@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Satisfy&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    filter: contrast(110%);
+
+}
+
+.header-img-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: whitesmoke;
+    gap: 10px;
+    background-color: orange;
+
+}
+
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #262626;
+    background-color: black;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 30px;
+    border: 1px solid black;
+    outline: 5px solid black;
+    outline-offset: 15px;
+}
+
+.header-text:hover {
+
+}
+.heading-section{
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+}
+.text-heading {
+    font-size: 3rem;
+    color: #17a2b8;
+    font-family: 'Satisfy', cursive;
+    opacity: 0.8;
+
+}
+
+.text-heading span {
+    font-family: 'Satisfy', cursive;
+    font-size: larger;
+    color: orange;
+    opacity: 1 !important;
+
+}
+.btn {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    margin: 1rem;
+    border: 2px solid purple;
+}
+
+.btn-4 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+
+
+.btn-4:before,
+.btn-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #17a2b8;
+    transition: all 0.3s ease;
+}
+
+.btn-4:before {
+    height: 50%;
+    width: 2px;
+}
+
+.btn-4:after {
+    width: 20%;
+    height: 2px;
+}
+
+.btn-4:hover:before {
+    height: 100%;
+}
+
+.btn-4:hover:after {
+    width: 100%;
+}
+
+.btn-4 span:before,
+.btn-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: orange;
+    transition: all 0.3s ease;
+}
+
+.btn-4 span:before {
+    width: 2px;
+    height: 50%;
+}
+
+.btn-4 span:after {
+    width: 20%;
+    height: 2px;
+}
+
+.btn-4 span:hover:before {
+    height: 100%;
+}
+
+.btn-4 span:hover:after {
+    width: 100%;
+}
+.genre-btn{
+    background-color: #262626;
+    color: white;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 3rem;
+}
+/*.button-answers {*/
+/*    width: 100%;*/
+/*    height: 3rem;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-evenly;*/
+/*    flex-direction: row;*/
+/*    border: 2px solid crimson;*/
+/*}*/
+
+
+
+.book-shelf {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 3rem 5rem;
+}
+
+.genres, .books {
+    width: 100%;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 1rem;
+
+}
+
+
+
+.books {
+    grid-template-columns: repeat(6, minmax(min-content, 20rem));
+}
+
+.book {
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+
+
+}
+
+.book_cover {
+    height: 100%;
+    width: 100%;
+}
+
+.book_cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    text-transform: capitalize;
+}
+
+.genres {
+    grid-template-columns: repeat(6, minmax(min-content, 1fr));
+
+}
+
+.displayFLex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
