@@ -1,10 +1,12 @@
 import React from 'react';
 
 
-let Book = (props) => {
+let Book = ({ cover, title, genre }) => {
     return (
         <div className="book">
-            <img src={props.book.cover} book={props.book} alt={props.book.title} genre={props.book.genre}/>
+            <img src={cover}
+                 alt={title}
+                 genre={genre}/>
         </div>
     )
 }

@@ -2,13 +2,12 @@ import React from 'react';
 import Book from './Book/Book'
 
 
-function Books({booksList}) {
-
+function Books({booksList}){
     const books =
         <div className="books">
             {
-                booksList.map(book => (
-                        <Book key={book.title} book={book} genre={book.genre}/>
+                booksList.map((book,title) => (
+                        <Book key={title} {...book}/>
                     )
                 )
             }
