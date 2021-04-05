@@ -67,7 +67,11 @@
     font-size: larger;
     color: chocolate;
     opacity: 1 !important;
-
+}
+.text-question span {
+    background-color: whitesmoke;
+    color: purple;
+    padding: 0.5rem 1rem;
 }
 
 .btn {
@@ -115,7 +119,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     grid-gap: .1rem;
-    background-color: chocolate;
+    background-color: whitesmoke;
 }
 
 

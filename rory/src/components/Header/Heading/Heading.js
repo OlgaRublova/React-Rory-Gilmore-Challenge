@@ -8,8 +8,11 @@ const Heading = ({loadAnswerLayout}) => {
                     <span> Rory Gilmore</span> ?
                 </h1>
                 <div display="displayFlex">
-                    <button className="btn" onClick={loadAnswerLayout}>Yes</button>
-                    <button className="btn">No</button>
+                    {/*<button className="btn" onClick={loadAnswerLayout}>Yes</button>*/}
+                    {/*<button className="btn">No</button>*/}
+                    <h1 className="text-question">
+                        <span> Pick your favourite genre!</span>
+                    </h1>
                 </div>
 
             </div>
