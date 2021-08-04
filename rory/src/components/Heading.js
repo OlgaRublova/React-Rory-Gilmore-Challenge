@@ -10,10 +10,6 @@ const Heading = () => {
                     <button type="submit" className="genre-btn">yes</button>
                     <button type="submit" className="genre-btn">no</button>
                 </div>
-
-
-
-
             </article>
 
     )

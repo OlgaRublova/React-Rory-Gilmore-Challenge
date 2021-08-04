@@ -13,21 +13,48 @@ import bookList from "./components/books";
 console.clear();
 const allGenres = ['all', ...new Set(booksList.map((book) => book.genre))];
 
+const getStorageTheme = () => {
+    let theme = "light-theme";
+    if (localStorage.getItem("theme")) {
+        theme = localStorage.getItem("theme")
+    }
+    return theme;
+}
+
 function App() {
     const [genres, setGenres] = useState(allGenres);
-
     const [data, setData] = useState(paginate(bookList));
     const [books, setBooks] = useState(data)
     const [page, setPage] = useState(0);
+    const [theme, setTheme] = useState(getStorageTheme());
 
 
     useEffect(() => {
         setBooks(data[page])
-    }, [page])
+        // eslint-disable-next-line
+    }, [page]);
 
 
     const handlePage = index => {
         setPage(index);
+    }
+    const prevPage = () => {
+        setPage(oldPage => {
+            let prevPage = oldPage - 1;
+            if (prevPage < 0) {
+                prevPage = data.length - 1;
+            }
+            return prevPage;
+        })
+    }
+    const nextPage = () => {
+        setPage(oldPage => {
+            let nextPage = oldPage + 1;
+            if (nextPage > data.length - 1) {
+                nextPage = 0;
+            }
+            return nextPage;
+        })
     }
 
     const filterBooksByGenre = (genre) => {
@@ -41,12 +68,27 @@ function App() {
         setBooks(newBooks);
     }
 
+    const toggleTheme = () => {
+        if (theme === "light-theme") {
+            setTheme("dark-theme")
+        } else {
+            setTheme("light-theme")
+        }
+    }
+
+
+    useEffect(() => {
+        document.documentElement.className = theme;
+        localStorage.setItem("theme", theme);
+
+    }, [theme])
+
 
     return (
         <main>
             <Title title="Rory Gilmore Reading Challenge"/>
             <div className="header">
-                <Gallery urls={urls}/>
+                <Gallery urls={urls} toggleTheme={toggleTheme} theme={theme}/>
                 <Heading/>
             </div>
             <Genres
@@ -55,7 +97,7 @@ function App() {
             />
 
             {<div className="btn-container--page">
-                <button className="prev-btn">prev</button>
+                <button className="prev-btn" onClick={prevPage}>prev</button>
                 {
                     data.map((item, index) => {
                         return (
@@ -70,13 +112,13 @@ function App() {
                         )
                     })
                 }
-                <button className="next-btn">next</button>
+                <button className="next-btn" onClick={nextPage}>next</button>
             </div>}
 
             <section className="books-container">
                 {books.map(book => {
                     return (
-                            <Book key={book.id} {...book}/>
+                        <Book key={book.id} {...book}/>
                     )
                 })}
             </section>

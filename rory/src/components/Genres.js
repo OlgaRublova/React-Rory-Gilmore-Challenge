@@ -6,7 +6,7 @@ const Genres = ({genres, filterBooksByGenre}) => {
                 return (
                     <button
                         type='button'
-                        className="btn genre-btn"
+                        className="genre-btn"
                         key={id}
                         onClick={() => filterBooksByGenre(genre)
                         }
