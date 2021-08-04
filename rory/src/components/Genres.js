@@ -1,6 +1,5 @@
-import React from 'react';
 
-const Genres = ({genres, filterBooks}) => {
+const Genres = ({genres, filterBooksByGenre}) => {
     return (
         <div className="btn-container">
             {genres.map((genre, id) => {
@@ -9,7 +8,8 @@ const Genres = ({genres, filterBooks}) => {
                         type='button'
                         className="btn genre-btn"
                         key={id}
-                        onClick={() => filterBooks(genre)}
+                        onClick={() => filterBooksByGenre(genre)
+                        }
                     >
                         {genre}
                     </button>

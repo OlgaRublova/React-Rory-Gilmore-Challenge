@@ -1,6 +1,3 @@
-import React from 'react';
-import Heading from "./Heading/Heading";
-import Gallery from "./Gallery/Gallery";
 
 let urls = [
     "https://ooligan.pdx.edu/img/rorygilmore.jpg",
@@ -14,13 +11,4 @@ let urls = [
     "https://img.buzzfeed.com/buzzfeed-static/static/2014-03/enhanced/webdr03/20/22/enhanced-1549-1395370382-1.jpg?downsize=900:*&output-format=auto&output-quality=auto"
 ]
 
-const Header = ({loadAnswerLayout}) => {
-    return (
-        <section className="header">
-            <Gallery urls={urls}/>
-            <Heading loadAnswerLayout={loadAnswerLayout}/>
-        </section>
-    )
-}
-
-export default Header;
+export default urls;

@@ -1148,7 +1148,7 @@ const list = [
         firstName: "William",
         lastName: "Shakespeare",
         title: "Hamlet",
-        genre: "Shakespearean tragedy",
+        genre: "Shakespearean",
         page: 64,
         cover: "images/100-200/128.jpg"
     },
@@ -1211,7 +1211,7 @@ const list = [
         firstName: "William",
         lastName: "Shakespeare",
         title: "Henry IV, part I",
-        genre: "Shakespearean tragedy",
+        genre: "Shakespearean",
         page: 398,
         cover: "images/100-200/135.jpg"
     },
@@ -1220,7 +1220,7 @@ const list = [
         firstName: "William",
         lastName: "Shakespeare",
         title: "Henry IV, part II",
-        genre: "Shakespearean tragedy",
+        genre: "Shakespearean",
         page: 320,
         cover: "images/100-200/136.jpg"
     },
@@ -1303,459 +1303,289 @@ const list = [
         title: "House of Sand and Fog",
         genre: "Novel",
         page: 365,
-        cover: "145.jpg"
+        cover: "https://m.media-amazon.com/images/I/51JB9NCDFRL._SL160_.jpg"
     },
     {
         id: 146,
         firstName: "Isabel",
         lastName: "Allende",
         title: "The House of the Spirits",
-        genre: "",
+        genre: "Novel",
         page: 448,
-        cover: ""
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51fxADjREWL.jpg"
     },
     {
         id: 147,
         firstName: "Julie",
         lastName: "Orringer",
         title: "How to Breathe Underwater",
-        genre: "",
-        page: 2,
-        cover: ""
+        genre: "Fiction",
+        page: 226,
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71HbJJA7XdL.jpg"
     },
     {
         id: 148,
         firstName: "Dr. Seuss",
         lastName: "",
         title: "How the Grinch Stole Christmas",
-        genre: "",
-        page: 2,
-        cover: ""
+        genre: "Children's",
+        page: 64,
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91Q9eneR7BL.jpg"
     },
     {
         id: 149,
         firstName: "Allen",
         lastName: "Ginsberg",
         title: "Howl and Other Poems",
-        genre: "",
-        page: 2,
-        cover: ""
+        genre: "Poetry",
+        page: 57,
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71B1NiNdEHL.jpg"
     },
     {
         id: 150,
         firstName: "M.J.",
         lastName: "Hyland",
         title: "How the Light Gets In",
-        genre: "",
-        page: 2,
-        cover: ""
+        genre: "Fiction",
+        page: 432,
+        cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348460321l/251052.jpg"
     },
-    {
-        id: 151,
-        firstName: "Victor",
-        lastName: "Hugo",
-        title: "The Hunchback of Notre Dame",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 152,
-        firstName: "Nora",
-        lastName: "Ephron",
-        title: "I Feel Bad About My Neck",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 153,
-        firstName: "Homer",
-        lastName: "",
-        title: "The Iliad",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 154,
-        firstName: "Pamela",
-        lastName: "des Barres",
-        title: "I'm With the Band",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 155,
-        firstName: "Truman",
-        lastName: "Capote",
-        title: "In Cold Blood",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 156,
-        firstName: "George",
-        lastName: "Sand",
-        title: "Indiana",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 157,
-        firstName: "Dante",
-        lastName: "Alighieri",
-        title: "The Inferno",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 158,
-        firstName: "Jerome",
-        lastName: "Lawrence",
-        title: "Inherit the Wind",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 159,
-        firstName: "William J.",
-        lastName: "Kennedy",
-        title: "Ironweed",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 160,
-        firstName: "Hillary",
-        lastName: "Clinton",
-        title: "It Takes a Village",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 161,
-        firstName: "Charlotte",
-        lastName: "Bronte",
-        title: "Jane Eyre",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 162,
-        firstName: "Amy",
-        lastName: "Tan",
-        title: "The Joy Luck Club",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 163,
-        firstName: "William",
-        lastName: "Shakespeare",
-        title: "Julius Caesar",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 164,
-        firstName: "Upton",
-        lastName: "Sinclair",
-        title: "The Jungle",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 165,
-        firstName: "Michael",
-        lastName: "Crichton",
-        title: "Jurassic Park",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 166,
-        firstName: "Tony",
-        lastName: "Vigorito",
-        title: "Just a Couple of Days",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 167,
-        firstName: "Robert",
-        lastName: "Alexander",
-        title: "The Kitchen Boy: A Novel of the Last Tsar",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 168,
-        firstName: "Anthony",
-        lastName: "Bourdain",
-        title: "Kitchen Confidential: Adventures in the Culinary Underbelly",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 169,
-        firstName: "Khaled",
-        lastName: "Hosseini",
-        title: "The Kite Runner",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 170,
-        firstName: "D.H.",
-        lastName: "Lawrence",
-        title: "Lady Chatterleys' Lover",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 171,
-        firstName: "Gore",
-        lastName: "Vidal",
-        title: "The Last Empire: Essays 1992-2000",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 172,
-        firstName: "William",
-        lastName: "Manchester",
-        title: "The Last Lion: Winston Spencer Churchill, Volume I: Visions of Glory, 1874-1932",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 173,
-        firstName: "William",
-        lastName: "Manchester",
-        title: "The Last Lion: Winston Spencer Churchill, Volume II: Alone, 1932-1940",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
+    // {
+    //     id: 151,
+    //     firstName: "Victor",
+    //     lastName: "Hugo",
+    //     title: "The Hunchback of Notre Dame",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 152,
+    //     firstName: "Nora",
+    //     lastName: "Ephron",
+    //     title: "I Feel Bad About My Neck",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 153,
+    //     firstName: "Homer",
+    //     lastName: "",
+    //     title: "The Iliad",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 154,
+    //     firstName: "Pamela",
+    //     lastName: "des Barres",
+    //     title: "I'm With the Band",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 155,
+    //     firstName: "Truman",
+    //     lastName: "Capote",
+    //     title: "In Cold Blood",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 156,
+    //     firstName: "George",
+    //     lastName: "Sand",
+    //     title: "Indiana",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 157,
+    //     firstName: "Dante",
+    //     lastName: "Alighieri",
+    //     title: "The Inferno",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 158,
+    //     firstName: "Jerome",
+    //     lastName: "Lawrence",
+    //     title: "Inherit the Wind",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 159,
+    //     firstName: "William J.",
+    //     lastName: "Kennedy",
+    //     title: "Ironweed",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 160,
+    //     firstName: "Hillary",
+    //     lastName: "Clinton",
+    //     title: "It Takes a Village",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 161,
+    //     firstName: "Charlotte",
+    //     lastName: "Bronte",
+    //     title: "Jane Eyre",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 162,
+    //     firstName: "Amy",
+    //     lastName: "Tan",
+    //     title: "The Joy Luck Club",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 163,
+    //     firstName: "William",
+    //     lastName: "Shakespeare",
+    //     title: "Julius Caesar",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 164,
+    //     firstName: "Upton",
+    //     lastName: "Sinclair",
+    //     title: "The Jungle",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 165,
+    //     firstName: "Michael",
+    //     lastName: "Crichton",
+    //     title: "Jurassic Park",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 166,
+    //     firstName: "Tony",
+    //     lastName: "Vigorito",
+    //     title: "Just a Couple of Days",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 167,
+    //     firstName: "Robert",
+    //     lastName: "Alexander",
+    //     title: "The Kitchen Boy: A Novel of the Last Tsar",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 168,
+    //     firstName: "Anthony",
+    //     lastName: "Bourdain",
+    //     title: "Kitchen Confidential: Adventures in the Culinary Underbelly",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 169,
+    //     firstName: "Khaled",
+    //     lastName: "Hosseini",
+    //     title: "The Kite Runner",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 170,
+    //     firstName: "D.H.",
+    //     lastName: "Lawrence",
+    //     title: "Lady Chatterleys' Lover",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 171,
+    //     firstName: "Gore",
+    //     lastName: "Vidal",
+    //     title: "The Last Empire: Essays 1992-2000",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 172,
+    //     firstName: "William",
+    //     lastName: "Manchester",
+    //     title: "The Last Lion: Winston Spencer Churchill, Volume I: Visions of Glory, 1874-1932",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 173,
+    //     firstName: "William",
+    //     lastName: "Manchester",
+    //     title: "The Last Lion: Winston Spencer Churchill, Volume II: Alone, 1932-1940",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    //
+    // {
+    //     id: 174,
+    //     firstName: "William",
+    //     lastName: "Manchester",
+    //     title: "The Last Lion: Winston Spencer Churchill, Volume III: Defender of the Realm, 1940-1965",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 175,
+    //     firstName: "Walt",
+    //     lastName: "Whitman",
+    //     title: "Leaves of Grass",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
+    // {
+    //     id: 176,
+    //     firstName: "Steven",
+    //     lastName: "Pressfield",
+    //     title: "The Legend of Bagger Vance",
+    //     genre: "",
+    //     page: 2,
+    //     cover: ""
+    // },
 
-    {
-        id: 174,
-        firstName: "William",
-        lastName: "Manchester",
-        title: "The Last Lion: Winston Spencer Churchill, Volume III: Defender of the Realm, 1940-1965",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 175,
-        firstName: "Walt",
-        lastName: "Whitman",
-        title: "Leaves of Grass",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 176,
-        firstName: "Steven",
-        lastName: "Pressfield",
-        title: "The Legend of Bagger Vance",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 177,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 178,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 179,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 180,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 181,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 182,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 183,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 184,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 185,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 186,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 187,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 188,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 189,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 190,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 191,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 192,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 193,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 194,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
-    {
-        id: 195,
-        firstName: "",
-        lastName: "",
-        title: "",
-        genre: "",
-        page: 2,
-        cover: ""
-    },
 
 ]
 export default list;
