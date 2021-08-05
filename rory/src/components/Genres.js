@@ -1,5 +1,6 @@
 
 const Genres = ({genres, filterBooksByGenre}) => {
+
     return (
         <div className="btn-container">
             {genres.map((genre, id) => {
