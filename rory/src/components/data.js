@@ -6,7 +6,7 @@ const list = [
         title: 1984,
         genre: 'Dystopian fiction',
         page: 328,
-        cover: '/images/1-100/img-1.jpg'
+        cover: 'images/1-100/img-1.jpg'
     },
     {
         id: 2,

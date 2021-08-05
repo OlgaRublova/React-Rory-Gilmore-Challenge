@@ -12,6 +12,7 @@ const AppProvider = ({children}) => {
     const [books, setBooks] = useState(data);
     const [genres, setGenres] = useState(allGenres);
     const [page, setPage] = useState(0);
+    const [isLoading, setIsLoading] = useState(true);
 
 
     const handlePage = index => {
@@ -35,13 +36,20 @@ const AppProvider = ({children}) => {
             return nextPage;
         })
     }
+
     const filterBooksByGenre = (genre) => {
+        setIsLoading(true);
         if (genre === 'all') {
+            setIsLoading(true);
             setBooks(booksList);
+            setIsLoading(false);
+
             return;
         }
+
         const newBooks = booksList.filter((book) => book.genre === genre);
         setBooks(newBooks);
+        setIsLoading(false);
     }
 
 
@@ -58,7 +66,9 @@ const AppProvider = ({children}) => {
             prevPage,
             nextPage,
             handlePage,
-            filterBooksByGenre
+            filterBooksByGenre,
+            isLoading,
+            setIsLoading,
         }}>
             {children}
         </AppContext.Provider>

@@ -1,42 +1,31 @@
 import Title from "./Title";
-import Gallery from "./Gallery";
-import urls from "../urls";
-import Heading from "./Heading";
+
 import {useEffect, useState} from "react";
+import SearchForm from "./SearchForm";
+import Genres from "./Genres";
+import Pages from "./Pages";
+import {useGlobalContext} from "../contex";
+import Books from "./Books";
+import Header from "./Header"
 
 
-const getStorageTheme = () => {
-    let theme = "light-theme";
-    if (localStorage.getItem("theme")) {
-        theme = localStorage.getItem("theme")
-    }
-    return theme;
-}
+
 const Home = () => {
-    const [theme, setTheme] = useState(getStorageTheme());
-
-    const toggleTheme = () => {
-        if (theme === "light-theme") {
-            setTheme("dark-theme")
-        } else {
-            setTheme("light-theme")
-        }
-    }
-
-
-    useEffect(() => {
-        document.documentElement.className = theme;
-        localStorage.setItem("theme", theme);
-    }, [theme])
+    const {genres, filterBooksByGenre} = useGlobalContext();
 
     return (
-        <>
+        <main>
             <Title title="Rory Gilmore Reading Challenge"/>
-            <section className="header">
-                <Gallery urls={urls} toggleTheme={toggleTheme} theme={theme}/>
-                <Heading/>
-            </section>
-        </>
+            <Header/>
+            <SearchForm/>
+            <Genres
+                genres={genres}
+                filterBooksByGenre={filterBooksByGenre}
+            />
+            <Pages/>
+            <Books/>
+
+        </main>
 
     )
 }

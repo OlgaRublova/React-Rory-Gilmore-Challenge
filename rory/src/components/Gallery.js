@@ -2,7 +2,6 @@ import {BsSun, BsMoon} from "react-icons/all";
 
 const Gallery = ({urls, toggleTheme, theme}) => {
 
-
     return (
         <main>
             <nav>

@@ -1,35 +1,22 @@
 import './App.css';
 
-import booksList from '../src/components/data';
-import {useState, useEffect} from "react";
-import Genres from "./components/Genres";
+import {Switch, Route} from "react-router-dom"
 
 import Home from "./components/Home"
-import {useGlobalContext} from "./contex";
-import Books from "./components/Books";
-import Pages from "./components/Pages"
-import SearchForm from "./components/SearchForm";
+import SingleBook from "./components/SingleBook";
 
 console.clear();
 
 
-
 function App() {
 
-    const { genres, filterBooksByGenre} = useGlobalContext();
-
     return (
-        <main>
-            <Home/>
-            <SearchForm/>
-            <Genres
-                genres={genres}
-                filterBooksByGenre={filterBooksByGenre}
-            />
-            <Pages/>
-            <Books/>
-
-        </main>
+        <Switch>
+            <Route path="/" exact>
+                <Home/>
+            </Route>
+            <Route path="/books/:id" children={<SingleBook/>}/>
+        </Switch>
     );
 }
 
