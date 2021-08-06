@@ -6,7 +6,7 @@ const list = [
         title: 1984,
         genre: 'Dystopian fiction',
         page: 328,
-        cover: 'images/1-100/img-1.jpg'
+        cover: 'https://images-na.ssl-images-amazon.com/images/I/518gNiNACGL._SX331_BO1,204,203,200_.jpg',
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const list = [
         title: 'The Adventures of Huckleberry Finn',
         genre: 'Picaresque novel',
         page: 366,
-        cover: 'images/1-100/img-2.jpeg'
+        cover: 'https://2f96be1b505f7f7a63c3-837c961929b51c21ec10b9658b068d6c.ssl.cf2.rackcdn.com/products/034670.jpg'
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const list = [
         title: 'Alice’s Adventures in Wonderland',
         genre: 'Literary nonsense',
         page: 200,
-        cover: 'images/1-100/img-3.jpg'
+        cover: 'https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781447279990.jpg'
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const list = [
         title: 'The Amazing Adventures of Kavalier & Clay',
         genre: 'Historical fiction',
         page: 639,
-        cover: 'images/1-100/img-4.jpg'
+        cover: 'https://m.media-amazon.com/images/I/51UjnBmJNZL.jpg'
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const list = [
         title: 'An American Tragedy',
         genre: 'Crime fiction',
         page: 800,
-        cover: 'images/1-100/img-5.jpg'
+        cover: 'https://image.winudf.com/v2/image/Y29tLm1lZ2Fib29rcy5iZXN0LmFtZXJpY2FudHJhZ2VkeTMxMDdfc2NyZWVuXzRfMTUzNDgxNzMyNV8wMzg/screen-4.jpg?fakeurl=1&type=.jpg'
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const list = [
         title: 'Angela’s Ashes',
         genre: 'Autobiography',
         page: 368,
-        cover: 'images/1-100/img-6.jpg'
+        cover: 'https://images-na.ssl-images-amazon.com/images/I/51A2T03B4SL._SX282_BO1,204,203,200_.jpg'
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const list = [
         title: 'Anna Karenina',
         genre: 'Realistic novel',
         page: 864,
-        cover: './images/1-100/img-7.jpg'
+        cover: 'https://images.booksense.com/images/250/293/9781978293250.jpg'
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const list = [
         title: 'The Diary of a Young Girl',
         genre: 'Autobiography',
         page: 352,
-        cover: 'images/1-100/img-8.jpg'
+        cover: 'https://cdn.waterstones.com/bookjackets/large/9780/2419/9780241952443.jpg'
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ const list = [
         title: 'Archidamian War',
         genre: 'History',
         page: 392,
-        cover: 'images/1-100/img-9.jpeg'
+        cover: 'https://images-na.ssl-images-amazon.com/images/I/61scRwQ8QUL._AC_UL600_SR387,600_.jpg'
     },
     {
         id: 10,
@@ -87,7 +87,7 @@ const list = [
         title: 'The Art of Fiction',
         genre: 'Fiction',
         page: 224,
-        cover: 'images/1-100/img-10.jpeg'
+        cover: 'https://m.media-amazon.com/images/I/41x+Hy-asKL.jpg'
     },
     {
         id: 11,
@@ -96,7 +96,7 @@ const list = [
         title: "Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness",
         genre: "Self-help",
         page: 144,
-        cover: "images/1-100/img-11.jpg"
+        cover: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781625583369/the-art-of-living-9781625583369_hr.jpg"
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ const list = [
         title: "The Art of War",
         genre: "Non-fiction",
         page: 288,
-        cover: "images/1-100/img-12.jpeg"
+        cover: "https://jamesclear.com/wp-content/uploads/2015/11/TheArtofWar-by-SunTzu.jpg"
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ const list = [
         title: "As I Lay Dying",
         genre: "Dark Comedy",
         page: 267,
-        cover: "images/1-100/img-13.jpeg"
+        cover: "https://m.media-amazon.com/images/I/51XkvLIHxxL.jpg"
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ const list = [
         title: "Atonement",
         genre: "Novel",
         page: 351,
-        cover: "images/1-100/img-14.jpeg"
+        cover: "https://images.randomhouse.com/cover/9780676974560"
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ const list = [
         title: "Autobiography of a Face",
         genre: "Autobiography",
         page: 256,
-        cover: "images/1-100/img-15.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81J+xlUugnL.jpg"
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ const list = [
         title: "The Awakening",
         genre: "Fiction",
         page: 303,
-        cover: "images/1-100/img-16.jpg"
+        cover: "https://d28hgpri8am2if.cloudfront.net/tagged_assets/cvr9780743487672/9780743487672_hr.jpg"
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ const list = [
         title: "Babe",
         genre: "Children's",
         page: 128,
-        cover: "images/1-100/img-17.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81lY0OpaL8L.jpg"
     },
     {
         id: 18,
@@ -159,7 +159,7 @@ const list = [
         title: "Backlash: The Undeclared War Against American Women",
         genre: "Non-fiction",
         page: 552,
-        cover: "images/1-100/img-18.jpg"
+        cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386922920l/200883.jpg"
     },
     {
         id: 19,
@@ -168,7 +168,7 @@ const list = [
         title: "Balzac and the Little Chinese Seamstress",
         genre: "Historical Fiction",
         page: 190,
-        cover: "images/1-100/img-19.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91Kkc0ZHa0L.jpg"
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ const list = [
         title: "Bambi: A Life in the Woods",
         genre: "Children's",
         page: 272,
-        cover: "images/1-100/img-20.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71816gRUnLL.jpg"
     },
     {
         id: 21,
@@ -186,7 +186,7 @@ const list = [
         title: "Bel Canto",
         genre: "Psychological Fiction",
         page: 318,
-        cover: "images/1-100/img-21.jpg"
+        cover: "http://prodimage.images-bn.com/pimages/9780060838720_p0_v2_s1200x630.jpg"
     },
     {
         id: 22,
@@ -195,7 +195,7 @@ const list = [
         title: "The Bell Jar",
         genre: "Psychological Fiction",
         page: 244,
-        cover: "images/1-100/img-22.jpg"
+        cover: "https://images.thenile.io/r1000/9780060837020.jpg"
     },
     {
         id: 23,
@@ -204,7 +204,7 @@ const list = [
         title: "Beloved",
         genre: "Historical Fiction",
         page: 324,
-        cover: "images/1-100/img-23.jpg"
+        cover: "https://s26162.pcdn.co/wp-content/uploads/2017/09/Belove_BookCover_WeAreTeachers.jpg"
     },
     {
         id: 24,
@@ -213,7 +213,7 @@ const list = [
         title: "Beowulf",
         genre: "Poetry",
         page: 256,
-        cover: "images/1-100/img-24.jpg"
+        cover: "https://g.christianbook.com/g/slideshow/3/320979/main/320979_1_ftc_dp.jpg"
     },
     {
         id: 25,
@@ -222,7 +222,7 @@ const list = [
         title: "The Bhagavad Gita",
         genre: "Hindu Scripture",
         page: 701,
-        cover: "images/1-100/img-25.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/9167y6YkDZL.jpg"
     },
     {
         id: 26,
@@ -231,7 +231,7 @@ const list = [
         title: "The Bielski Brothers: The True Story of Three Men Who Defied the Nazis, Built a Village in the Forest, and Saved 1200 Jews",
         genre: "Documentary",
         page: 302,
-        cover: "images/1-100/img-26.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51Saz99PESL._SX331_BO1,204,203,200_.jpg"
     },
     {
         id: 27,
@@ -240,7 +240,7 @@ const list = [
         title: "Bitch: In Praise of Difficult Women",
         genre: "Non-Fiction",
         page: 448,
-        cover: "images/1-100/img-27.jpg"
+        cover: "https://m.media-amazon.com/images/I/51x-XPTS0bL.jpg"
     },
     {
         id: 28,
@@ -249,7 +249,7 @@ const list = [
         title: "A Bolt from the Blue and Other Essays",
         genre: "Novel",
         page: 400,
-        cover: "images/1-100/img-28.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41BMB-JUjmL._SX338_BO1,204,203,200_.jpg"
     },
     {
         id: 29,
@@ -258,7 +258,7 @@ const list = [
         title: "Brave New World",
         genre: "Dystopian fiction",
         page: 311,
-        cover: "images/1-100/img-29.jpg"
+        cover: "https://i.pinimg.com/originals/25/e7/c0/25e7c09587e746b53941bbeffbe90d89.jpg"
     },
     {
         id: 30,
@@ -267,16 +267,16 @@ const list = [
         title: "Brick Lane",
         genre: "Novel",
         page: 432,
-        cover: "images/1-100/img-30.jpg"
+        cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433730686l/18723.jpg"
     },
     {
         id: 31,
         firstName: "Alan Jay",
         lastName: "Lerner",
-        title: "Bridgadoon",
+        title: "Brigadoon",
         genre: "Novel",
         page: 200,
-        cover: "images/1-100/img-31.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/410MirCwX4L.jpg"
     },
     {
         id: 32,
@@ -285,7 +285,7 @@ const list = [
         title: "Candide",
         genre: "Novel",
         page: 84,
-        cover: "images/1-100/img-32.png"
+        cover: "https://m.media-amazon.com/images/I/51o5uPXRSgL.jpg"
     },
     {
         id: 33,
@@ -294,7 +294,7 @@ const list = [
         title: "The Canterbury Tales",
         genre: "Poetry",
         page: 912,
-        cover: "images/1-100/img-33.jpg"
+        cover: "https://images2.penguinrandomhouse.com/cover/9780553902525"
     },
     {
         id: 34,
@@ -303,7 +303,7 @@ const list = [
         title: "Carrie",
         genre: "Horror",
         page: 199,
-        cover: "images/1-100/img-34.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/916W3jMu+mL.jpg"
     },
     {
         id: 35,
@@ -312,7 +312,7 @@ const list = [
         title: "Catch-22",
         genre: "Absurdist fiction",
         page: 453,
-        cover: "images/1-100/img-35.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51eW-wH1K-L._SX324_BO1,204,203,200_.jpg"
     },
     {
         id: 36,
@@ -321,7 +321,7 @@ const list = [
         title: "The Catcher in the Rye",
         genre: "Novel",
         page: 277,
-        cover: "images/1-100/img-36.jpg"
+        cover: "https://i.pinimg.com/originals/59/7f/b4/597fb48556f2d63ae86cb49197d0b477.jpg"
     },
     {
         id: 37,
@@ -330,7 +330,7 @@ const list = [
         title: "The Celebrated Jumping Frog",
         genre: "Fiction",
         page: 32,
-        cover: "images/1-100/img-37.jpg"
+        cover: "https://m.media-amazon.com/images/I/41W4wuKH2pL.jpg"
     },
     {
         id: 38,
@@ -339,7 +339,7 @@ const list = [
         title: "Charlotte's Web",
         genre: "Children's",
         page: 192,
-        cover: "images/1-100/img-38.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/916JW20V3yL.jpg"
     },
     {
         id: 39,
@@ -348,7 +348,7 @@ const list = [
         title: "The Children's Hour",
         genre: "Drama",
         page: 70,
-        cover: "images/1-100/img-39.jpg"
+        cover: "http://www.theatremclean.org/wp-content/uploads/2017/01/childrens-hour_page-poster_400x560.png"
     },
     {
         id: 40,
@@ -357,7 +357,7 @@ const list = [
         title: "Christine",
         genre: "Novel",
         page: 526,
-        cover: "images/1-100/img-40.jpg"
+        cover: "https://d3525k1ryd2155.cloudfront.net/h/309/329/1349329309.0.x.jpg"
     },
     {
         id: 41,
@@ -366,7 +366,7 @@ const list = [
         title: "A Christmas Carol",
         genre: "Novel",
         page: 162,
-        cover: "images/1-100/img-41.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91r7kYxAAyL.jpg"
     },
     {
         id: 42,
@@ -375,7 +375,7 @@ const list = [
         title: "Cinderella",
         genre: "Children's",
         page: 32,
-        cover: "images/1-100/img-42.jpg"
+        cover: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780735842946/cinderella-9780735842946_hr.jpg"
     },
     {
         id: 43,
@@ -384,7 +384,7 @@ const list = [
         title: "A Clockwork Orange",
         genre: "Novel",
         page: 213,
-        cover: "images/1-100/img-43.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41mN6FBCVGL._SX316_BO1,204,203,200_.jpg"
     },
     {
         id: 44,
@@ -393,7 +393,7 @@ const list = [
         title: "The Code of the Woosters",
         genre: "Comic novel",
         page: 272,
-        cover: "images/1-100/img-44.jpg"
+        cover: "https://covers.openlibrary.org/b/id/254199-L.jpg"
     },
     {
         id: 45,
@@ -402,7 +402,7 @@ const list = [
         title: "The Collected Stories",
         genre: "Fiction",
         page: 592,
-        cover: "images/1-100/img-45.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/511WBcHJZeL.jpg"
     },
     {
         id: 46,
@@ -411,7 +411,7 @@ const list = [
         title: "A Comedy of Errors",
         genre: "Comedy play",
         page: 69,
-        cover: "images/1-100/img-46.jpg"
+        cover: "https://m.media-amazon.com/images/I/51xfuF6iB0L.jpg"
     },
     {
         id: 47,
@@ -420,7 +420,7 @@ const list = [
         title: "Complete Novels",
         genre: "Novel",
         page: 969,
-        cover: "images/1-100/img-47.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41lW1FYmGFL._SX311_BO1,204,203,200_.jpg"
     },
     {
         id: 48,
@@ -429,7 +429,7 @@ const list = [
         title: "The Complete Poems",
         genre: "Poetry",
         page: 656,
-        cover: "images/1-100/img-48.jpg"
+        cover: "https://m.media-amazon.com/images/I/51ieMWY9pJL.jpg"
     },
     {
         id: 49,
@@ -438,7 +438,7 @@ const list = [
         title: "Complete Stories",
         genre: "Fiction",
         page: 480,
-        cover: "images/1-100/img-49.jpg"
+        cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387735027l/322658.jpg"
     },
     {
         id: 50,
@@ -447,7 +447,7 @@ const list = [
         title: "A Confederacy of Dunces",
         genre: "Picaresque novel",
         page: 405,
-        cover: "images/1-100/img-50.jpg"
+        cover: "https://pictures.abebooks.com/inventory/30185614561.jpg"
     },
     {
         id: 51,
@@ -456,7 +456,7 @@ const list = [
         title: "A Connecticut Yankee in King Arthur's Court",
         genre: "Novel",
         page: 336,
-        cover: "images/1-100/img-51.jpg"
+        cover: "https://g.christianbook.com/g/slideshow/4/41591/main/41591_1_ftc_dp.jpg"
     },
     {
         id: 52,
@@ -465,7 +465,7 @@ const list = [
         title: "Consider the Lobster: And Other Essays",
         genre: "Non-fiction",
         page: 343,
-        cover: "images/1-100/img-52.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41Kqqz6v7BL._SX331_BO1,204,203,200_.jpg"
     },
     {
         id: 53,
@@ -474,7 +474,7 @@ const list = [
         title: "Contact",
         genre: "Science Fiction",
         page: 432,
-        cover: "images/1-100/img-53.jpg"
+        cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602082958l/61666._SY475_.jpg"
     },
     {
         id: 54,
@@ -483,7 +483,7 @@ const list = [
         title: "The Count of Monte Cristo",
         genre: "Novel",
         page: 1276,
-        cover: "images/1-100/img-54.jpg"
+        cover: "https://i.pinimg.com/originals/74/5e/6b/745e6bee4404bdec395fff084175cc48.jpg"
     },
     {
         id: 55,
@@ -492,7 +492,7 @@ const list = [
         title: "Cousin Bette",
         genre: "Novel",
         page: 496,
-        cover: "images/1-100/img-55.jpg"
+        cover: "https://i.ebayimg.com/images/g/djMAAOSwX7hf~ec3/s-l500.jpg"
     },
     {
         id: 56,
@@ -501,7 +501,7 @@ const list = [
         title: "Crime and Punishment",
         genre: "Novel",
         page: 430,
-        cover: "images/1-100/img-56.jpg"
+        cover: "http://prodimage.images-bn.com/pimages/9781631495311_p0_v6_s1200x630.jpg"
     },
     {
         id: 57,
@@ -510,7 +510,7 @@ const list = [
         title: "The Crimson Petal and the White",
         genre: "Novel",
         page: 864,
-        cover: "images/1-100/img-57.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51t4JqIkY6L._SX330_BO1,204,203,200_.jpg"
     },
     {
         id: 58,
@@ -519,7 +519,7 @@ const list = [
         title: "The Crucible",
         genre: "Tragedy",
         page: 160,
-        cover: "images/1-100/img-58.gif"
+        cover: "https://donnasgeneralstore.com/wp-content/uploads/TheCrucible.jpg"
     },
     {
         id: 59,
@@ -528,7 +528,7 @@ const list = [
         title: "Cujo",
         genre: "Horror",
         page: 309,
-        cover: "images/1-100/img-59.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71AKaPbpeYL.jpg"
     },
     {
         id: 60,
@@ -537,7 +537,7 @@ const list = [
         title: "The Curious Incident of the Dog in the Night-Time",
         genre: "Mystery",
         page: 274,
-        cover: "images/1-100/img-60.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/61q11L2zo6L.jpg"
     },
     {
         id: 61,
@@ -546,7 +546,7 @@ const list = [
         title: "Cyrano De Bergerac",
         genre: "Play",
         page: 224,
-        cover: "images/1-100/img-61.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/818gq1W75xL.jpg"
     },
     {
         id: 62,
@@ -555,7 +555,7 @@ const list = [
         title: "Daughter of Fortune",
         genre: "Novel",
         page: 432,
-        cover: "images/1-100/img-62.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/719fQ9sJceS.jpg"
     },
     {
         id: 63,
@@ -564,7 +564,7 @@ const list = [
         title: "David Copperfield",
         genre: "Novel",
         page: 624,
-        cover: "images/1-100/img-63.jpeg"
+        cover: "https://m.media-amazon.com/images/I/51TrWpIwMfL.jpg"
     },
     {
         id: 64,
@@ -573,7 +573,7 @@ const list = [
         title: "The Da Vinci Code",
         genre: "Conspiracy Fiction",
         page: 359,
-        cover: "images/1-100/img-64.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91Q5dCjc2KL.jpg"
     },
     {
         id: 65,
@@ -582,7 +582,7 @@ const list = [
         title: "The Dead Souls",
         genre: "Picaresque novel",
         page: 432,
-        cover: "images/1-100/img-65.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71mjbyBGQ0L.jpg"
     },
     {
         id: 66,
@@ -591,7 +591,7 @@ const list = [
         title: "Death of a Salesman",
         genre: "Tragedy",
         page: 144,
-        cover: "images/1-100/img-66.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71ZUsis6HjL.jpg"
     },
     {
         id: 67,
@@ -600,7 +600,7 @@ const list = [
         title: "Deenie",
         genre: "Young adult",
         page: 160,
-        cover: "images/1-100/img-67.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/61qM3h4ZpFL.jpg"
     },
     {
         id: 68,
@@ -609,7 +609,7 @@ const list = [
         title: "Demons",
         genre: "Novel",
         page: 768,
-        cover: "images/1-100/img-68.jpg"
+        cover: "https://i.pinimg.com/originals/2e/39/cc/2e39cce395898c3ad056e9bfc2465247.png"
     },
     {
         id: 69,
@@ -618,7 +618,7 @@ const list = [
         title: "The Devil in the White City: Murder, Magic, and Madness at the Fair that Changed America",
         genre: "Biography",
         page: 447,
-        cover: "images/1-100/img-69.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91nh+RL7nPL.jpg"
     },
 
     {
@@ -628,7 +628,7 @@ const list = [
         title: "The Dirt: Confessions of the World's Most Notorious Rock Band",
         genre: "Biography",
         page: 431,
-        cover: "images/1-100/img-70.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81rjVu119KL.jpg"
     },
     {
         id: 71,
@@ -637,7 +637,7 @@ const list = [
         title: "The Divine Comedy",
         genre: "Poetry",
         page: 712,
-        cover: "images/1-100/img-71.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91vybHeMSxL.jpg"
     },
     {
         id: 72,
@@ -646,7 +646,7 @@ const list = [
         title: "The Divine Secrets of the Ya-Ya Sisterhood",
         genre: "Novel",
         page: 368,
-        cover: "images/1-100/img-72.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51Hn77QFjkL.jpg"
     },
     {
         id: 73,
@@ -655,7 +655,7 @@ const list = [
         title: "Don Quixote",
         genre: "Parody",
         page: 863,
-        cover: "images/1-100/img-73.jpg"
+        cover: "https://m.media-amazon.com/images/I/51iQq6ZYedL.jpg"
     },
     {
         id: 74,
@@ -664,7 +664,7 @@ const list = [
         title: "Dracula",
         genre: "Horror",
         page: 418,
-        cover: "images/1-100/img-74.jpg"
+        cover: "https://m.media-amazon.com/images/I/51F49MFtd8L.jpg"
     },
     {
         id: 75,
@@ -673,7 +673,7 @@ const list = [
         title: "Driving Miss Daisy",
         genre: "Play",
         page: 72,
-        cover: "images/1-100/img-75.jpg"
+        cover: "https://m.media-amazon.com/images/I/41h9jc3k7vL.jpg"
     },
     {
         id: 76,
@@ -682,7 +682,7 @@ const list = [
         title: "Edgar Allan Poe: Complete Tales & Poems",
         genre: "Poetry",
         page: 1023,
-        cover: "images/1-100/img-76.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81kJufCw2yL.jpg"
     },
     {
         id: 77,
@@ -691,7 +691,7 @@ const list = [
         title: "Eleanor Roosevelt",
         genre: "Biography",
         page: 686,
-        cover: "images/1-100/img-77.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81ayAcK+91L.jpg"
     },
     {
         id: 78,
@@ -700,7 +700,7 @@ const list = [
         title: "The Electric Kool-Aid Acid Test",
         genre: "Novel",
         page: 432,
-        cover: "images/1-100/img-78.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51UMpPPd53L._SX330_BO1,204,203,200_.jpg"
     },
     {
         id: 79,
@@ -709,7 +709,7 @@ const list = [
         title: "Ella Minnow Pea: A Novel in Letters",
         genre: "Novel",
         page: 208,
-        cover: "images/1-100/img-79.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81vjpjJ0R7L.jpg"
     },
     {
         id: 80,
@@ -718,7 +718,7 @@ const list = [
         title: "Eloise at the Plaza",
         genre: "Children's",
         page: 26,
-        cover: "images/1-100/img-80.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71lUKI+wm4L.jpg"
     },
     {
         id: 81,
@@ -727,7 +727,7 @@ const list = [
         title: "Emily the Strange",
         genre: "Novel",
         page: 432,
-        cover: "images/1-100/img-81.jpg"
+        cover: "https://m.media-amazon.com/images/I/51TPSVrIw0L.jpg"
     },
 
     {
@@ -737,7 +737,7 @@ const list = [
         title: "Emma",
         genre: "Novel",
         page: 400,
-        cover: "images/1-100/img-82.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51m1BWsfUCL._SX331_BO1,204,203,200_.jpg"
     },
     {
         id: 83,
@@ -746,7 +746,7 @@ const list = [
         title: "Empire Falls",
         genre: "Novel",
         page: 496,
-        cover: "images/1-100/img-83.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71L0e5sfpyL.jpg"
     },
     {
         id: 84,
@@ -755,7 +755,7 @@ const list = [
         title: "Encyclopedia Brown: Boy Detective",
         genre: "Mystery",
         page: 96,
-        cover: "images/1-100/img-84.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/810PMLLHUPL.jpg"
     },
     {
         id: 85,
@@ -764,7 +764,7 @@ const list = [
         title: "Ethan Frome",
         genre: "Novel",
         page: 195,
-        cover: "images/1-100/img-85.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81iP6KeWlQL.jpg"
     },
     {
         id: 86,
@@ -773,7 +773,7 @@ const list = [
         title: "Ethics",
         genre: "Early Modern",
         page: 305,
-        cover: "images/1-100/img-86.jpg"
+        cover: "https://m.media-amazon.com/images/I/51tIpRAJbfL._SL500_.jpg"
     },
     {
         id: 87,
@@ -782,7 +782,7 @@ const list = [
         title: "Europe through the Back Door: The Travel Skills Handbook",
         genre: "Travel Guide",
         page: 777,
-        cover: "images/1-100/img-87.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71dBKzhxZjL.jpg"
     },
     {
         id: 88,
@@ -791,7 +791,7 @@ const list = [
         title: "Eva Luna",
         genre: "Novel",
         page: 241,
-        cover: "images/1-100/img-88.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51qq6csQfRL._SX320_BO1,204,203,200_.jpg"
     },
     {
         id: 89,
@@ -800,7 +800,7 @@ const list = [
         title: "Everything Is Illuminated",
         genre: "Novel",
         page: 276,
-        cover: "images/1-100/img-89.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51m+Xj6mAwL.jpg"
     },
     {
         id: 90,
@@ -809,7 +809,7 @@ const list = [
         title: "The Executioner's Song",
         genre: "Biographical Fiction",
         page: 1136,
-        cover: "images/1-100/img-90.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51BzPAcxmXL._SX328_BO1,204,203,200_.jpg"
     },
     {
         id: 91,
@@ -818,7 +818,7 @@ const list = [
         title: "Extravagance",
         genre: "Novel",
         page: 304,
-        cover: "images/1-100/img-91.jpg"
+        cover: "https://m.media-amazon.com/images/I/41UeZ3YvSrL.jpg"
     },
     {
         id: 92,
@@ -827,7 +827,7 @@ const list = [
         title: "Fahrenheit 451",
         genre: "Dystopian fiction",
         page: 249,
-        cover: "images/1-100/img-92.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71OFqSRFDgL.jpg"
     },
     {
         id: 93,
@@ -836,7 +836,7 @@ const list = [
         title: "Fahrenheit 9/11",
         genre: "Documentary",
         page: 363,
-        cover: "images/1-100/img-93.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/518oyI4vZVL._SX307_BO1,204,203,200_.jpg"
     },
     {
         id: 94,
@@ -845,7 +845,7 @@ const list = [
         title: "The Fall of the Athenian Empire",
         genre: "History",
         page: 455,
-        cover: "images/1-100/img-94.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/61EHnzIPMvL.jpg"
     },
     {
         id: 95,
@@ -854,7 +854,7 @@ const list = [
         title: "Fat Land: How Americans Became the Fattest People in the World",
         genre: "Diet book",
         page: 256,
-        cover: "images/1-100/img-95.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71i6t+7AO2L.jpg"
     }, {
         id: 96,
         firstName: "Hunter S.",
@@ -862,7 +862,7 @@ const list = [
         title: "Fear and Loathing in Las Vegas",
         genre: "Gonzo journalism",
         page: 204,
-        cover: "images/1-100/img-96.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/718WrWeyy6L.jpg"
     },
     {
         id: 97,
@@ -871,7 +871,7 @@ const list = [
         title: "The Fellowship of the Ring",
         genre: "Fantasy",
         page: "423",
-        cover: "images/1-100/img-97.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91jBdaRVqML.jpg"
     },
     {
         id: 98,
@@ -880,7 +880,7 @@ const list = [
         title: "Fiddler on the Roof",
         genre: "Children's",
         page: 160,
-        cover: "images/1-100/img-98.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71GaP6oxC7L.jpg"
     },
     {
         id: 99,
@@ -889,7 +889,7 @@ const list = [
         title: "Finnegan's Wake",
         genre: "Menippean satire",
         page: 672,
-        cover: "images/1-100/img-99.jpg"
+        cover: "https://images.penguinrandomhouse.com/cover/9780141181264"
     },
     {
         id: 100,
@@ -898,7 +898,7 @@ const list = [
         title: "The Five People You Meet in Heaven",
         genre: "Inspirational fiction",
         page: 194,
-        cover: "images/1-100/img-100.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41CdFqzQ84L.jpg"
     },
     {
         id: 101,
@@ -907,7 +907,7 @@ const list = [
         title: "Fletch",
         genre: "Comedy",
         page: 208,
-        cover: "images/100-200/101.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51emiSTYUaL._SX326_BO1,204,203,200_.jpg"
     },
     {
         id: 102,
@@ -916,7 +916,7 @@ const list = [
         title: "Flowers for Algernon",
         genre: "Novel",
         page: 311,
-        cover: "images/100-200/102.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/31fzDDwtE3L._SX301_BO1,204,203,200_.jpg"
     },
     {
         id: 103,
@@ -925,7 +925,7 @@ const list = [
         title: "The Fortress of Solitude",
         genre: "Novel",
         page: 511,
-        cover: "images/100-200/103.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91n6eeetsuL.jpg"
     },
     {
         id: 104,
@@ -934,7 +934,7 @@ const list = [
         title: "The Fountainhead",
         genre: "Philosophical fiction",
         page: 752,
-        cover: "images/100-200/104.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91yszMADa7L.jpg"
     },
     {
         id: 105,
@@ -943,7 +943,7 @@ const list = [
         title: "Frankenstein",
         genre: "Gothic novel",
         page: 280,
-        cover: "images/100-200/105.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/416QjTxduzL._SX311_BO1,204,203,200_.jpg"
     },
     {
         id: 106,
@@ -952,7 +952,7 @@ const list = [
         title: "Franny and Zooey",
         genre: "Short stories",
         page: 201,
-        cover: "images/100-200/106.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51Se-s2ZglL.jpg"
     },
     {
         id: 107,
@@ -961,7 +961,7 @@ const list = [
         title: "Freaky Friday",
         genre: "Children's",
         page: 144,
-        cover: "images/100-200/107.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51UUsU2cdQL._SX334_BO1,204,203,200_.jpg"
     },
     {
         id: 108,
@@ -970,7 +970,7 @@ const list = [
         title: "Galapagos",
         genre: "Novel",
         page: 324,
-        cover: "images/100-200/108.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71B68jttiYL.jpg"
     },
     {
         id: 109,
@@ -979,7 +979,7 @@ const list = [
         title: "Gender Trouble",
         genre: "Fiction",
         page: 272,
-        cover: "images/100-200/109.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41wmzC9GroL._SX319_BO1,204,203,200_.jpg"
     },
     {
         id: 110,
@@ -988,7 +988,7 @@ const list = [
         title: "George W. Bushism: The Slate Book of the Accidental Wit and Wisdom of our 43rd President",
         genre: "Biography",
         page: 96,
-        cover: "images/100-200/110.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51N8tkSefkS._SX311_BO1,204,203,200_.jpg"
     },
     {
         id: 111,
@@ -997,7 +997,7 @@ const list = [
         title: "Gidget",
         genre: "Fiction",
         page: 154,
-        cover: "images/100-200/111.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/911wD8a7AHL.jpg"
     },
     {
         id: 112,
@@ -1006,7 +1006,7 @@ const list = [
         title: "A Girl from Yamhill",
         genre: "Young adult",
         page: 352,
-        cover: "images/100-200/112.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51TLj55E9mL.jpg"
     },
     {
         id: 113,
@@ -1015,7 +1015,7 @@ const list = [
         title: "Girl, Interrupted",
         genre: "Autobiography",
         page: 192,
-        cover: "images/100-200/113.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81MGfnTQ9ZL.jpg"
     },
     {
         id: 114,
@@ -1024,7 +1024,7 @@ const list = [
         title: "The Gnostic Gospels",
         genre: "Gospel",
         page: 224,
-        cover: "images/100-200/114.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51cYTMLCyLL._SX318_BO1,204,203,200_.jpg"
     },
     {
         id: 115,
@@ -1033,7 +1033,7 @@ const list = [
         title: "The Godfather",
         genre: "Crime novel",
         page: 448,
-        cover: "images/100-200/115.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81IHPwG1tbL.jpg"
     },
     {
         id: 116,
@@ -1042,7 +1042,7 @@ const list = [
         title: "The God of Small Things",
         genre: "Psycological fiction",
         page: 333,
-        cover: "images/100-200/116.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91EFcae8moL.jpg"
     },
     {
         id: 117,
@@ -1051,7 +1051,7 @@ const list = [
         title: "Goldilocks and the Three Bears",
         genre: "Children's",
         page: 48,
-        cover: "images/100-200/117.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/810POGQWWnL.jpg"
     },
     {
         id: 118,
@@ -1060,7 +1060,7 @@ const list = [
         title: "Gone with the Wind",
         genre: "Historical fiction",
         page: 719,
-        cover: "images/100-200/118.jpg"
+        cover: "https://m.media-amazon.com/images/I/51vXH2JGV8L.jpg"
     },
     {
         id: 119,
@@ -1069,7 +1069,7 @@ const list = [
         title: "Goodnight Spoon",
         genre: "Children's",
         page: "Unknown",
-        cover: "images/100-200/119.png"
+        cover: "https://64.media.tumblr.com/64e236455719444346c90baddb174f38/tumblr_ne88bihzmZ1s4pbxso1_1280.jpg"
     },
     {
         id: 120,
@@ -1078,7 +1078,7 @@ const list = [
         title: "The Good Soldier",
         genre: "Domestic fiction",
         page: 192,
-        cover: "images/100-200/120.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71SIzet4opL.jpg"
     },
     {
         id: 121,
@@ -1087,7 +1087,7 @@ const list = [
         title: "The Gospel According to Jesus Christ",
         genre: "Gospel",
         page: 400,
-        cover: "images/100-200/121.jpg"
+        cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519393758l/28859.jpg"
     },
     {
         id: 122,
@@ -1096,7 +1096,7 @@ const list = [
         title: "The Graduate",
         genre: "Drama",
         page: 224,
-        cover: "images/100-200/122.jpg"
+        cover: "https://m.media-amazon.com/images/I/41SZPxxP3AL.SX316.SY480._SL500_.jpg"
     },
     {
         id: 123,
@@ -1105,7 +1105,7 @@ const list = [
         title: "The Grapes of Wrath",
         genre: "Fiction",
         page: 535,
-        cover: "images/100-200/123.jpg"
+        cover: "https://images.penguinrandomhouse.com/cover/9780670016907"
     },
     {
         id: 124,
@@ -1114,7 +1114,7 @@ const list = [
         title: "Great Expectations",
         genre: "Novel",
         page: 544,
-        cover: "images/100-200/124.jpg"
+        cover: "https://m.media-amazon.com/images/I/51pqUWvj6NL.jpg"
     },
     {
         id: 125,
@@ -1123,7 +1123,7 @@ const list = [
         title: "The Great Gatsby",
         genre: "Tragedy",
         page: 240,
-        cover: "images/100-200/125.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81djg0KWthS.jpg"
     },
     {
         id: 126,
@@ -1132,7 +1132,7 @@ const list = [
         title: "The Group",
         genre: "Novel",
         page: 496,
-        cover: "images/100-200/126.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51MSzxxIFxL._SX342_SY445_QL70_ML2_.jpg"
     },
     {
         id: 127,
@@ -1141,7 +1141,7 @@ const list = [
         title: "Haiku, Volume 2: Spring",
         genre: "Poetry",
         page: 382,
-        cover: "images/100-200/127.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/519jjD631OL._SX365_BO1,204,203,200_.jpg"
     },
     {
         id: 128,
@@ -1150,7 +1150,7 @@ const list = [
         title: "Hamlet",
         genre: "Shakespearean",
         page: 64,
-        cover: "images/100-200/128.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41stzQ0MsgL._SX318_BO1,204,203,200_.jpg"
     },
     {
         id: 129,
@@ -1159,7 +1159,7 @@ const list = [
         title: "Harry Potter and the Goblet of Fire",
         genre: "Children's",
         page: 636,
-        cover: "images/100-200/129.jpg"
+        cover: "https://m.media-amazon.com/images/I/71ykU-RQ0nL._AC_SL1000_.jpg"
     },
     {
         id: 130,
@@ -1168,7 +1168,7 @@ const list = [
         title: "Harry Potter and the Sorcerer's Stone",
         genre: "Children's",
         page: 309,
-        cover: "images/100-200/130.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/515iJ1-+IvL.jpg"
     },
     {
         id: 131,
@@ -1177,7 +1177,7 @@ const list = [
         title: "A Heartbreaking Work of Staggering Genius",
         genre: "Memoir",
         page: 375,
-        cover: "images/100-200/131.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81jWHraFo+L.jpg"
     },
     {
         id: 132,
@@ -1186,7 +1186,7 @@ const list = [
         title: "Heart of Darkness",
         genre: "Fiction",
         page: 98,
-        cover: "images/100-200/132.jpg"
+        cover: "https://kbimages1-a.akamaihd.net/e278c62e-943a-473e-846a-3e19bce5b5d8/353/569/90/False/heart-of-darkness-12.jpg"
     },
     {
         id: 133,
@@ -1195,7 +1195,7 @@ const list = [
         title: "Hell's Angels: The Strange and Terrible Saga of the Outlaw Motorcycle Gangs",
         genre: "Gonzo journalism",
         page: 278,
-        cover: "images/100-200/133.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81d-DNnl8xL.jpg"
     },
     {
         id: 134,
@@ -1204,7 +1204,7 @@ const list = [
         title: "Helter Skelter: The True Story of the Manson Murders",
         genre: "True crime",
         page: 689,
-        cover: "images/100-200/134.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/41eZAOsiLZL._SX331_BO1,204,203,200_.jpg"
     },
     {
         id: 135,
@@ -1213,7 +1213,7 @@ const list = [
         title: "Henry IV, part I",
         genre: "Shakespearean",
         page: 398,
-        cover: "images/100-200/135.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/712X73igwvL.jpg"
     },
     {
         id: 136,
@@ -1222,7 +1222,7 @@ const list = [
         title: "Henry IV, part II",
         genre: "Shakespearean",
         page: 320,
-        cover: "images/100-200/136.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/51FkIGvFv6L._SX306_BO1,204,203,200_.jpg"
     },
     {
         id: 137,
@@ -1231,7 +1231,7 @@ const list = [
         title: "Henry V",
         genre: "History play",
         page: 294,
-        cover: "images/100-200/137.jpg"
+        cover: "https://m.media-amazon.com/images/I/51bdrrjTlmL.jpg"
     },
     {
         id: 138,
@@ -1240,7 +1240,7 @@ const list = [
         title: "Henry VI",
         genre: "History play",
         page: 123,
-        cover: "images/100-200/138.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91JAKAiiA5L.jpg"
     },
     {
         id: 139,
@@ -1249,7 +1249,7 @@ const list = [
         title: "He's Just Not That Into You",
         genre: "Non-fiction",
         page: 208,
-        cover: "images/100-200/139.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/61H9uerdrdL.jpg"
     },
     {
         id: 140,
@@ -1258,7 +1258,7 @@ const list = [
         title: "High Fidelity",
         genre: "Novel",
         page: 336,
-        cover: "images/100-200/140.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/81Grx7267uL.jpg"
     },
     {
         id: 141,
@@ -1267,7 +1267,7 @@ const list = [
         title: "The History of the Decline and Fall of the Roman Empire",
         genre: "History",
         page: 795,
-        cover: "images/100-200/141.jpeg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/519labstQ5L._SX318_BO1,204,203,200_.jpg"
     },
     {
         id: 142,
@@ -1276,7 +1276,7 @@ const list = [
         title: "Holidays on Ice: Stories",
         genre: "Short stories",
         page: 176,
-        cover: "images/100-200/142.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/71t0yJrW7UL.jpg"
     },
     {
         id: 143,
@@ -1285,7 +1285,7 @@ const list = [
         title: "The Holy Barbarians",
         genre: "Biography",
         page: 330,
-        cover: "images/100-200/143.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/514F1xvQYBL._SX355_BO1,204,203,200_.jpg"
     },
     {
         id: 144,
@@ -1294,7 +1294,7 @@ const list = [
         title: "Horton Hears a Who!",
         genre: "Children's",
         page: 72,
-        cover: "images/100-200/144.jpg"
+        cover: "https://images-na.ssl-images-amazon.com/images/I/91jgrV6XiiL.jpg"
     },
     {
         id: 145,

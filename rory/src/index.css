@@ -13,6 +13,7 @@
     --clr-input-bg: whitesmoke;
     --clr-input: #262626;
     --clr-spinner-top: #1aa7ec;
+    --clr-bg-btn-primary: #1aa7ec;
 
 }
 
@@ -28,6 +29,8 @@
     --clr-input-bg: #262626;
     --clr-input: chocolate;
     --clr-spinner-top: crimson;
+    --clr-bg-btn-primary: crimson;
+
 
 }
 
@@ -38,8 +41,11 @@
     box-sizing: border-box;
 }
 
-main, section {
+main, section, body {
     background-color: var(--clr-bcg);
+    color: var(--clr-font-primary);
+    font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 .nav-center {
@@ -272,15 +278,82 @@ main, section {
     }
 }
 
-.single-book{
+.single-book {
+    position: relative;
     width: 90vw;
-    max-width: 20rem;
+    max-width: 25rem;
     margin: 4rem auto;
     display: grid;
     gap: 2rem;
+
 }
-.single-book img{
+
+.single-book img {
     width: 100%;
     object-fit: cover;
     display: block;
+}
+
+.single-book-info {
+    min-height: 7rem;
+    height:auto ;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:space-between ;
+    align-items: baseline;
+    text-align: justify-all;
+}
+
+.btn-primary {
+    background-color: var(--clr-bg-btn-primary);
+    text-align: center;
+    color: var(--clr-font-primary);
+
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+
+.single-book p {
+    font-weight: bold;
+
+}
+
+.book-data {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    color: var(--clr-font-primary);
+    margin-right: 1rem;
+    background: var(--clr-bg-btn-primary);
+    width: 4rem;
+    text-align: center;
+
+}
+
+.arrows{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.arrow-btn{
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: orange;
+    background: transparent;
+    outline: none;
+    border: none
+
+
+
 }
