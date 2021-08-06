@@ -7,7 +7,7 @@ import Pages from "./Pages";
 import {useGlobalContext} from "../contex";
 import Books from "./Books";
 import Header from "./Header"
-
+import Answer from "./Answer"
 
 
 const Home = () => {
@@ -24,6 +24,7 @@ const Home = () => {
             />
             <Pages/>
             <Books/>
+            <Answer/>
 
         </main>
 

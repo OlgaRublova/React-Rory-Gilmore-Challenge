@@ -1,6 +1,8 @@
 import React, {useState, useContext, useEffect} from "react";
 import paginate from "./components/utils";
 import booksList from "./components/data";
+import Books from "./components/Books";
+import Answer from "./components/Answer";
 
 const AppContext = React.createContext();
 
@@ -10,9 +12,12 @@ const AppProvider = ({children}) => {
     const [query, setQuery] = useState("Anna Karenina");
     const [data, setData] = useState(paginate(booksList));
     const [books, setBooks] = useState(data);
+
     const [genres, setGenres] = useState(allGenres);
     const [page, setPage] = useState(0);
     const [isLoading, setIsLoading] = useState(true);
+
+    const [answer, setAnswer] = useState(false);
 
 
     const handlePage = index => {
@@ -52,6 +57,14 @@ const AppProvider = ({children}) => {
         setIsLoading(false);
     }
 
+    const removeBook = id => {
+        console.log('click')
+        let newBooksList = booksList.filter(book => book.id !== id);
+        console.log(newBooksList)
+        console.log(books)
+    }
+
+
 
     return (
         <AppContext.Provider value={{
@@ -69,6 +82,9 @@ const AppProvider = ({children}) => {
             filterBooksByGenre,
             isLoading,
             setIsLoading,
+            removeBook,
+            answer,
+            setAnswer
         }}>
             {children}
         </AppContext.Provider>

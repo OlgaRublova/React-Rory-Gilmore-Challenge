@@ -1,8 +1,10 @@
+import {useGlobalContext} from "../contex";
 
 const Genres = ({genres, filterBooksByGenre}) => {
+    const {answer} = useGlobalContext();
 
     return (
-        <div className="btn-container">
+        answer && <div className="btn-container">
             {genres.map((genre, id) => {
                 return (
                     <button

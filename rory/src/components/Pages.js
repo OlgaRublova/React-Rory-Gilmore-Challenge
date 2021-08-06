@@ -1,10 +1,10 @@
 import {useGlobalContext} from "../contex";
 
 const Pages = () => {
-const {data, prevPage, nextPage, handlePage, page, setPage} = useGlobalContext();
+const {data, prevPage, nextPage, handlePage, page, answer} = useGlobalContext();
 
     return(
-        <section className="btn-container--page">
+        answer && <section className="btn-container--page">
             <button className="prev-btn" onClick={prevPage}>prev</button>
             {
                 data.map((item, index) => {
