@@ -7,24 +7,23 @@ import Pages from "./Pages";
 import {useGlobalContext} from "../contex";
 import Books from "./Books";
 import Header from "./Header"
-import Answer from "./Answer"
-
+import Modal from "./Modal"
+import Loading from "./Loading";
 
 const Home = () => {
     const {genres, filterBooksByGenre} = useGlobalContext();
 
+
     return (
         <main>
+            <Modal/>
+
             <Title title="Rory Gilmore Reading Challenge"/>
             <Header/>
-            <SearchForm/>
-            <Genres
-                genres={genres}
-                filterBooksByGenre={filterBooksByGenre}
-            />
-            <Pages/>
-            <Books/>
-            <Answer/>
+
+            {/*<SearchForm/>*/}
+
+            {/*<Pages/>*/}
 
         </main>
 

@@ -3,28 +3,15 @@ import {useGlobalContext} from "../contex";
 import {useEffect, useState} from "react";
 import {Link} from "react-router-dom"
 import {FaHeart, CgMore, RiDeleteBin6Fill} from "react-icons/all";
+import Loading from "./Loading";
 
 const Books = () => {
     const {data, page, books, setBooks, isLoading, setIsLoading, removeBook, answer} = useGlobalContext();
 
 
-    useEffect(() => {
-        setBooks(data[page]);
-        setIsLoading(false);
-        // eslint-disable-next-line
-    }, [page]);
-
-
-    if (isLoading) {
-        return <div className="loading"></div>
-    }
-    console.log(isLoading)
-
-
     return (
         <>
-
-            {answer && <section className="books-container">
+            {!isLoading && <section className="books-container">
                 {books.map(book => {
                     const {id, title, cover, firstName, lastName} = book;
                     return (
@@ -54,14 +41,6 @@ const Books = () => {
                         // </Link>
                     )
                 })}
-            </section>}
-
-            {!answer && <section>
-                <article className="section-text">
-                    <div className="section-text__header">OK!</div>
-                    <div className="section-text__sub">Next time then!</div>
-                </article>
-
             </section>}
         </>
 

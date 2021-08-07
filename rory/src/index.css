@@ -52,7 +52,7 @@ main, section, body {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
+    z-index: 100;
     padding: 2rem;
 }
 
@@ -71,6 +71,9 @@ main, section, body {
 }
 
 .header-img-box {
+    height: 100vh;
+    width: 100vw;
+
 
     position: relative;
     display: grid;
@@ -424,10 +427,12 @@ main, section, body {
     color: var(--clr-font-primary);
 
     text-decoration: none;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding: 0.5rem 1rem;
     font-weight: bold;
     border-radius: 5px;
+    outline: none;
+    border-color: transparent;
 
 }
 
@@ -467,5 +472,25 @@ main, section, body {
     background: transparent;
     outline: none;
     border: none
+}
 
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--clr-bcg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.open {
+    opacity: 1;
+    z-index: 3;
 }

@@ -2,7 +2,8 @@ import React, {useState, useContext, useEffect} from "react";
 import paginate from "./components/utils";
 import booksList from "./components/data";
 import Books from "./components/Books";
-import Answer from "./components/Answer";
+import Modal from "./components/Modal";
+import Loading from "./components/Loading";
 
 const AppContext = React.createContext();
 
@@ -18,8 +19,26 @@ const AppProvider = ({children}) => {
     const [isLoading, setIsLoading] = useState(true);
 
     const [answer, setAnswer] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = ()=> {
+        setIsModalOpen(true)
+    }
+    const closeModal = ()=> {
+        setIsModalOpen(false)
+    }
+
+    useEffect(() => {
+        setIsLoading(true)
+        setBooks(data[page]);
+        setIsLoading(false);
+        // eslint-disable-next-line
+    }, [page]);
 
 
+    if(isLoading){
+        return  <Loading/>
+    }
     const handlePage = index => {
         setPage(index);
     }
@@ -84,7 +103,11 @@ const AppProvider = ({children}) => {
             setIsLoading,
             removeBook,
             answer,
-            setAnswer
+            setAnswer,
+            isModalOpen,
+            setIsModalOpen,
+            openModal,
+            closeModal
         }}>
             {children}
         </AppContext.Provider>
