@@ -1,44 +1,40 @@
 import React, {useState, useContext, useEffect} from "react";
-import paginate from "./components/utils";
 import booksList from "./components/data";
-import Books from "./components/Books";
-import Modal from "./components/Modal";
-import Loading from "./components/Loading";
+import Pages from "./components/Pages"
+import {useFetch} from "./components/useFetch";
+import paginate from "./components/utils";
 
 const AppContext = React.createContext();
 
 const allGenres = ['all', ...new Set(booksList.map((book) => book.genre))];
 
+console.clear();
+
 const AppProvider = ({children}) => {
-    const [query, setQuery] = useState("Anna Karenina");
-    const [data, setData] = useState(paginate(booksList));
-    const [books, setBooks] = useState(data);
+    const {showPagination, setShowPagination, paginatedBooks, books, setBooks, page, setPage,} = useFetch();
 
     const [genres, setGenres] = useState(allGenres);
-    const [page, setPage] = useState(0);
-    const [isLoading, setIsLoading] = useState(true);
 
-    const [answer, setAnswer] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [error, setError] = useState({show: false, msg: ""})
+    const [query, setQuery] = useState("Anna Karenina");
+    // console.log("paginated books: ")
+    // console.log(paginatedBooks)
 
-    const openModal = ()=> {
+
+    useEffect(() => {
+        if (showPagination) return;
+        setBooks(paginatedBooks[page]);
+    }, [showPagination, page])
+
+    const openModal = () => {
         setIsModalOpen(true)
     }
-    const closeModal = ()=> {
+    const closeModal = () => {
         setIsModalOpen(false)
     }
 
-    useEffect(() => {
-        setIsLoading(true)
-        setBooks(data[page]);
-        setIsLoading(false);
-        // eslint-disable-next-line
-    }, [page]);
 
-
-    if(isLoading){
-        return  <Loading/>
-    }
     const handlePage = index => {
         setPage(index);
     }
@@ -46,7 +42,7 @@ const AppProvider = ({children}) => {
         setPage(oldPage => {
             let prevPage = oldPage - 1;
             if (prevPage < 0) {
-                prevPage = data.length - 1;
+                prevPage = paginatedBooks.length - 1;
             }
             return prevPage;
         })
@@ -54,7 +50,7 @@ const AppProvider = ({children}) => {
     const nextPage = () => {
         setPage(oldPage => {
             let nextPage = oldPage + 1;
-            if (nextPage > data.length - 1) {
+            if (nextPage > paginatedBooks.length - 1) {
                 nextPage = 0;
             }
             return nextPage;
@@ -62,52 +58,53 @@ const AppProvider = ({children}) => {
     }
 
     const filterBooksByGenre = (genre) => {
-        setIsLoading(true);
+
         if (genre === 'all') {
-            setIsLoading(true);
             setBooks(booksList);
-            setIsLoading(false);
+            setShowPagination(false);
+            console.log("all - loading");
+            console.log(showPagination)
+
 
             return;
-        }
+        } else {
+            const newBooks = booksList.filter((book) => book.genre === genre);
 
-        const newBooks = booksList.filter((book) => book.genre === genre);
-        setBooks(newBooks);
-        setIsLoading(false);
+            if (newBooks.length > 15) {
+                // setIsLoading(false);
+                setBooks(paginate(newBooks));
+                setShowPagination(false)
+                console.log("big newBooks - loading");
+                console.log(showPagination)
+
+            } else {
+                setBooks(newBooks);
+                console.log("small newBooks - loading");
+                console.log(showPagination)
+                setShowPagination(true);
+            }
+        }
     }
 
     const removeBook = id => {
-        console.log('click')
         let newBooksList = booksList.filter(book => book.id !== id);
-        console.log(newBooksList)
-        console.log(books)
     }
 
-
+    function toggleError(show = false, msg = "") {
+        setError({show, msg})
+    }
 
     return (
         <AppContext.Provider value={{
-            query,
-            setQuery,
-            books,
-            setBooks,
-            data,
+            query, setQuery,
             genres,
-            page,
-            setPage,
-            prevPage,
-            nextPage,
-            handlePage,
+            page, setPage, prevPage, nextPage, handlePage,
             filterBooksByGenre,
-            isLoading,
-            setIsLoading,
             removeBook,
-            answer,
-            setAnswer,
-            isModalOpen,
-            setIsModalOpen,
-            openModal,
-            closeModal
+            isModalOpen, setIsModalOpen, openModal, closeModal,
+            error, toggleError,
+            books, setBooks,
+            paginatedBooks, showPagination, setShowPagination
         }}>
             {children}
         </AppContext.Provider>

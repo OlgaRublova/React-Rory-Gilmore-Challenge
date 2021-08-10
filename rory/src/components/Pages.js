@@ -1,13 +1,24 @@
 import {useGlobalContext} from "../contex";
+import {useEffect} from "react";
 
 const Pages = () => {
-const {data, prevPage, nextPage, handlePage, page, answer} = useGlobalContext();
+    const {
+        paginatedBooks,
+        prevPage,
+        nextPage,
+        handlePage,
+        page,
+        isLoading,setBooks, genres
+    } = useGlobalContext();
 
-    return(
-        answer && <section className="btn-container--page">
+
+
+
+    return (
+        <section className="btn-container--page">
             <button className="prev-btn" onClick={prevPage}>prev</button>
             {
-                data.map((item, index) => {
+                paginatedBooks.map((item, index) => {
                     return (
                         <button
                             key={index}

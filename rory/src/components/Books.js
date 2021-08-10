@@ -1,17 +1,14 @@
-import SingleBook from "./SingleBook";
 import {useGlobalContext} from "../contex";
 import {useEffect, useState} from "react";
 import {Link} from "react-router-dom"
 import {FaHeart, CgMore, RiDeleteBin6Fill} from "react-icons/all";
-import Loading from "./Loading";
 
 const Books = () => {
-    const {data, page, books, setBooks, isLoading, setIsLoading, removeBook, answer} = useGlobalContext();
-
+    const {books, removeBook} = useGlobalContext();
 
     return (
         <>
-            {!isLoading && <section className="books-container">
+            <section className="books-container">
                 {books.map(book => {
                     const {id, title, cover, firstName, lastName} = book;
                     return (
@@ -41,7 +38,7 @@ const Books = () => {
                         // </Link>
                     )
                 })}
-            </section>}
+            </section>
         </>
 
 

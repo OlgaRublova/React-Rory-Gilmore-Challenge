@@ -27,7 +27,7 @@
     --clr-active-btn: crimson;
     --clr-icon-p: white;
     --clr-input-bg: #262626;
-    --clr-input: chocolate;
+    --clr-input: lightgray;
     --clr-spinner-top: crimson;
     --clr-bg-btn-primary: crimson;
 
@@ -45,6 +45,7 @@ main, section, body {
     background-color: var(--clr-bcg);
     color: var(--clr-font-primary);
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100vw;
 
 }
 
@@ -73,7 +74,6 @@ main, section, body {
 .header-img-box {
     height: 100vh;
     width: 100vw;
-
 
     position: relative;
     display: grid;
@@ -110,7 +110,9 @@ main, section, body {
     justify-content: center;
     flex-direction: column;
     margin: 2rem auto;
+    padding: 1rem;
     font-family: 'Satisfy', cursive;
+    text-align: center;
 }
 
 .section-text__header {
@@ -364,19 +366,7 @@ main, section, body {
 }
 
 
-.form-input {
-    width: 100%;
-    max-width: 20rem;
-    border: transparent;
-    outline: none;
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    background-color: var(--clr-input-bg);
-    color: var(--clr-input);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-style: italic;
-}
+
 
 .loading {
     width: 6rem;
@@ -493,4 +483,48 @@ main, section, body {
 .open {
     opacity: 1;
     z-index: 3;
+}
+
+.form-control {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 0.5rem;
+    border-radius: 5px;
+    background: var(--clr-input-bg);
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 1rem;
+}
+
+.form-control input {
+
+    background: var(--clr-input-bg);
+    outline-color: var(--clr-input);
+    color: var(--clr-input);
+    padding: 0.25rem 0.5rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+
+
+.form-control button {
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    background: var(--clr-bg-btn-primary);
+
+    transition: 1s;
+    cursor: pointer;
+}
+.form-control button:hover{
+    background: var(--clr-btn-hover);
+}
+.errorMessage{
+    color: orangered;
+    text-align: center;
+    text-transform: capitalize;
 }
