@@ -7,11 +7,8 @@ const Pages = () => {
         prevPage,
         nextPage,
         handlePage,
-        page,
-        isLoading,setBooks, genres
+        page
     } = useGlobalContext();
-
-
 
 
     return (

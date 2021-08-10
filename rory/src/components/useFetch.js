@@ -1,9 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import paginate from "./utils";
 import data from "./data";
+import {useGlobalContext} from "../contex";
 
 
 export const useFetch = () => {
+
     const [showPagination, setShowPagination] = useState(true);
     const [paginatedBooks, setPaginatedBooks] = useState([]);
     const [books, setBooks] = useState(data);

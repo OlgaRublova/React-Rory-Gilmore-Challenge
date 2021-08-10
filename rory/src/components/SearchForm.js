@@ -1,13 +1,31 @@
 import {useGlobalContext} from "../contex";
 import {MdSearch} from "react-icons/all";
+import {useRef, useEffect} from "react";
 
 const SearchForm = () => {
 
-    const {error, toggleError, query, setQuery} = useGlobalContext();
+    const {error, toggleError, books, setBooks, setSearchTerm} = useGlobalContext();
 
     const handleSubmit = e => {
         e.preventDefault();
         toggleError(true, "sorry, there is no book like that")
+    }
+
+    const searchValue = useRef('');
+
+    useEffect(() => {
+        searchValue.current.focus()
+    }, []);
+
+    const searchBook = () => {
+        setSearchTerm(searchValue.current.value);
+    }
+    const handleBookSearch = (title, lastName, firstName) => {
+        const specificBooks = books.find(book => {
+            return (book.title === title) || (book.lastName === lastName) || (book.firstName === firstName)
+        })
+        setBooks(specificBooks)
+
     }
 
     return (
@@ -26,10 +44,10 @@ const SearchForm = () => {
                     <MdSearch/>
                     <input
                         type="text"
-                        value={query}
-                        onChange={(e) => setQuery(e.target.value)}
+                        ref={searchValue}
+                        onChange={searchBook}
                     />
-                    <button type="submit">search</button>
+                    <button onClick={handleBookSearch}>search</button>
                 </div>
 
             </form>

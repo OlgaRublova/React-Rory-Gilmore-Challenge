@@ -5,17 +5,24 @@ import Pages from "./Pages";
 
 
 const Modal = () => {
-    const {isModalOpen, closeModal, genres, filterBooksByGenre, showPagination} = useGlobalContext();
-    console.log("modal - loading")
-    console.log(showPagination)
-    return (
-        <section className={`${isModalOpen ? "modal-container open" : "modal-container"}`}>
+    const {
+        isModalOpen,
+        closeModal,
+        genres,
+        filterBooksByGenre,
+        showPagination,
+    } = useGlobalContext();
 
-                    <article className="section-text">
-                        <div className="section-text__header">Great!</div>
-                        <div className="section-text__sub">Pick your gender!</div>
-                    </article>
-            <button className="btn-primary" onClick={closeModal}>Ask again!</button>
+
+    return (
+
+        <section className={`${isModalOpen ? "modal-container open" : "modal-container"}`}>
+            <button
+                className="btn-primary"
+                onClick={closeModal}
+            >
+                Ask again!
+            </button>
 
             <Genres
                 genres={genres}

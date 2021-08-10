@@ -1,4 +1,4 @@
-const list = [
+ const list = [
     {
         id: 1,
         firstName: 'George',
@@ -1588,4 +1588,8 @@ const list = [
 
 
 ]
-export default list;
+
+
+
+
+ export default list;

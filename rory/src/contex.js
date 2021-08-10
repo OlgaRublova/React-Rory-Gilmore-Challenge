@@ -1,6 +1,5 @@
 import React, {useState, useContext, useEffect} from "react";
 import booksList from "./components/data";
-import Pages from "./components/Pages"
 import {useFetch} from "./components/useFetch";
 import paginate from "./components/utils";
 
@@ -16,22 +15,29 @@ const AppProvider = ({children}) => {
     const [genres, setGenres] = useState(allGenres);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isModalNoOpen, setIsNoModalOpen] = useState(false);
     const [error, setError] = useState({show: false, msg: ""})
-    const [query, setQuery] = useState("Anna Karenina");
-    // console.log("paginated books: ")
-    // console.log(paginatedBooks)
-
+    const [searchTerm, setSearchTerm] = useState("Anna Karenina");
+    console.log(searchTerm)
 
     useEffect(() => {
         if (showPagination) return;
         setBooks(paginatedBooks[page]);
-    }, [showPagination, page])
+    }, [showPagination, page, searchTerm])
 
     const openModal = () => {
-        setIsModalOpen(true)
+        setIsModalOpen(true);
     }
     const closeModal = () => {
         setIsModalOpen(false)
+
+    }
+    const openNoModal = () => {
+        setIsNoModalOpen(true);
+    }
+    const closeNoModal = () => {
+        setIsNoModalOpen(false);
+
     }
 
 
@@ -62,49 +68,40 @@ const AppProvider = ({children}) => {
         if (genre === 'all') {
             setBooks(booksList);
             setShowPagination(false);
-            console.log("all - loading");
-            console.log(showPagination)
-
-
             return;
         } else {
             const newBooks = booksList.filter((book) => book.genre === genre);
 
             if (newBooks.length > 15) {
-                // setIsLoading(false);
                 setBooks(paginate(newBooks));
                 setShowPagination(false)
-                console.log("big newBooks - loading");
-                console.log(showPagination)
-
             } else {
                 setBooks(newBooks);
-                console.log("small newBooks - loading");
-                console.log(showPagination)
                 setShowPagination(true);
             }
         }
     }
 
     const removeBook = id => {
-        let newBooksList = booksList.filter(book => book.id !== id);
+        return setBooks(books.filter((book) => book.id !== id));
     }
 
     function toggleError(show = false, msg = "") {
         setError({show, msg})
     }
 
+
     return (
         <AppContext.Provider value={{
-            query, setQuery,
+            searchTerm, setSearchTerm,
             genres,
             page, setPage, prevPage, nextPage, handlePage,
-            filterBooksByGenre,
-            removeBook,
             isModalOpen, setIsModalOpen, openModal, closeModal,
+            isModalNoOpen, setIsNoModalOpen, openNoModal, closeNoModal,
             error, toggleError,
-            books, setBooks,
-            paginatedBooks, showPagination, setShowPagination
+            books, setBooks, removeBook, filterBooksByGenre,
+            paginatedBooks, showPagination, setShowPagination,
+
         }}>
             {children}
         </AppContext.Provider>
