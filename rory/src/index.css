@@ -266,14 +266,16 @@ main, section, body {
     right: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     color: var(--clr-active-btn);
     font-size: 1.4rem;
     padding: 0.2rem;
-    /*transform: translateY(-100%);*/
     transition: all 1s;
+    background: black;
+    opacity: 0.9;
 }
+
 
 .checkbox-container {
     position: relative;
@@ -284,7 +286,7 @@ main, section, body {
 }
 
 [type="checkbox"]:checked .icon {
-    opacity: 0.4;
+    opacity: 0.4 !important;
 }
 
 [type="checkbox"]:not(:checked),
@@ -535,4 +537,19 @@ main, section, body {
     color: orangered;
     text-align: center;
     text-transform: capitalize;
+}
+.icon-book__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.icon-book__text{
+    text-decoration: none;
+    color: yellow;
+    text-transform: capitalize;
+    margin-left: 0.5rem;
+}
+.icon-shadow{
+    background: yellow;
 }

@@ -1,6 +1,7 @@
 import {useParams, Link} from "react-router-dom"
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from "react-icons/all";
 import data from "./data"
+import {BiBook} from "react-icons/all";
 
 const SingleBook = () => {
 
@@ -38,6 +39,7 @@ const SingleBook = () => {
                 <h2 className="section-heading">{title}</h2>
                 <img src={cover} alt={title}/>
                 <div className="single-book-info">
+
                     <p><span className="book-data">Author:</span>{firstName} {lastName}</p>
                     <p><span className="book-data">Genre:</span> {genre}</p>
                     <p><span className="book-data">Count:</span> {page} pages</p>

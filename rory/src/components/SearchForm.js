@@ -21,8 +21,6 @@ const SearchForm = () => {
 
     useEffect(() => {
         findBooks(searchTerm)
-        console.log("Use effect - books");
-        console.log(books)
 
     }, [searchTerm]);
 
@@ -60,7 +58,6 @@ const SearchForm = () => {
                         type="text"
                         ref={searchValue}
                         onChange={(e) => setSearchTerm(searchValue.current.value)}
-
                     />
                     <button>search</button>
                 </div>

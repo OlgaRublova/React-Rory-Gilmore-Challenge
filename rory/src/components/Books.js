@@ -1,6 +1,6 @@
 import {useGlobalContext} from "../contex";
 import {Link} from "react-router-dom"
-import {FaHeart, CgMore, RiDeleteBin6Fill} from "react-icons/all";
+import {FaHeart, RiDeleteBin6Fill, BiBook} from "react-icons/all";
 
 const Books = () => {
     const {books, removeBook} = useGlobalContext();
@@ -12,16 +12,14 @@ const Books = () => {
                 {books.map(book => {
                     const {id, title, cover, firstName, lastName} = book;
                     return (
-                        // <Link to={`/books/${id}`} key={id} >
                         <article key={id} className="book">
                             <img src={cover} alt={title} className="book-img"/>
                             <div className="icon">
-                                <div className="checkbox-container">
-                                    <input type="checkbox"/>
-                                    <label></label>
+                                <div className="checkbox-container" >
+                                    <input type="checkbox" />
+                                    <label ></label>
                                 </div>
-                                <CgMore style={{'color': "white"}}/>
-                                <RiDeleteBin6Fill style={{'color': "white", 'border': "1px solid black"}}
+                                <RiDeleteBin6Fill style={{'color': "grey"}}
                                                   onClick={() => removeBook(id)}/>
                                 <FaHeart/>
                             </div>
@@ -30,10 +28,14 @@ const Books = () => {
                                 <div>
                                     <h4>{firstName} {lastName}</h4>
                                     <p>{title}</p>
+                                    <Link to={`/books/${id}`} key={id} className="icon-book__container">
+                                        <BiBook style={{"color": "yellow"}}></BiBook>
+                                        <span className="icon-book__text">Read more</span>
+                                    </Link>
                                 </div>
+
                             </div>
                         </article>
-                        // </Link>
                     )
                 })}
             </section>
