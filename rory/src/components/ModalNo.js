@@ -13,7 +13,7 @@ const Modal = () => {
 
         <section className={`${isModalNoOpen ? "modal-container open" : "modal-container"}`}>
             <button
-                className="btn-primary"
+                className="question-btn"
                 onClick={closeNoModal}
             >
                 Ask again!

@@ -1,10 +1,12 @@
 import {useGlobalContext} from "../contex";
 import {MdSearch} from "react-icons/all";
-import {useRef, useEffect} from "react";
+import {useRef, useEffect, useState} from "react";
+import bookList from "./data.js"
 
 const SearchForm = () => {
+    const {error, toggleError, books, setBooks} = useGlobalContext();
 
-    const {error, toggleError, books, setBooks, setSearchTerm} = useGlobalContext();
+    const [searchTerm, setSearchTerm] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -17,19 +19,31 @@ const SearchForm = () => {
         searchValue.current.focus()
     }, []);
 
-    const searchBook = () => {
-        setSearchTerm(searchValue.current.value);
-    }
-    const handleBookSearch = (title, lastName, firstName) => {
-        const specificBooks = books.find(book => {
-            return (book.title === title) || (book.lastName === lastName) || (book.firstName === firstName)
-        })
-        setBooks(specificBooks)
+    useEffect(() => {
+        findBooks(searchTerm)
+        console.log("Use effect - books");
+        console.log(books)
 
+    }, [searchTerm]);
+
+    const findBooks = (searchItem) => {
+        let specificBooks = bookList.filter(book => {
+            const {title, firstName, lastName} = book;
+
+            return (
+                title.toString().toLowerCase().includes(searchItem.toString().toLowerCase()) ||
+                firstName.toString().toLowerCase().includes(searchItem.toString().toLowerCase()) ||
+                lastName.toString().toLowerCase().includes(searchItem.toString().toLowerCase())
+            )
+        });
+
+        setBooks(specificBooks);
     }
+
 
     return (
         <>
+
             <article className="section-text">
                 <div className="section-text__header">Great!</div>
                 <div className="section-text__sub">Check if your favourite book is in the list</div>
@@ -45,9 +59,10 @@ const SearchForm = () => {
                     <input
                         type="text"
                         ref={searchValue}
-                        onChange={searchBook}
+                        onChange={(e) => setSearchTerm(searchValue.current.value)}
+
                     />
-                    <button onClick={handleBookSearch}>search</button>
+                    <button>search</button>
                 </div>
 
             </form>

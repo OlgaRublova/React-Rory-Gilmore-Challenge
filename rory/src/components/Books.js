@@ -5,6 +5,7 @@ import {FaHeart, CgMore, RiDeleteBin6Fill} from "react-icons/all";
 const Books = () => {
     const {books, removeBook} = useGlobalContext();
 
+
     return (
         <>
             <section className="books-container">
@@ -20,7 +21,6 @@ const Books = () => {
                                     <label></label>
                                 </div>
                                 <CgMore style={{'color': "white"}}/>
-                                {/*<button onClick={() => removeBook(id)}>remove</button>*/}
                                 <RiDeleteBin6Fill style={{'color': "white", 'border': "1px solid black"}}
                                                   onClick={() => removeBook(id)}/>
                                 <FaHeart/>

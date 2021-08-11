@@ -14,6 +14,7 @@
     --clr-input: #262626;
     --clr-spinner-top: #1aa7ec;
     --clr-bg-btn-primary: #1aa7ec;
+    --clr-btn-question: #1aa7ec;
 
 }
 
@@ -30,6 +31,7 @@
     --clr-input: lightgray;
     --clr-spinner-top: crimson;
     --clr-bg-btn-primary: crimson;
+    --clr-btn-question: chocolate;
 
 
 }
@@ -40,6 +42,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 
 main, section, body {
     background-color: var(--clr-bcg);
@@ -411,7 +415,7 @@ main, section, body {
     text-align: justify-all;
 }
 
-.btn-primary {
+.btn-primary,.question-btn {
     background-color: var(--clr-bg-btn-primary);
     text-align: center;
     color: var(--clr-font-primary);
@@ -423,7 +427,9 @@ main, section, body {
     border-radius: 5px;
     outline: none;
     border-color: transparent;
-
+}
+.question-btn{
+    background: var(--clr-btn-question);
 }
 
 .single-book p {
@@ -471,18 +477,20 @@ main, section, body {
     width: 100vw;
     min-height: 100vh;
     background: var(--clr-bcg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     opacity: 0;
     z-index: -1;
     transition: 1s;
+    display:none;
+
 }
 
 .open {
     opacity: 1;
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .form-control {
@@ -513,7 +521,7 @@ main, section, body {
     border-radius: 5px;
     border-color: transparent;
     padding: 0.25rem 0.5rem;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     letter-spacing: 1px;
     background: var(--clr-bg-btn-primary);
 

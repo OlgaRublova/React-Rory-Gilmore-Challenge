@@ -10,20 +10,26 @@ const allGenres = ['all', ...new Set(booksList.map((book) => book.genre))];
 console.clear();
 
 const AppProvider = ({children}) => {
-    const {showPagination, setShowPagination, paginatedBooks, books, setBooks, page, setPage,} = useFetch();
+    const {
+        showPagination,
+        setShowPagination,
+        paginatedBooks,
+        books,
+        setBooks,
+        page,
+        setPage,
+    } = useFetch();
 
     const [genres, setGenres] = useState(allGenres);
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isModalNoOpen, setIsNoModalOpen] = useState(false);
     const [error, setError] = useState({show: false, msg: ""})
-    const [searchTerm, setSearchTerm] = useState("Anna Karenina");
-    console.log(searchTerm)
 
     useEffect(() => {
         if (showPagination) return;
         setBooks(paginatedBooks[page]);
-    }, [showPagination, page, searchTerm])
+    }, [showPagination, page])
 
     const openModal = () => {
         setIsModalOpen(true);
@@ -90,10 +96,8 @@ const AppProvider = ({children}) => {
         setError({show, msg})
     }
 
-
     return (
         <AppContext.Provider value={{
-            searchTerm, setSearchTerm,
             genres,
             page, setPage, prevPage, nextPage, handlePage,
             isModalOpen, setIsModalOpen, openModal, closeModal,
