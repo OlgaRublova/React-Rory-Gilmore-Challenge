@@ -1,16 +1,18 @@
 import {useGlobalContext} from "../contex";
 import {MdSearch} from "react-icons/all";
 import {useRef, useEffect, useState} from "react";
-import bookList from "./data.js"
+import {useFilterContext} from "../context/filter_context";
 
 const SearchForm = () => {
-    const {error, toggleError, books, setBooks} = useGlobalContext();
+    const {filtered_books: books, findBook, error, toggleError} = useFilterContext()
+    console.log("SearchForm - error")
+    console.log(error)
+    const {show, msg} = error;
 
     const [searchTerm, setSearchTerm] = useState('');
 
     const handleSubmit = e => {
         e.preventDefault();
-        toggleError(true, "sorry, there is no book like that")
     }
 
     const searchValue = useRef('');
@@ -20,47 +22,35 @@ const SearchForm = () => {
     }, []);
 
     useEffect(() => {
-        findBooks(searchTerm)
-
+        findBook(searchTerm)
     }, [searchTerm]);
 
-    const findBooks = (searchItem) => {
-        let specificBooks = bookList.filter(book => {
-            const {title, firstName, lastName} = book;
 
-            return (
-                title.toString().toLowerCase().includes(searchItem.toString().toLowerCase()) ||
-                firstName.toString().toLowerCase().includes(searchItem.toString().toLowerCase()) ||
-                lastName.toString().toLowerCase().includes(searchItem.toString().toLowerCase())
-            )
-        });
-
-        setBooks(specificBooks);
-    }
-
+    useEffect(() => {
+        toggleError("true", "Enter the book/author you want to find")
+    }, [])
 
     return (
+
         <>
 
             <article className="section-text">
                 <div className="section-text__header">Great!</div>
                 <div className="section-text__sub">Check if your favourite book is in the list</div>
             </article>
-            <div className="errorMessage">{error.show && <p>{error.msg}</p>}</div>
+            <div className="errorMessage">{show && <p>{msg}</p>}</div>
 
 
-            <form
-                className="section-heading"
-                onSubmit={handleSubmit}>
-                <div className="form-control">
-                    <MdSearch/>
-                    <input
-                        type="text"
-                        ref={searchValue}
-                        onChange={(e) => setSearchTerm(searchValue.current.value)}
-                    />
-                    <button>search</button>
-                </div>
+            <form className="form-control"
+                  onSubmit={handleSubmit}>
+                <MdSearch style={{"marginLeft": "1rem"}}/>
+                <input
+                    type="text"
+                    ref={searchValue}
+                    onChange={(e) => setSearchTerm(searchValue.current.value)}
+                />
+                <button>search</button>
+
 
             </form>
         </>

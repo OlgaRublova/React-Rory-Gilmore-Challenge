@@ -28,10 +28,10 @@ const Header = () => {
     }, [theme])
 
     return (
-        <section className="header">
+        <div className="header">
             <Gallery urls={urls} toggleTheme={toggleTheme} theme={theme}/>
             <Heading/>
-        </section>
+        </div>
     )
 }
 

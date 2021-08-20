@@ -5,8 +5,6 @@ import {Switch, Route} from "react-router-dom"
 import Home from "./components/Home"
 import SingleBook from "./components/SingleBook";
 
-console.clear();
-
 
 function App() {
 

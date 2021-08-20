@@ -3539,5 +3539,4 @@ const list = [
     },
 ]
 
-
-export default list;
+console.log(JSON.stringify(list));

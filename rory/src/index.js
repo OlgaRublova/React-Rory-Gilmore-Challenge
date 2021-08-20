@@ -6,15 +6,23 @@ import reportWebVitals from './reportWebVitals';
 
 import {AppProvider} from "./contex";
 import {BrowserRouter as Router} from "react-router-dom";
+import {FilterProvider} from "./context/filter_context";
+import {BooksProvider} from "./context/books_context";
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <AppProvider>
-            <Router>
-                <App/>
-            </Router>
-        </AppProvider>
+        <BooksProvider>
+            <FilterProvider>
+                <AppProvider>
+                    <Router>
+                        <App/>
+                    </Router>
+                </AppProvider>
+            </FilterProvider>
+        </BooksProvider>
+
+
     </React.StrictMode>,
     document.getElementById('root')
 );

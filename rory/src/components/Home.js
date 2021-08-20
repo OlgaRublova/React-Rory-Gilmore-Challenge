@@ -7,13 +7,13 @@ const Home = () => {
 
 
     return (
-        <main>
+        <>
             <Modal/>
             <ModalNo/>
 
             <Title title="Rory Gilmore Reading Challenge"/>
             <Header/>
-        </main>
+        </>
 
     )
 }

@@ -3,16 +3,18 @@ import Genres from "./Genres";
 import {useGlobalContext} from "../contex";
 import Pages from "./Pages";
 import {BsMoon, BsSun} from "react-icons/all";
-
+import Sort from "./Sort"
+import {useFilterContext} from "../context/filter_context";
 
 const Modal = () => {
     const {
         isModalOpen,
         closeModal,
-        genres,
-        filterBooksByGenre,
         showPagination
     } = useGlobalContext();
+
+    const {genres, filterBooksByGenre} = useFilterContext();
+
 
 
     return (
@@ -27,12 +29,12 @@ const Modal = () => {
                 Ask again!
             </button>
 
-            <Genres
-                genres={genres}
-                filterBooksByGenre={filterBooksByGenre}
-            />
-            {!showPagination && <Pages/>}
+            <Genres genres={genres} filterBooksByGenre={filterBooksByGenre}/>
+            {/*{!showPagination && <Pages/>}*/}
+            <Sort/>
+
             <Books/>
+
 
         </section>
 
