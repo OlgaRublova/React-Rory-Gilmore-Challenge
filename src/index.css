@@ -140,15 +140,16 @@ section {
 .form-control button:hover {
     background: var(--clr-btn-hover);
 }
-.icon-check__btn{
+
+.icon-check__btn {
     color: green;
 }
-.icon-heart__btn{
+
+.favorite {
     color: red;
 }
-.wishes{
-    color: red;
-}
+
+
 
 /* -----------Icons style-----------*/
 .icon-book__container {
@@ -219,18 +220,25 @@ section {
     grid-gap: 1rem;
 }
 
-.book {
+.book{
     position: relative;
     overflow: hidden;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     border: 1px solid var(--clr-font-primary);
+    transition: opacity 2s;
 }
 
-.book-img {
+.book-img, .book-img-shadow {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: opacity 2s;
+
+}
+.book-img-shadow {
+    opacity: 0.2;
+    border: none;
 }
 
 .book:hover .book-info,

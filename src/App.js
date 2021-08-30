@@ -4,7 +4,7 @@ import {Switch, Route} from "react-router-dom"
 import {BrowserRouter as Router} from 'react-router-dom'
 
 import Home from "./pages/Home"
-import SingleBook from "./components/SingleBook";
+import SingleBookPage from "./pages/SingleBookPage";
 import Modal from "./components/Modal";
 import Navbar from "./components/Navbar";
 import ErrorPage from "./pages/ErrorPage";
@@ -36,7 +36,7 @@ function App() {
                 </Route>
 
 
-                <Route path="/books/:id" children={<SingleBook/>}/>
+                <Route path="/books/:id" children={<SingleBookPage/>}/>
 
                 <Route exact path="/wish-list">
                     <WishListPage/>

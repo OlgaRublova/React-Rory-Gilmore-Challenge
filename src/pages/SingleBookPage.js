@@ -1,10 +1,10 @@
 import {useParams, Link} from "react-router-dom"
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from "react-icons/all";
-import data from "./data"
+import data from "../components/data"
 import {useEffect} from "react";
 import React from "react";
 
-const SingleBook = () => {
+const SingleBookPage = () => {
 
 
     let {id} = useParams(),
@@ -78,4 +78,4 @@ const SingleBook = () => {
     )
 }
 
-export default SingleBook;
+export default SingleBookPage;

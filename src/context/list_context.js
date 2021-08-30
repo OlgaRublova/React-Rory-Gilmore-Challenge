@@ -1,6 +1,5 @@
 import React, {useEffect, useContext, useReducer, useState} from 'react'
 import reducer from "../reducer/list_reducer"
-import useLocalStorageState from "use-local-storage-state";
 
 const getStorageList = () => {
     let list = [];
@@ -24,10 +23,11 @@ const ListContext = React.createContext();
 
 export const ListProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initialState);
+    // const [isOnline, setIsOnline] = useState(null);
+
 
     useEffect(() => {
         localStorage.setItem('list', JSON.stringify(state.list));
-
     }, [state.list])
 
 
@@ -35,6 +35,7 @@ export const ListProvider = ({children}) => {
 
     //  add to cart
     const addToList = (id, firstName, lastName, title, genre, page, cover) => {
+        // setIsOnline(id)
         dispatch({type: "ADD_TO_LIST", payload: {id, firstName, lastName, title, genre, page, cover}})
 
     }
@@ -50,14 +51,13 @@ export const ListProvider = ({children}) => {
     }
 
 
-
-
     return (
         <ListContext.Provider value={{
             ...state,
             addToList,
             removeItem,
             clearList,
+            // isOnline
             // query
 
         }}>
