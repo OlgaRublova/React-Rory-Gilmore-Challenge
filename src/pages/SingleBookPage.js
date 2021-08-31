@@ -1,7 +1,6 @@
 import {useParams, Link} from "react-router-dom"
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from "react-icons/all";
 import data from "../components/data"
-import {useEffect} from "react";
 import React from "react";
 
 const SingleBookPage = () => {
@@ -26,26 +25,16 @@ const SingleBookPage = () => {
         if (type === "next") {
             result = result + 1;
             id = result;
-            // console.log("plus: ")
-            // console.log(result)
-            // console.log("id plus: ")
-            // console.log(id)
         }
         if (type === "prev") {
             result = result - 1
-            // console.log("minus: ")
-            // console.log(result)
-            // console.log("id minus: ")
-            // console.log(id)
-
         }
         return result
     }
 
 
 
-    // console.log("basic: ")
-    // console.log(result)
+
 
 
     let {title, cover, firstName, lastName, genre, page} = data[result];

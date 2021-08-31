@@ -148,7 +148,9 @@ section {
 .favorite {
     color: red;
 }
-
+.favorite-other{
+    color: blue;
+}
 
 
 /* -----------Icons style-----------*/

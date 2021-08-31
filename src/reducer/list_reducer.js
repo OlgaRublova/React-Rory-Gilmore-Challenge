@@ -1,7 +1,7 @@
 const list_reducer = (state, action) => {
 
     if (action.type === "ADD_TO_LIST") {
-        const {id, firstName, lastName, title, genre, page, cover} = action.payload;
+        const {id, firstName, lastName, title, genre, page, cover,favorite} = action.payload;
         const newItem = {
             id,
             firstName,
@@ -10,6 +10,7 @@ const list_reducer = (state, action) => {
             genre,
             cover,
             page,
+            favorite
         }
         return (
             {

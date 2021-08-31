@@ -34,9 +34,9 @@ export const ListProvider = ({children}) => {
 
 
     //  add to cart
-    const addToList = (id, firstName, lastName, title, genre, page, cover) => {
+    const addToList = (id, firstName, lastName, title, genre, page, cover,favorite) => {
         // setIsOnline(id)
-        dispatch({type: "ADD_TO_LIST", payload: {id, firstName, lastName, title, genre, page, cover}})
+        dispatch({type: "ADD_TO_LIST", payload: {id, firstName, lastName, title, genre, page, cover,favorite}})
 
     }
 

@@ -1,10 +1,12 @@
 import React, {useContext, useReducer, useEffect, useState} from 'react';
 import reducer from "../reducer/filter_reducer"
 import {useBooksContext} from "./books_context";
+import {logDOM} from "@testing-library/react";
 
 
 const initialState = {
     filtered_books: [],
+    all_books: [],
     genres: [],
     genre: "all",
     paginated_books: [],
@@ -20,8 +22,8 @@ const initialState = {
     },
     page: 0,
     showPagination: false,
-    pagination: false
-
+    pagination: false,
+    likes: []
 }
 
 const FilterContext = React.createContext();
@@ -42,8 +44,6 @@ export const FilterProvider = ({children}) => {
     }, [books])
 
 
-
-
     useEffect(() => {
         dispatch({type: "FILTER_BOOKS"})
         dispatch({type: "SORT_BOOKS"})
@@ -62,14 +62,33 @@ export const FilterProvider = ({children}) => {
 
     const filterBooksByGenre = (genre) => {
         setMain(genre)
-        dispatch({type: "FILTER_BY_GENRE", payload: {genre, books} })
-
+        dispatch({type: "FILTER_BY_GENRE", payload: {genre, books}})
     }
-
 
     const removeBook = id => {
         dispatch({type: "REMOVE_BOOK", payload: id})
     }
+
+    const heartFavoriteHandler = (e, favoriteValue) => {
+        e.preventDefault();
+        const sessionId = Number(e.target.parentElement.attributes['data-sessionid'].value);
+        let newLikes = state.likes.map((like) => {
+            const {id} = like;
+
+            if (id === sessionId) {
+                return {...like, favorite: favoriteValue}
+            }
+            return like;
+        })
+
+        console.log("state.likes: ")
+        console.log(state.likes)
+        console.log("newLikes: ")
+        console.log(newLikes)
+        dispatch({type: "LIKE_BOOK", payload: newLikes})
+
+    }
+
 
     const findBook = (searchItem) => {
         if (searchItem) {
@@ -102,7 +121,7 @@ export const FilterProvider = ({children}) => {
             main,
 
             prevPage, nextPage, handlePage,
-
+            heartFavoriteHandler
 
         }}>
             {children}

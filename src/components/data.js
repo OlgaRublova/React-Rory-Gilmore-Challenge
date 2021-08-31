@@ -2,6 +2,7 @@ import React from 'react'
 
 const list = [
     {
+        favorite: false,
         id: 1,
         firstName: 'George',
         lastName: 'Orwel',
@@ -11,6 +12,7 @@ const list = [
         cover: 'https://images-na.ssl-images-amazon.com/images/I/518gNiNACGL._SX331_BO1,204,203,200_.jpg',
     },
     {
+        favorite: false,
         id: 2,
         firstName: 'Mark',
         lastName: 'Twain',
@@ -20,6 +22,7 @@ const list = [
         cover: 'https://2f96be1b505f7f7a63c3-837c961929b51c21ec10b9658b068d6c.ssl.cf2.rackcdn.com/products/034670.jpg'
     },
     {
+        favorite: false,
         id: 3,
         firstName: 'Lewis',
         lastName: 'Carroll',
@@ -29,6 +32,7 @@ const list = [
         cover: 'https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781447279990.jpg'
     },
     {
+        favorite: false,
         id: 4,
         firstName: 'Michael',
         lastName: 'Chabon',
@@ -38,6 +42,7 @@ const list = [
         cover: 'https://m.media-amazon.com/images/I/51UjnBmJNZL.jpg'
     },
     {
+        favorite: false,
         id: 5,
         firstName: 'Theodore',
         lastName: 'Dreiser',
@@ -47,6 +52,7 @@ const list = [
         cover: 'https://image.winudf.com/v2/image/Y29tLm1lZ2Fib29rcy5iZXN0LmFtZXJpY2FudHJhZ2VkeTMxMDdfc2NyZWVuXzRfMTUzNDgxNzMyNV8wMzg/screen-4.jpg?fakeurl=1&type=.jpg'
     },
     {
+        favorite: false,
         id: 6,
         firstName: 'Frank',
         lastName: 'McCourt',
@@ -56,6 +62,7 @@ const list = [
         cover: 'https://images-na.ssl-images-amazon.com/images/I/51A2T03B4SL._SX282_BO1,204,203,200_.jpg'
     },
     {
+        favorite: false,
         id: 7,
         firstName: 'Leo',
         lastName: 'Tolstoy',
@@ -65,6 +72,7 @@ const list = [
         cover: 'https://images.booksense.com/images/250/293/9781978293250.jpg'
     },
     {
+        favorite: false,
         id: 8,
         firstName: 'Anne',
         lastName: 'Frank',
@@ -74,6 +82,7 @@ const list = [
         cover: 'https://cdn.waterstones.com/bookjackets/large/9780/2419/9780241952443.jpg'
     },
     {
+        favorite: false,
         id: 9,
         firstName: 'Donald',
         lastName: 'Kagan',
@@ -83,6 +92,7 @@ const list = [
         cover: 'https://images-na.ssl-images-amazon.com/images/I/61scRwQ8QUL._AC_UL600_SR387,600_.jpg'
     },
     {
+        favorite: false,
         id: 10,
         firstName: 'Henry',
         lastName: 'James',
@@ -92,6 +102,7 @@ const list = [
         cover: 'https://m.media-amazon.com/images/I/41x+Hy-asKL.jpg'
     },
     {
+        favorite: false,
         id: 11,
         firstName: "Epictetus",
         lastName: "N/A",
@@ -101,6 +112,7 @@ const list = [
         cover: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781625583369/the-art-of-living-9781625583369_hr.jpg"
     },
     {
+        favorite: false,
         id: 12,
         firstName: "Sun",
         lastName: "Tzu",
@@ -110,6 +122,7 @@ const list = [
         cover: "https://jamesclear.com/wp-content/uploads/2015/11/TheArtofWar-by-SunTzu.jpg"
     },
     {
+        favorite: false,
         id: 13,
         firstName: "William",
         lastName: "Faulkner",
@@ -119,6 +132,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51XkvLIHxxL.jpg"
     },
     {
+        favorite: false,
         id: 14,
         firstName: "Ian",
         lastName: "McEwan",
@@ -128,6 +142,7 @@ const list = [
         cover: "https://images.randomhouse.com/cover/9780676974560"
     },
     {
+        favorite: false,
         id: 15,
         firstName: "Lucy",
         lastName: "Grealy",
@@ -137,6 +152,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81J+xlUugnL.jpg"
     },
     {
+        favorite: false,
         id: 16,
         firstName: "Kate",
         lastName: "Chopin",
@@ -146,6 +162,7 @@ const list = [
         cover: "https://d28hgpri8am2if.cloudfront.net/tagged_assets/cvr9780743487672/9780743487672_hr.jpg"
     },
     {
+        favorite: false,
         id: 17,
         firstName: "Dick",
         lastName: "King-Smith",
@@ -155,6 +172,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81lY0OpaL8L.jpg"
     },
     {
+        favorite: false,
         id: 18,
         firstName: "Susan",
         lastName: "Faludi",
@@ -164,6 +182,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386922920l/200883.jpg"
     },
     {
+        favorite: false,
         id: 19,
         firstName: "Dai",
         lastName: "Sijie",
@@ -173,6 +192,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91Kkc0ZHa0L.jpg"
     },
     {
+        favorite: false,
         id: 20,
         firstName: "Felix",
         lastName: "Salten",
@@ -182,6 +202,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71816gRUnLL.jpg"
     },
     {
+        favorite: false,
         id: 21,
         firstName: "Ann",
         lastName: "Patchett",
@@ -191,6 +212,7 @@ const list = [
         cover: "http://prodimage.images-bn.com/pimages/9780060838720_p0_v2_s1200x630.jpg"
     },
     {
+        favorite: false,
         id: 22,
         firstName: "Sylvia",
         lastName: "Plath",
@@ -200,6 +222,7 @@ const list = [
         cover: "https://images.thenile.io/r1000/9780060837020.jpg"
     },
     {
+        favorite: false,
         id: 23,
         firstName: "Toni",
         lastName: "Morrison",
@@ -209,6 +232,7 @@ const list = [
         cover: "https://s26162.pcdn.co/wp-content/uploads/2017/09/Belove_BookCover_WeAreTeachers.jpg"
     },
     {
+        favorite: false,
         id: 24,
         firstName: "Anonymous",
         lastName: "Anonymous",
@@ -218,6 +242,7 @@ const list = [
         cover: "https://g.christianbook.com/g/slideshow/3/320979/main/320979_1_ftc_dp.jpg"
     },
     {
+        favorite: false,
         id: 25,
         firstName: "Anonymous",
         lastName: "Anonymous",
@@ -227,6 +252,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/9167y6YkDZL.jpg"
     },
     {
+        favorite: false,
         id: 26,
         firstName: "Peter",
         lastName: "Duffy",
@@ -236,6 +262,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51Saz99PESL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 27,
         firstName: "Elizabeth",
         lastName: "Wurtzel",
@@ -245,6 +272,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51x-XPTS0bL.jpg"
     },
     {
+        favorite: false,
         id: 28,
         firstName: "Mary",
         lastName: "McCarthy",
@@ -254,6 +282,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41BMB-JUjmL._SX338_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 29,
         firstName: "Aldous",
         lastName: "Huxley",
@@ -263,6 +292,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/25/e7/c0/25e7c09587e746b53941bbeffbe90d89.jpg"
     },
     {
+        favorite: false,
         id: 30,
         firstName: "Monica",
         lastName: "Ali",
@@ -272,6 +302,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433730686l/18723.jpg"
     },
     {
+        favorite: false,
         id: 31,
         firstName: "Alan Jay",
         lastName: "Lerner",
@@ -281,6 +312,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/410MirCwX4L.jpg"
     },
     {
+        favorite: false,
         id: 32,
         firstName: "Voltaire",
         lastName: "Voltaire",
@@ -290,6 +322,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51o5uPXRSgL.jpg"
     },
     {
+        favorite: false,
         id: 33,
         firstName: "Geoffrey",
         lastName: "Chaucer",
@@ -299,6 +332,7 @@ const list = [
         cover: "https://images2.penguinrandomhouse.com/cover/9780553902525"
     },
     {
+        favorite: false,
         id: 34,
         firstName: "Stephen",
         lastName: "King",
@@ -308,6 +342,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/916W3jMu+mL.jpg"
     },
     {
+        favorite: false,
         id: 35,
         firstName: "Joseph",
         lastName: "Heller",
@@ -317,6 +352,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51eW-wH1K-L._SX324_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 36,
         firstName: "J.D.",
         lastName: "Salinger",
@@ -326,6 +362,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/59/7f/b4/597fb48556f2d63ae86cb49197d0b477.jpg"
     },
     {
+        favorite: false,
         id: 37,
         firstName: "Mark",
         lastName: "Twain",
@@ -335,6 +372,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41W4wuKH2pL.jpg"
     },
     {
+        favorite: false,
         id: 38,
         firstName: "E.B.",
         lastName: "White",
@@ -344,6 +382,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/916JW20V3yL.jpg"
     },
     {
+        favorite: false,
         id: 39,
         firstName: "Lillian",
         lastName: "Hellman",
@@ -353,6 +392,7 @@ const list = [
         cover: "https://www.dpspbs.com/pictures/medium/3441.jpg"
     },
     {
+        favorite: false,
         id: 40,
         firstName: "Stephen",
         lastName: "King",
@@ -362,6 +402,7 @@ const list = [
         cover: "https://d3525k1ryd2155.cloudfront.net/h/309/329/1349329309.0.x.jpg"
     },
     {
+        favorite: false,
         id: 41,
         firstName: "Charles",
         lastName: "Dickens",
@@ -371,6 +412,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91r7kYxAAyL.jpg"
     },
     {
+        favorite: false,
         id: 42,
         firstName: "Brothers Grimm",
         lastName: "",
@@ -380,6 +422,7 @@ const list = [
         cover: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780735842946/cinderella-9780735842946_hr.jpg"
     },
     {
+        favorite: false,
         id: 43,
         firstName: "Anthony",
         lastName: "Burgess",
@@ -389,6 +432,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41mN6FBCVGL._SX316_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 44,
         firstName: "P.G.",
         lastName: "Wodehouse",
@@ -398,6 +442,7 @@ const list = [
         cover: "https://covers.openlibrary.org/b/id/254199-L.jpg"
     },
     {
+        favorite: false,
         id: 45,
         firstName: "Eudora",
         lastName: "Welty",
@@ -407,6 +452,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/511WBcHJZeL.jpg"
     },
     {
+        favorite: false,
         id: 46,
         firstName: "William",
         lastName: "Shakespeare",
@@ -416,6 +462,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51xfuF6iB0L.jpg"
     },
     {
+        favorite: false,
         id: 47,
         firstName: "Dawn",
         lastName: "Powell",
@@ -425,6 +472,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41lW1FYmGFL._SX311_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 48,
         firstName: "Anne",
         lastName: "Sexton",
@@ -434,6 +482,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51ieMWY9pJL.jpg"
     },
     {
+        favorite: false,
         id: 49,
         firstName: "Dorothy",
         lastName: "Parker",
@@ -443,6 +492,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387735027l/322658.jpg"
     },
     {
+        favorite: false,
         id: 50,
         firstName: "John",
         lastName: "Kennedy Toole",
@@ -452,6 +502,7 @@ const list = [
         cover: "https://pictures.abebooks.com/inventory/30185614561.jpg"
     },
     {
+        favorite: false,
         id: 51,
         firstName: "Mark",
         lastName: "Twain",
@@ -461,6 +512,7 @@ const list = [
         cover: "https://g.christianbook.com/g/slideshow/4/41591/main/41591_1_ftc_dp.jpg"
     },
     {
+        favorite: false,
         id: 52,
         firstName: "David",
         lastName: "Foster Wallace",
@@ -470,6 +522,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41Kqqz6v7BL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 53,
         firstName: "Carl",
         lastName: "Sagan",
@@ -479,6 +532,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602082958l/61666._SY475_.jpg"
     },
     {
+        favorite: false,
         id: 54,
         firstName: "Alexandre",
         lastName: "Dumas",
@@ -488,6 +542,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/74/5e/6b/745e6bee4404bdec395fff084175cc48.jpg"
     },
     {
+        favorite: false,
         id: 55,
         firstName: "Honore",
         lastName: "de Balzac",
@@ -497,6 +552,7 @@ const list = [
         cover: "https://i.ebayimg.com/images/g/djMAAOSwX7hf~ec3/s-l500.jpg"
     },
     {
+        favorite: false,
         id: 56,
         firstName: "Fyodor",
         lastName: "Dostoevsky",
@@ -506,6 +562,7 @@ const list = [
         cover: "http://prodimage.images-bn.com/pimages/9781631495311_p0_v6_s1200x630.jpg"
     },
     {
+        favorite: false,
         id: 57,
         firstName: "Michel",
         lastName: "Faber",
@@ -515,6 +572,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51t4JqIkY6L._SX330_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 58,
         firstName: "Arthur",
         lastName: "Miller",
@@ -524,6 +582,7 @@ const list = [
         cover: "https://donnasgeneralstore.com/wp-content/uploads/TheCrucible.jpg"
     },
     {
+        favorite: false,
         id: 59,
         firstName: "Stephen",
         lastName: "King",
@@ -533,6 +592,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71AKaPbpeYL.jpg"
     },
     {
+        favorite: false,
         id: 60,
         firstName: "Mark",
         lastName: "Haddon",
@@ -542,6 +602,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61q11L2zo6L.jpg"
     },
     {
+        favorite: false,
         id: 61,
         firstName: "Edmond",
         lastName: "Rostand",
@@ -551,6 +612,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/818gq1W75xL.jpg"
     },
     {
+        favorite: false,
         id: 62,
         firstName: "Isabel",
         lastName: "Allende",
@@ -560,6 +622,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/719fQ9sJceS.jpg"
     },
     {
+        favorite: false,
         id: 63,
         firstName: "Charles",
         lastName: "Dickens",
@@ -569,6 +632,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51TrWpIwMfL.jpg"
     },
     {
+        favorite: false,
         id: 64,
         firstName: "Dan",
         lastName: "Brown",
@@ -578,6 +642,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91Q5dCjc2KL.jpg"
     },
     {
+        favorite: false,
         id: 65,
         firstName: "Nikolai",
         lastName: "Gogol",
@@ -587,6 +652,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71mjbyBGQ0L.jpg"
     },
     {
+        favorite: false,
         id: 66,
         firstName: "Arthur",
         lastName: "Miller",
@@ -596,6 +662,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71ZUsis6HjL.jpg"
     },
     {
+        favorite: false,
         id: 67,
         firstName: "Judy",
         lastName: "Blume",
@@ -605,6 +672,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61qM3h4ZpFL.jpg"
     },
     {
+        favorite: false,
         id: 68,
         firstName: "Fyodor",
         lastName: "Dostoyevsky",
@@ -614,6 +682,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/2e/39/cc/2e39cce395898c3ad056e9bfc2465247.png"
     },
     {
+        favorite: false,
         id: 69,
         firstName: "Erik",
         lastName: "Larson",
@@ -624,6 +693,7 @@ const list = [
     },
 
     {
+        favorite: false,
         id: 70,
         firstName: "Tommy",
         lastName: "Lee",
@@ -633,6 +703,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81rjVu119KL.jpg"
     },
     {
+        favorite: false,
         id: 71,
         firstName: "Dante",
         lastName: "Alighieri",
@@ -642,6 +713,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91vybHeMSxL.jpg"
     },
     {
+        favorite: false,
         id: 72,
         firstName: "Rebecca",
         lastName: "Wells",
@@ -651,6 +723,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51Hn77QFjkL.jpg"
     },
     {
+        favorite: false,
         id: 73,
         firstName: "Miguel",
         lastName: "De Cervantes",
@@ -660,6 +733,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51iQq6ZYedL.jpg"
     },
     {
+        favorite: false,
         id: 74,
         firstName: "Bram",
         lastName: "Stocker",
@@ -669,6 +743,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51F49MFtd8L.jpg"
     },
     {
+        favorite: false,
         id: 75,
         firstName: "Alfred",
         lastName: "Uhrv",
@@ -678,6 +753,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41h9jc3k7vL.jpg"
     },
     {
+        favorite: false,
         id: 76,
         firstName: "Edgar Allan",
         lastName: "Poe",
@@ -687,6 +763,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81kJufCw2yL.jpg"
     },
     {
+        favorite: false,
         id: 77,
         firstName: "Blanche",
         lastName: "Wiesen Cook",
@@ -696,6 +773,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81ayAcK+91L.jpg"
     },
     {
+        favorite: false,
         id: 78,
         firstName: "Tom",
         lastName: "Wolfe",
@@ -705,6 +783,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51UMpPPd53L._SX330_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 79,
         firstName: "Mark",
         lastName: "Dunn",
@@ -714,6 +793,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81vjpjJ0R7L.jpg"
     },
     {
+        favorite: false,
         id: 80,
         firstName: "Kay",
         lastName: "Thompson",
@@ -723,6 +803,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71lUKI+wm4L.jpg"
     },
     {
+        favorite: false,
         id: 81,
         firstName: "Roger",
         lastName: "Reger",
@@ -733,6 +814,7 @@ const list = [
     },
 
     {
+        favorite: false,
         id: 82,
         firstName: "Jane",
         lastName: "Austen",
@@ -742,6 +824,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51m1BWsfUCL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 83,
         firstName: "Richard",
         lastName: "Russo",
@@ -751,6 +834,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71L0e5sfpyL.jpg"
     },
     {
+        favorite: false,
         id: 84,
         firstName: "Donald J",
         lastName: "Sobol",
@@ -760,6 +844,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/810PMLLHUPL.jpg"
     },
     {
+        favorite: false,
         id: 85,
         firstName: "Edith",
         lastName: "Wharton",
@@ -769,6 +854,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81iP6KeWlQL.jpg"
     },
     {
+        favorite: false,
         id: 86,
         firstName: "Benedict",
         lastName: "De Spinoza",
@@ -778,6 +864,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51tIpRAJbfL._SL500_.jpg"
     },
     {
+        favorite: false,
         id: 87,
         firstName: "Rick",
         lastName: "Steves",
@@ -787,6 +874,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71dBKzhxZjL.jpg"
     },
     {
+        favorite: false,
         id: 88,
         firstName: "Isabel",
         lastName: "Allende",
@@ -796,6 +884,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51qq6csQfRL._SX320_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 89,
         firstName: "Jonathan",
         lastName: "Safran Foer",
@@ -805,6 +894,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51m+Xj6mAwL.jpg"
     },
     {
+        favorite: false,
         id: 90,
         firstName: "Norman",
         lastName: "Mailer",
@@ -814,6 +904,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51BzPAcxmXL._SX328_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 91,
         firstName: "Gary",
         lastName: "Krist",
@@ -823,6 +914,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41UeZ3YvSrL.jpg"
     },
     {
+        favorite: false,
         id: 92,
         firstName: "Ray",
         lastName: "Bradbury",
@@ -832,6 +924,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71OFqSRFDgL.jpg"
     },
     {
+        favorite: false,
         id: 93,
         firstName: "Michael",
         lastName: "Moore",
@@ -841,6 +934,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/518oyI4vZVL._SX307_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 94,
         firstName: "Donald",
         lastName: "Kagan",
@@ -850,6 +944,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61EHnzIPMvL.jpg"
     },
     {
+        favorite: false,
         id: 95,
         firstName: "Greg",
         lastName: "Critser",
@@ -858,6 +953,7 @@ const list = [
         page: 256,
         cover: "https://images-na.ssl-images-amazon.com/images/I/71i6t+7AO2L.jpg"
     }, {
+        favorite: false,
         id: 96,
         firstName: "Hunter S.",
         lastName: "Thompson",
@@ -867,6 +963,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/718WrWeyy6L.jpg"
     },
     {
+        favorite: false,
         id: 97,
         firstName: "J.R.R.",
         lastName: "Tolkien",
@@ -876,6 +973,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91jBdaRVqML.jpg"
     },
     {
+        favorite: false,
         id: 98,
         firstName: "Joseph",
         lastName: "Stein",
@@ -885,6 +983,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71GaP6oxC7L.jpg"
     },
     {
+        favorite: false,
         id: 99,
         firstName: "James",
         lastName: "Joyce",
@@ -894,6 +993,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780141181264"
     },
     {
+        favorite: false,
         id: 100,
         firstName: "Mitch",
         lastName: "Albom",
@@ -903,6 +1003,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41CdFqzQ84L.jpg"
     },
     {
+        favorite: false,
         id: 101,
         firstName: "Gregory",
         lastName: "McDonald",
@@ -912,6 +1013,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51emiSTYUaL._SX326_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 102,
         firstName: "Daniel",
         lastName: "Keyes",
@@ -921,6 +1023,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/31fzDDwtE3L._SX301_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 103,
         firstName: "Jonathan",
         lastName: "Lethem",
@@ -930,6 +1033,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91n6eeetsuL.jpg"
     },
     {
+        favorite: false,
         id: 104,
         firstName: "Ayn",
         lastName: "Rand",
@@ -939,6 +1043,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91yszMADa7L.jpg"
     },
     {
+        favorite: false,
         id: 105,
         firstName: "Mary",
         lastName: "Shelley",
@@ -948,6 +1053,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/416QjTxduzL._SX311_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 106,
         firstName: "J.D.",
         lastName: "Salinger",
@@ -957,6 +1063,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51Se-s2ZglL.jpg"
     },
     {
+        favorite: false,
         id: 107,
         firstName: "Mary",
         lastName: "Rodgers",
@@ -966,6 +1073,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51UUsU2cdQL._SX334_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 108,
         firstName: "Kurt",
         lastName: "Vonnegut",
@@ -975,6 +1083,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71B68jttiYL.jpg"
     },
     {
+        favorite: false,
         id: 109,
         firstName: "Judith",
         lastName: "Butler",
@@ -984,6 +1093,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41wmzC9GroL._SX319_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 110,
         firstName: "Jacob",
         lastName: "Weisberg",
@@ -993,6 +1103,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51N8tkSefkS._SX311_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 111,
         firstName: "Fredrick",
         lastName: "Kohner",
@@ -1002,6 +1113,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/911wD8a7AHL.jpg"
     },
     {
+        favorite: false,
         id: 112,
         firstName: "Beverly",
         lastName: "Cleary",
@@ -1011,6 +1123,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51TLj55E9mL.jpg"
     },
     {
+        favorite: false,
         id: 113,
         firstName: "Susanna",
         lastName: "Kaysen",
@@ -1020,6 +1133,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81MGfnTQ9ZL.jpg"
     },
     {
+        favorite: false,
         id: 114,
         firstName: "Elaine",
         lastName: "Pagels",
@@ -1029,6 +1143,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51cYTMLCyLL._SX318_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 115,
         firstName: "Mario",
         lastName: "Puzo",
@@ -1038,6 +1153,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81IHPwG1tbL.jpg"
     },
     {
+        favorite: false,
         id: 116,
         firstName: "Arundhati",
         lastName: "Roy",
@@ -1047,6 +1163,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91EFcae8moL.jpg"
     },
     {
+        favorite: false,
         id: 117,
         firstName: "Alvin",
         lastName: "Granowsky",
@@ -1056,6 +1173,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/810POGQWWnL.jpg"
     },
     {
+        favorite: false,
         id: 118,
         firstName: "Margaret",
         lastName: "Mitchell",
@@ -1065,6 +1183,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51vXH2JGV8L.jpg"
     },
     {
+        favorite: false,
         id: 119,
         firstName: "Keith",
         lastName: "Richards",
@@ -1074,6 +1193,7 @@ const list = [
         cover: "https://64.media.tumblr.com/64e236455719444346c90baddb174f38/tumblr_ne88bihzmZ1s4pbxso1_1280.jpg"
     },
     {
+        favorite: false,
         id: 120,
         firstName: "Ford",
         lastName: "Maddox Ford",
@@ -1083,6 +1203,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71SIzet4opL.jpg"
     },
     {
+        favorite: false,
         id: 121,
         firstName: "José",
         lastName: "Saramago",
@@ -1092,6 +1213,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519393758l/28859.jpg"
     },
     {
+        favorite: false,
         id: 122,
         firstName: "Charles",
         lastName: "Webb",
@@ -1101,6 +1223,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41SZPxxP3AL.SX316.SY480._SL500_.jpg"
     },
     {
+        favorite: false,
         id: 123,
         firstName: "John",
         lastName: "Steinbeck",
@@ -1110,6 +1233,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780670016907"
     },
     {
+        favorite: false,
         id: 124,
         firstName: "Charles",
         lastName: "Dickens",
@@ -1119,6 +1243,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51pqUWvj6NL.jpg"
     },
     {
+        favorite: false,
         id: 125,
         firstName: "F. Scott",
         lastName: "Fitzgerald",
@@ -1128,6 +1253,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81djg0KWthS.jpg"
     },
     {
+        favorite: false,
         id: 126,
         firstName: "Mary",
         lastName: "McCarthy",
@@ -1137,6 +1263,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51MSzxxIFxL._SX342_SY445_QL70_ML2_.jpg"
     },
     {
+        favorite: false,
         id: 127,
         firstName: "R.H.",
         lastName: "Blyth",
@@ -1146,6 +1273,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/519jjD631OL._SX365_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 128,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1155,6 +1283,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41stzQ0MsgL._SX318_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 129,
         firstName: "J.K.",
         lastName: "Rowling",
@@ -1164,6 +1293,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/71ykU-RQ0nL._AC_SL1000_.jpg"
     },
     {
+        favorite: false,
         id: 130,
         firstName: "J.K.",
         lastName: "Rowling",
@@ -1173,6 +1303,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/515iJ1-+IvL.jpg"
     },
     {
+        favorite: false,
         id: 131,
         firstName: "Dave",
         lastName: "Eggers",
@@ -1182,6 +1313,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81jWHraFo+L.jpg"
     },
     {
+        favorite: false,
         id: 132,
         firstName: "Joseph",
         lastName: "Conrad",
@@ -1191,6 +1323,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/e278c62e-943a-473e-846a-3e19bce5b5d8/353/569/90/False/heart-of-darkness-12.jpg"
     },
     {
+        favorite: false,
         id: 133,
         firstName: "Hunter S.",
         lastName: "Thompson",
@@ -1200,6 +1333,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81d-DNnl8xL.jpg"
     },
     {
+        favorite: false,
         id: 134,
         firstName: "Vincent",
         lastName: "Bugliosi",
@@ -1209,6 +1343,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41eZAOsiLZL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 135,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1218,6 +1353,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/712X73igwvL.jpg"
     },
     {
+        favorite: false,
         id: 136,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1227,6 +1363,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51FkIGvFv6L._SX306_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 137,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1236,6 +1373,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51bdrrjTlmL.jpg"
     },
     {
+        favorite: false,
         id: 138,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1245,6 +1383,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91JAKAiiA5L.jpg"
     },
     {
+        favorite: false,
         id: 139,
         firstName: "Greg",
         lastName: "Behrendt",
@@ -1254,6 +1393,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61H9uerdrdL.jpg"
     },
     {
+        favorite: false,
         id: 140,
         firstName: "Nick",
         lastName: "Hornby",
@@ -1263,6 +1403,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81Grx7267uL.jpg"
     },
     {
+        favorite: false,
         id: 141,
         firstName: "Edward",
         lastName: "Gibbon",
@@ -1272,6 +1413,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/519labstQ5L._SX318_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 142,
         firstName: "David",
         lastName: "Sedaris",
@@ -1281,6 +1423,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71t0yJrW7UL.jpg"
     },
     {
+        favorite: false,
         id: 143,
         firstName: "Lawrence",
         lastName: "Lipton",
@@ -1290,6 +1433,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/514F1xvQYBL._SX355_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 144,
         firstName: "Dr. Seuss",
         lastName: "",
@@ -1299,6 +1443,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91jgrV6XiiL.jpg"
     },
     {
+        favorite: false,
         id: 145,
         firstName: "Andre",
         lastName: "Dubus III",
@@ -1308,6 +1453,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51JB9NCDFRL._SL160_.jpg"
     },
     {
+        favorite: false,
         id: 146,
         firstName: "Isabel",
         lastName: "Allende",
@@ -1317,6 +1463,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51fxADjREWL.jpg"
     },
     {
+        favorite: false,
         id: 147,
         firstName: "Julie",
         lastName: "Orringer",
@@ -1326,6 +1473,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71HbJJA7XdL.jpg"
     },
     {
+        favorite: false,
         id: 148,
         firstName: "Dr. Seuss",
         lastName: "",
@@ -1335,6 +1483,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91Q9eneR7BL.jpg"
     },
     {
+        favorite: false,
         id: 149,
         firstName: "Allen",
         lastName: "Ginsberg",
@@ -1344,6 +1493,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71B1NiNdEHL.jpg"
     },
     {
+        favorite: false,
         id: 150,
         firstName: "M.J.",
         lastName: "Hyland",
@@ -1353,6 +1503,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348460321l/251052.jpg"
     },
     {
+        favorite: false,
         id: 151,
         firstName: "Victor",
         lastName: "Hugo",
@@ -1362,6 +1513,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780451531513"
     },
     {
+        favorite: false,
         id: 152,
         firstName: "Nora",
         lastName: "Ephron",
@@ -1371,6 +1523,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/31Y6BLQetUS._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
     },
     {
+        favorite: false,
         id: 153,
         firstName: "Homer",
         lastName: "",
@@ -1380,6 +1533,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/fe5292f0-1209-46b8-a12a-b1c5df4714c5/1200/1200/False/the-iliad-of-homer-129.jpg"
     },
     {
+        favorite: false,
         id: 154,
         firstName: "Pamela",
         lastName: "des Barres",
@@ -1389,6 +1543,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51nwhfkqlgL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
     },
     {
+        favorite: false,
         id: 155,
         firstName: "Truman",
         lastName: "Capote",
@@ -1398,6 +1553,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61B3wTSzH8L.jpg"
     },
     {
+        favorite: false,
         id: 156,
         firstName: "George",
         lastName: "Sand",
@@ -1407,6 +1563,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51e+K6wNNEL.jpg"
     },
     {
+        favorite: false,
         id: 157,
         firstName: "Dante",
         lastName: "Alighieri",
@@ -1416,6 +1573,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/511265rdCRL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
     },
     {
+        favorite: false,
         id: 158,
         firstName: "Jerome",
         lastName: "Lawrence",
@@ -1425,6 +1583,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/515UL7box5L._SX322_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 159,
         firstName: "William J.",
         lastName: "Kennedy",
@@ -1434,6 +1593,7 @@ const list = [
         cover: "https://d.gr-assets.com/books/1408926209l/267243.jpg"
     },
     {
+        favorite: false,
         id: 160,
         firstName: "Hillary",
         lastName: "Clinton",
@@ -1443,6 +1603,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51T83eiOMML._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
     },
     {
+        favorite: false,
         id: 161,
         firstName: "Charlotte",
         lastName: "Bronte",
@@ -1452,6 +1613,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81zFP9e6z8L.jpg"
     },
     {
+        favorite: false,
         id: 162,
         firstName: "Amy",
         lastName: "Tan",
@@ -1461,6 +1623,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71FISsF-abL.jpg"
     },
     {
+        favorite: false,
         id: 163,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1470,6 +1633,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41l+kKRNZAL.jpg"
     },
     {
+        favorite: false,
         id: 164,
         firstName: "Upton",
         lastName: "Sinclair",
@@ -1479,6 +1643,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51EJZaHxpHL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
     },
     {
+        favorite: false,
         id: 165,
         firstName: "Michael",
         lastName: "Crichton",
@@ -1488,6 +1653,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81rBVCDfrgL.jpg"
     },
     {
+        favorite: false,
         id: 166,
         firstName: "Tony",
         lastName: "Vigorito",
@@ -1497,6 +1663,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387714001l/760022.jpg"
     },
     {
+        favorite: false,
         id: 167,
         firstName: "Robert",
         lastName: "Alexander",
@@ -1506,6 +1673,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1396833031l/95141.jpg"
     },
     {
+        favorite: false,
         id: 168,
         firstName: "Anthony",
         lastName: "Bourdain",
@@ -1515,6 +1683,7 @@ const list = [
         cover: "https://usishield.com/wp-content/uploads/2019/02/kitchen.jpg"
     },
     {
+        favorite: false,
         id: 169,
         firstName: "Khaled",
         lastName: "Hosseini",
@@ -1524,6 +1693,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51aC4tiXgiL._SX309_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 170,
         firstName: "D.H.",
         lastName: "Lawrence",
@@ -1533,6 +1703,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/413yD+k+hDL._SX302_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 171,
         firstName: "Gore",
         lastName: "Vidal",
@@ -1542,6 +1713,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/516nGMGJcHL._SX319_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 172,
         firstName: "William",
         lastName: "Manchester",
@@ -1551,6 +1723,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51dfpAIGM0L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
     },
     {
+        favorite: false,
         id: 173,
         firstName: "William",
         lastName: "Manchester",
@@ -1561,6 +1734,7 @@ const list = [
     },
 
     {
+        favorite: false,
         id: 174,
         firstName: "William",
         lastName: "Manchester",
@@ -1570,6 +1744,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/5189mbZiOKL._SX320_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 175,
         firstName: "Walt",
         lastName: "Whitman",
@@ -1579,6 +1754,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41fmy4COtML._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 176,
         firstName: "Steven",
         lastName: "Pressfield",
@@ -1588,6 +1764,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51cgd8A2DNL.jpg"
     },
     {
+        favorite: false,
         id: 177,
         firstName: "Bret",
         lastName: "Easton Ellis",
@@ -1597,6 +1774,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91MQx+N9y+L.jpg"
     },
     {
+        favorite: false,
         id: 178,
         firstName: "Ann",
         lastName: "Rand",
@@ -1606,6 +1784,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81Vz857kwxL.jpg"
     },
     {
+        favorite: false,
         id: 179,
         firstName: "R.W.B.",
         lastName: "Lewis",
@@ -1615,6 +1794,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91ovm7yyN8L.jpg"
     },
     {
+        favorite: false,
         id: 180,
         firstName: "Rainer",
         lastName: "Maria Rilke",
@@ -1624,6 +1804,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51dCQg04gvL._SX333_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 181,
         firstName: "Aeschylus",
         lastName: "",
@@ -1633,6 +1814,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51YUQZHDI8L.jpg"
     },
     {
+        favorite: false,
         id: 182,
         firstName: "Al",
         lastName: "Franken",
@@ -1642,6 +1824,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51+lKXN6OZL.jpg"
     },
     {
+        favorite: false,
         id: 183,
         firstName: "Marie",
         lastName: "Kondo",
@@ -1651,6 +1834,7 @@ const list = [
         cover: "https://covers.audiobooks.com/images/covers/full/9781494578947.jpg"
     },
     {
+        favorite: false,
         id: 184,
         firstName: "Yann",
         lastName: "Martel",
@@ -1660,6 +1844,7 @@ const list = [
         cover: "https://img1.od-cdn.com/ImageType-100/1294-1/%7B97B260FA-8E07-487C-89FF-032C0163634F%7DImg100.jpg"
     },
     {
+        favorite: false,
         id: 185,
         firstName: "Laura",
         lastName: "Esquivel",
@@ -1669,6 +1854,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51ypXbTPrUL.jpg"
     },
     {
+        favorite: false,
         id: 186,
         firstName: "C.S.",
         lastName: "Lewis",
@@ -1678,6 +1864,7 @@ const list = [
         cover: "https://www.pluggedin.com/wp-content/uploads/2020/01/lion-witch-and-wardrobe-cover.jpg"
     },
     {
+        favorite: false,
         id: 187,
         firstName: "Dr. Theodore Isaac",
         lastName: "Rubin, M.D.",
@@ -1687,6 +1874,7 @@ const list = [
         cover: "https://images.macmillan.com/folio-assets/macmillan_us_frontbookcovers_1000H/9780312871796.jpg"
     },
     {
+        favorite: false,
         id: 188,
         firstName: "Charles",
         lastName: "Dickens",
@@ -1696,6 +1884,7 @@ const list = [
         cover: "https://covers.feedbooks.net/book/687.jpg?size=large&t=1549045847"
     },
     {
+        favorite: false,
         id: 189,
         firstName: "Laura",
         lastName: "Ingalls Wilder",
@@ -1705,6 +1894,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91jsOzK+K1L.jpg"
     },
     {
+        favorite: false,
         id: 190,
         firstName: "Katharine",
         lastName: "Butler Hathaway",
@@ -1714,6 +1904,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/419RMV6HE0L._SX310_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 191,
         firstName: "Hans Christian",
         lastName: "Andersen",
@@ -1723,6 +1914,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360519957l/595948.jpg"
     },
     {
+        favorite: false,
         id: 192,
         firstName: "Louisa May",
         lastName: "Alcott",
@@ -1732,6 +1924,7 @@ const list = [
         cover: "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_scaled,f_auto,q_auto,dpr_2,c_scale,w_405/v1587403863/pro_pbid_968567.jpg"
     },
     {
+        favorite: false,
         id: 193,
         firstName: "Hillary Rodham",
         lastName: "Clinton",
@@ -1741,6 +1934,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41zWbcsr8ML._SX325_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 194,
         firstName: "William",
         lastName: "Golding",
@@ -1750,6 +1944,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81uc0ffe6xL.jpg"
     },
     {
+        favorite: false,
         id: 195,
         firstName: "J.R.R.",
         lastName: "Tolkien",
@@ -1759,6 +1954,7 @@ const list = [
         cover: "https://nationalbookswap.com/pbs/xl/27/9027/9780618129027.jpg"
     },
     {
+        favorite: false,
         id: 196,
         firstName: "Shirley",
         lastName: "Jackson",
@@ -1768,6 +1964,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1416448200l/89723.jpg"
     },
     {
+        favorite: false,
         id: 197,
         firstName: "Alice",
         lastName: "Sebold",
@@ -1777,6 +1974,7 @@ const list = [
         cover: "https://readinggroupchoices.com/wp/wp-content/uploads/2016/08/the-lovely-bones@2x-e1571668647187.jpg"
     },
     {
+        favorite: false,
         id: 198,
         firstName: "Erich",
         lastName: "Segal",
@@ -1786,6 +1984,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41DxtTcXDsL._SX328_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 199,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1795,6 +1994,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41a4pN3JXuL.jpg"
     },
     {
+        favorite: false,
         id: 200,
         firstName: "Gustave",
         lastName: "Flaubert",
@@ -1804,6 +2004,7 @@ const list = [
         cover: "http://languagetrainers.com/reviews/book-reviews/uploads/5679-madame%20bovary%20cover.jpg"
     },
     {
+        favorite: false,
         id: 201,
         firstName: "Robertson",
         lastName: "Davies",
@@ -1813,6 +2014,7 @@ const list = [
         cover: "https://d3525k1ryd2155.cloudfront.net/h/401/200/1402200401.0.x.jpg"
     },
     {
+        favorite: false,
         id: 202,
         firstName: "William",
         lastName: "Goldman",
@@ -1822,6 +2024,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71iR0-b77pL.jpg"
     },
     {
+        favorite: false,
         id: 203,
         firstName: "Mikhail",
         lastName: "Bulgakov",
@@ -1831,6 +2034,7 @@ const list = [
         cover: "https://www.indexoncensorship.org/wp-content/uploads/2016/09/The-Master-And-Margarita.jpg"
     },
     {
+        favorite: false,
         id: 204,
         firstName: "Judith",
         lastName: "Ortiz Cofer",
@@ -1840,6 +2044,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780807083871"
     },
     {
+        favorite: false,
         id: 205,
         firstName: "Simone",
         lastName: "de Beauvoir",
@@ -1849,6 +2054,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91Mwl2NTHAL.jpg"
     },
     {
+        favorite: false,
         id: 206,
         firstName: "William",
         lastName: "Tecumseh Sherman",
@@ -1858,6 +2064,7 @@ const list = [
         cover: "https://prodimage.images-bn.com/pimages/9781543130102_p0_v1_s550x406.jpg"
     },
     {
+        favorite: false,
         id: 207,
         firstName: "John",
         lastName: "Gray, Ph.D.",
@@ -1866,6 +2073,7 @@ const list = [
         page: 368,
         cover: "https://www.team1global.com.au/store/wp-content/uploads/2018/09/TM1-B225.jpg"
     }, {
+        favorite: false,
         id: 208,
         firstName: "H.L.",
         lastName: "Mencken",
@@ -1875,6 +2083,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61YGEYd2W4L._SX313_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 209,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1884,6 +2093,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780451529961"
     },
     {
+        favorite: false,
         id: 210,
         firstName: "David",
         lastName: "Sedaris",
@@ -1893,6 +2103,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91mWfTCab-L.jpg"
     },
     {
+        favorite: false,
         id: 211,
         firstName: "Franz",
         lastName: "Kafka",
@@ -1902,6 +2113,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/911IPbfO8BL.jpg"
     },
     {
+        favorite: false,
         id: 212,
         firstName: "Jeffrey",
         lastName: "Eugenides",
@@ -1911,6 +2123,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71sJpKGagtL.jpg"
     },
     {
+        favorite: false,
         id: 213,
         firstName: "William",
         lastName: "Shakespeare",
@@ -1920,6 +2133,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/86/df/71/86df719f3277caef592b5a8c0e8ee309.jpg"
     },
     {
+        favorite: false,
         id: 214,
         firstName: "William",
         lastName: "Gibson",
@@ -1929,6 +2143,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51EaShGyF4L._SX328_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 215,
         firstName: "Stephen",
         lastName: "King",
@@ -1938,6 +2153,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1449956772l/28181799._SY475_.jpg"
     },
     {
+        favorite: false,
         id: 216,
         firstName: "Victoria",
         lastName: "Holt",
@@ -1947,6 +2163,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1257877982l/1099175.jpg"
     },
     {
+        favorite: false,
         id: 217,
         firstName: "Herman",
         lastName: "Melville",
@@ -1956,6 +2173,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/913FLAudHML.jpg"
     },
     {
+        favorite: false,
         id: 218,
         firstName: "Hobart Chatfield",
         lastName: "Taylor",
@@ -1965,6 +2183,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41XjWM3pmJL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 219,
         firstName: "Samuel",
         lastName: "Beckett",
@@ -1974,6 +2193,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71oOwcq8wzL.jpg"
     },
     {
+        favorite: false,
         id: 220,
         firstName: "Milton",
         lastName: "Friedman",
@@ -1982,6 +2202,7 @@ const list = [
         page: 860,
         cover: "https://pup-assets.imgix.net/onix/images/9780691003542.jpg"
     }, {
+        favorite: false,
         id: 221,
         firstName: "Celeste",
         lastName: "Albaret",
@@ -1991,6 +2212,7 @@ const list = [
         cover: "https://pictures.abebooks.com/isbn/9782221141441-us.jpg"
     },
     {
+        favorite: false,
         id: 222,
         firstName: "Julie",
         lastName: "Mars",
@@ -2000,6 +2222,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41SF8GXB76L._SX332_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 223,
         firstName: "Seamus",
         lastName: "Craic",
@@ -2009,6 +2232,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/510Q9HM5M5L.jpg"
     },
     {
+        favorite: false,
         id: 224,
         firstName: "William",
         lastName: "Congreve",
@@ -2018,6 +2242,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51GR9N3BanL.jpg"
     },
     {
+        favorite: false,
         id: 225,
         firstName: "Ernest",
         lastName: "Hemingway",
@@ -2027,6 +2252,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61KiwSu7+lL.jpg"
     },
     {
+        favorite: false,
         id: 226,
         firstName: "Virginia",
         lastName: "Woolf",
@@ -2036,6 +2262,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51qyu+CxlaL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 227,
         firstName: "Charles Nordhoff",
         lastName: "and James Norman Hall",
@@ -2045,6 +2272,7 @@ const list = [
         cover: "https://i.ebayimg.com/images/g/41QAAOSwJVZgAE2f/s-l500.jpg"
     },
     {
+        favorite: false,
         id: 228,
         firstName: "Seymour M.",
         lastName: "Hersh",
@@ -2054,6 +2282,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71yW-SGVeRL.jpg"
     },
     {
+        favorite: false,
         id: 229,
         firstName: "H.L.",
         lastName: "Mencken",
@@ -2063,6 +2292,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91crwoRnDOL.jpg"
     },
     {
+        favorite: false,
         id: 230,
         firstName: "Tim",
         lastName: "Guest",
@@ -2072,6 +2302,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91mhnbJ60zL.jpg"
     },
     {
+        favorite: false,
         id: 231,
         firstName: "Jodi",
         lastName: "Picoult",
@@ -2081,6 +2312,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61QfgLeRAEL.jpg"
     },
     {
+        favorite: false,
         id: 232,
         firstName: "Karl Ove",
         lastName: "Knausgaard",
@@ -2090,6 +2322,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51W0ttfaSmL._SL500_.jpg"
     },
     {
+        favorite: false,
         id: 233,
         firstName: "Norman",
         lastName: "Mailer",
@@ -2099,6 +2332,7 @@ const list = [
         cover: "https://pictures.abebooks.com/inventory/17004357408.jpg"
     },
     {
+        favorite: false,
         id: 234,
         firstName: "William S.",
         lastName: "Burroughs",
@@ -2108,6 +2342,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51s5Je-MYyL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 235,
         firstName: "Jhumpa",
         lastName: "Lahiri",
@@ -2117,6 +2352,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51Q2RYbNslL.jpg"
     },
     {
+        favorite: false,
         id: 236,
         firstName: "Umberto",
         lastName: "Eco",
@@ -2126,6 +2362,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71xP8C6bBTL.jpg"
     },
     {
+        favorite: false,
         id: 237,
         firstName: "Jan Lars",
         lastName: "Jensen",
@@ -2135,6 +2372,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348765940l/9578496.jpg"
     },
     {
+        favorite: false,
         id: 238,
         firstName: "Emily",
         lastName: "Dickinson",
@@ -2144,6 +2382,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51LI05U8O-L._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 239,
         firstName: "David",
         lastName: "Macaulay",
@@ -2153,6 +2392,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51Zdbg9-laL.jpg"
     },
     {
+        favorite: false,
         id: 240,
         firstName: "Barbara",
         lastName: "Ehrenreich",
@@ -2161,6 +2401,7 @@ const list = [
         page: 240,
         cover: "https://images-na.ssl-images-amazon.com/images/I/712YLhunOJL.jpg"
     }, {
+        favorite: false,
         id: 241,
         firstName: "Jane",
         lastName: "Austen",
@@ -2169,6 +2410,7 @@ const list = [
         page: 260,
         cover: "https://kbimages1-a.akamaihd.net/4e4e6558-ef00-4c92-b7bb-bf0a3fb53e3c/1200/1200/False/northanger-abbey-41.jpg"
     }, {
+        favorite: false,
         id: 242,
         firstName: "Charles",
         lastName: "Dickens",
@@ -2178,6 +2420,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780679423072"
     },
     {
+        favorite: false,
         id: 243,
         firstName: "William E.",
         lastName: "Cain",
@@ -2187,6 +2430,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51HCyHgcL4L._SX322_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 244,
         firstName: "Charles",
         lastName: "Bukowski",
@@ -2196,6 +2440,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51c4Mt5DnjL._SX342_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 245,
         firstName: "Dawn",
         lastName: "Powell",
@@ -2205,6 +2450,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387733455l/19816003.jpg"
     },
     {
+        favorite: false,
         id: 246,
         firstName: "Sophicles",
         lastName: "",
@@ -2214,6 +2460,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/M/MV5BY2UwOTAzOWEtZTk1My00YTU0LWJhMWEtNzkwMTc0NGUxNTM1XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_.jpg"
     },
     {
+        favorite: false,
         id: 247,
         firstName: "John",
         lastName: "Steinbeck",
@@ -2223,6 +2470,7 @@ const list = [
         cover: "https://upload.wikimedia.org/wikipedia/commons/a/a8/Of_Mice_and_Men_%281937_1st_ed_dust_jacket%29.jpg"
     },
     {
+        favorite: false,
         id: 248,
         firstName: "Tobias",
         lastName: "Wolff",
@@ -2232,6 +2480,7 @@ const list = [
         cover: "https://pictures.abebooks.com/inventory/30238732668.jpg"
     },
     {
+        favorite: false,
         id: 249,
         firstName: "Charles",
         lastName: "Dickens",
@@ -2241,6 +2490,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91nOyDA5i9L.jpg"
     },
     {
+        favorite: false,
         id: 250,
         firstName: "Aleksandr",
         lastName: "Solzhenitsyn",
@@ -2250,6 +2500,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51Rb4jnb1yL._SX308_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 251,
         firstName: "Ken",
         lastName: "Kesey",
@@ -2259,6 +2510,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91QerkARMLL.jpg"
     },
     {
+        favorite: false,
         id: 252,
         firstName: "Gabriel",
         lastName: "Garcia Marquez",
@@ -2268,6 +2520,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91mftQtgAkL.jpg"
     },
     {
+        favorite: false,
         id: 253,
         firstName: "Jack",
         lastName: "Kerouac",
@@ -2277,6 +2530,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/10/cd/7c/10cd7cdb91d200ceb90e42133c404882.jpg"
     },
     {
+        favorite: false,
         id: 254,
         firstName: "Amy",
         lastName: "Tan",
@@ -2286,6 +2540,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41hv0jQ42kL._SX329_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 255,
         firstName: "Paul",
         lastName: "Auster",
@@ -2295,6 +2550,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51hOyBUMgPL.jpg"
     },
     {
+        favorite: false,
         id: 256,
         firstName: "Margaret",
         lastName: "Atwood",
@@ -2304,6 +2560,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1296247911l/5088200.jpg"
     },
     {
+        favorite: false,
         id: 257,
         firstName: "William",
         lastName: "Shakespeare",
@@ -2313,6 +2570,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51AStJesndL.jpg"
     },
     {
+        favorite: false,
         id: 258,
         firstName: "Charles",
         lastName: "Dickens",
@@ -2322,6 +2580,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/b45f78ed-5d09-4c52-9f06-f64a8b5f1e32/353/569/90/False/our-mutual-friend-175.jpg"
     },
     {
+        favorite: false,
         id: 259,
         firstName: "Donald",
         lastName: "Kagan",
@@ -2331,6 +2590,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41YR7qFKvVL._SX331_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 260,
         firstName: "Isak",
         lastName: "Dineson",
@@ -2340,6 +2600,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780679724759"
     },
     {
+        favorite: false,
         id: 261,
         firstName: "S.E.",
         lastName: "Hinton",
@@ -2348,6 +2609,7 @@ const list = [
         page: 192,
         cover: "https://m.media-amazon.com/images/I/51jORwiBQAL.jpg"
     }, {
+        favorite: false,
         id: 262,
         firstName: "E.M.",
         lastName: "Forster",
@@ -2357,6 +2619,7 @@ const list = [
         cover: "https://img1.od-cdn.com/ImageType-400/3580-1/334/823/C9/%7B334823C9-E078-4A5C-9FCB-0C8376FAADDD%7DImg400.jpg"
     },
     {
+        favorite: false,
         id: 263,
         firstName: "Donald",
         lastName: "Kagan",
@@ -2365,6 +2628,7 @@ const list = [
         page: 400,
         cover: "https://images-na.ssl-images-amazon.com/images/I/61v3nfpdDWL.jpg"
     }, {
+        favorite: false,
         id: 264,
         firstName: "Stephen",
         lastName: "Chbosky",
@@ -2374,6 +2638,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/417+Cq07wML._SX355_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 265,
         firstName: "Grace",
         lastName: "Metalious",
@@ -2383,6 +2648,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/515bJ5j4FxL.jpg"
     },
     {
+        favorite: false,
         id: 266,
         firstName: "Oscar",
         lastName: "Wilde",
@@ -2392,6 +2658,7 @@ const list = [
         cover: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781476788128/the-picture-of-dorian-gray-9781476788128_hr.jpg"
     },
     {
+        favorite: false,
         id: 267,
         firstName: "Arianna",
         lastName: "Huffington",
@@ -2401,6 +2668,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/8123yQEIQfL.jpg"
     },
     {
+        favorite: false,
         id: 268,
         firstName: "Carlo",
         lastName: "Collodi",
@@ -2410,6 +2678,7 @@ const list = [
         cover: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780735843288/pinocchio-9780735843288_hr.jpg"
     },
     {
+        favorite: false,
         id: 269,
         firstName: "Legs McNeil ",
         lastName: "and Gillian McCain",
@@ -2419,6 +2688,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61MFYNjUSNL.jpg"
     },
     {
+        favorite: false,
         id: 270,
         firstName: "Nick",
         lastName: "Hornby",
@@ -2427,6 +2697,7 @@ const list = [
         page: 143,
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348860701l/564002.jpg"
     }, {
+        favorite: false,
         id: 271,
         firstName: "Dorothy",
         lastName: "Parker",
@@ -2436,6 +2707,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51WRV-4G2AL._SX342_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 272,
         firstName: "Fredrich",
         lastName: "Nietzsche",
@@ -2445,6 +2717,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71Hph3hh-ML.jpg"
     },
     {
+        favorite: false,
         id: 273,
         firstName: "Ron",
         lastName: "Suskind",
@@ -2454,6 +2727,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41TvvRTB78S._SX324_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 274,
         firstName: "Jane",
         lastName: "Austen",
@@ -2463,6 +2737,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91eKRbuhgaL.jpg"
     },
     {
+        favorite: false,
         id: 275,
         firstName: "Anonymous",
         lastName: "",
@@ -2472,6 +2747,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81hdkBR1yeL.jpg"
     },
     {
+        favorite: false,
         id: 276,
         firstName: "Valerie",
         lastName: "Martin",
@@ -2481,6 +2757,7 @@ const list = [
         cover: "https://d1ldy8a769gy68.cloudfront.net/300/038/550/408/038550408X.jpg"
     },
     {
+        favorite: false,
         id: 277,
         firstName: "Tom",
         lastName: "Wolfe",
@@ -2490,6 +2767,7 @@ const list = [
         cover: "https://www.antikvariat.net/files/store_ryo/ryo102226_0.jpg"
     },
     {
+        favorite: false,
         id: 278,
         firstName: "Nancy",
         lastName: "Mitford",
@@ -2499,6 +2777,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81KPrfOb-FL.jpg"
     },
     {
+        favorite: false,
         id: 279,
         firstName: "T.J.",
         lastName: "Binyon",
@@ -2508,6 +2787,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/A1IlKDR3vaL.jpg"
     },
     {
+        favorite: false,
         id: 280,
         firstName: "George Bernard",
         lastName: "Shaw",
@@ -2517,6 +2797,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51n1DstcJFL.jpg"
     },
     {
+        favorite: false,
         id: 281,
         firstName: "James",
         lastName: "McKean",
@@ -2526,6 +2807,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71QKKKYcV-L.jpg"
     },
     {
+        favorite: false,
         id: 282,
         firstName: "Rachel",
         lastName: "Howzell Hall",
@@ -2535,6 +2817,7 @@ const list = [
         cover: "https://timelife.com/system/cover_images/images/000/000/277/full/350_Vol3_SweetLove_Cover.jpg?1345495420"
     },
     {
+        favorite: false,
         id: 283,
         firstName: "Brothers Grimm",
         lastName: "",
@@ -2544,6 +2827,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/A16h8HWhDUL.jpg"
     },
     {
+        favorite: false,
         id: 284,
         firstName: "Edgar Allan",
         lastName: "Poe",
@@ -2553,6 +2837,7 @@ const list = [
         cover: "http://prodimage.images-bn.com/pimages/9781476759685_p0_v5_s1200x630.jpg"
     },
     {
+        favorite: false,
         id: 285,
         firstName: "Daphne",
         lastName: "du Maurier",
@@ -2562,6 +2847,7 @@ const list = [
         cover: "https://images.theconversation.com/files/364192/original/file-20201019-19-15ey6l2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
     },
     {
+        favorite: false,
         id: 286,
         firstName: "W.",
         lastName: "Somerset Maugham",
@@ -2571,6 +2857,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171743413l/117834.jpg"
     },
     {
+        favorite: false,
         id: 287,
         firstName: "Azar",
         lastName: "Nafisi",
@@ -2580,6 +2867,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51vrv0hceML._SX342_SY445_QL70_ML2_.jpg"
     },
     {
+        favorite: false,
         id: 288,
         firstName: "Kate",
         lastName: "Douglas Wiggin",
@@ -2589,6 +2877,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51t0BaaWdjL.jpg"
     },
     {
+        favorite: false,
         id: 289,
         firstName: "Stephen",
         lastName: "Crane",
@@ -2598,6 +2887,7 @@ const list = [
         cover: "https://covers.feedbooks.net/book/4527.jpg?size=large&t=1549045887"
     },
     {
+        favorite: false,
         id: 290,
         firstName: "Anita",
         lastName: "Diamant",
@@ -2607,6 +2897,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/5146GkyMe2S._SX327_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
 
         id: 291,
         firstName: "Virginia",
@@ -2617,6 +2908,7 @@ const list = [
         cover: "https://pictures.abebooks.com/isbn/9780743222853-us.jpg"
     },
     {
+        favorite: false,
         id: 292,
         firstName: "J.R.R.",
         lastName: "Tolkien",
@@ -2626,6 +2918,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/7edc9f4f-d5ba-4398-a3f0-3fe063b0666f/353/569/90/False/the-return-of-the-king-the-lord-of-the-rings-book-3-1.jpg"
     },
     {
+        favorite: false,
         id: 293,
         firstName: "Gloria",
         lastName: "Steinem",
@@ -2635,6 +2928,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51WM+auruqL._SX327_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
 
         id: 294,
         firstName: "William",
@@ -2645,6 +2939,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81ozsSH1wDL.jpg"
     },
     {
+        favorite: false,
 
         id: 295,
         firstName: "Sue",
@@ -2655,6 +2950,7 @@ const list = [
         cover: "https://images.booksense.com/images/219/241/9780425241219.jpg"
     },
     {
+        favorite: false,
 
         id: 296,
         firstName: "Stephen",
@@ -2665,6 +2961,7 @@ const list = [
         cover: "https://www.hachette.co.uk/wp-content/uploads/2020/08/hbg-title-9781529363487-15.jpg?fit=440%2C675"
     },
     {
+        favorite: false,
 
         id: 297,
         firstName: "Henry",
@@ -2675,6 +2972,7 @@ const list = [
         cover: "https://www.publicaffairsbooks.com/wp-content/uploads/2020/09/9781541797703.jpg?fit=436%2C675"
     },
     {
+        favorite: false,
 
         id: 298,
         firstName: "Edith",
@@ -2685,6 +2983,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1315441174l/2529463.jpg"
     },
     {
+        favorite: false,
 
         id: 299,
         firstName: "William",
@@ -2695,6 +2994,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/cd5d681a-a30f-4576-be4c-dac1c221c85a/353/569/90/False/romeo-and-juliet-170.jpg"
     },
     {
+        favorite: false,
 
         id: 300,
         firstName: "Virginia",
@@ -2705,6 +3005,7 @@ const list = [
         cover: "https://broadviewpress.com/wp-content/uploads/2016/06/9781551114286.jpg"
     },
     {
+        favorite: false,
 
         id: 301,
         firstName: "E.M.",
@@ -2715,6 +3016,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91qxd9-pqyL.jpg"
     },
     {
+        favorite: false,
 
         id: 302,
         firstName: "Ira",
@@ -2725,6 +3027,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/2e/0a/f7/2e0af71bd2ef95597827e89395ea0ca6.jpg"
     },
     {
+        favorite: false,
 
         id: 303,
         firstName: "Ursula",
@@ -2735,6 +3038,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61JwIE6Mt3S.jpg"
     },
     {
+        favorite: false,
         id: 304,
         firstName: "William",
         lastName: "Faulkner",
@@ -2744,6 +3048,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91Gm5o5FUQL.jpg"
     },
     {
+        favorite: false,
         id: 305,
         firstName: "Salman",
         lastName: "Rushdie",
@@ -2753,6 +3058,7 @@ const list = [
         cover: "http://www.freethinkerscorner.com/uploads/1/0/6/1/106189835/s824075240130343247_p268_i1_w313.jpeg"
     },
     {
+        favorite: false,
         id: 306,
         firstName: "Nancy",
         lastName: "Milford",
@@ -2762,6 +3068,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41NTDeFeezL._SX293_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 307,
         firstName: "Henry",
         lastName: "James",
@@ -2771,6 +3078,7 @@ const list = [
         cover: "https://s3.amazonaws.com/images.hamlethub.com/hh20mediafolder/1045/201507/Daisy.png"
     },
     {
+        favorite: false,
         id: 308,
         firstName: "Frank L.",
         lastName: "Baum",
@@ -2780,6 +3088,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71GCR1EQ47L._SX313_BO1,204,203,200_.gif"
     },
     {
+        favorite: false,
         id: 309,
         firstName: "Nathaniel",
         lastName: "Hawthorne",
@@ -2789,6 +3098,7 @@ const list = [
         cover: "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4351/9781435159655.jpg"
     },
     {
+        favorite: false,
         id: 310,
         firstName: "Laura",
         lastName: "Hillenbrand",
@@ -2798,6 +3108,7 @@ const list = [
         cover: "https://www.qbbooks.com/pictures/medium/43036.jpg"
     },
     {
+        favorite: false,
         id: 311,
         firstName: "Simone",
         lastName: "de Beauvoir",
@@ -2807,6 +3118,7 @@ const list = [
         cover: "https://pictures.abebooks.com/isbn/9780307265562-us.jpg"
     },
     {
+        favorite: false,
         id: 312,
         firstName: "Sue",
         lastName: "Monk Kidd",
@@ -2816,6 +3128,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51xDldx8enL._SX372_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 313,
         firstName: "Judith",
         lastName: "Thurman",
@@ -2825,6 +3138,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81mAdDoKiiL.jpg"
     },
     {
+        favorite: false,
         id: 314,
         firstName: "Dawn",
         lastName: "Powell",
@@ -2834,6 +3148,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/513N0MSSGXL._SX310_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 315,
         firstName: "Jane",
         lastName: "Austen",
@@ -2843,6 +3158,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91Mpe6aduKL.jpg"
     },
     {
+        favorite: false,
         id: 316,
         firstName: "John",
         lastName: "Knowles",
@@ -2852,6 +3168,7 @@ const list = [
         cover: "https://www.pluggedin.com/wp-content/uploads/2020/01/separate-peace-cover-image-669x1024.jpeg"
     },
     {
+        favorite: false,
         id: 317,
         firstName: "Henry",
         lastName: "Miller",
@@ -2861,6 +3178,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1179094752l/873897._SY475_.jpg"
     },
     {
+        favorite: false,
         id: 318,
         firstName: "Carlos",
         lastName: "Ruiz Zafon",
@@ -2870,6 +3188,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347296353l/9529.jpg"
     },
     {
+        favorite: false,
         id: 319,
         firstName: "Jack",
         lastName: "Shaefer",
@@ -2879,6 +3198,7 @@ const list = [
         cover: "https://pictures.abebooks.com/inventory/30410181039.jpg"
     },
     {
+        favorite: false,
         id: 320,
         firstName: "Stephen",
         lastName: "King",
@@ -2889,6 +3209,7 @@ const list = [
     },
 
     {
+        favorite: false,
         id: 321,
         firstName: "Hermann",
         lastName: "Hesse",
@@ -2898,6 +3219,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/ef590318-6966-4125-aa2f-adcd74241d07/1200/1200/False/siddhartha-65.jpg"
     },
     {
+        favorite: false,
         id: 322,
         firstName: "Sue",
         lastName: "Grafton",
@@ -2907,6 +3229,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41Xok7vTuEL.jpg"
     },
     {
+        favorite: false,
         id: 323,
         firstName: "Kurt",
         lastName: "Vonnegut",
@@ -2915,6 +3238,7 @@ const list = [
         page: 275,
         cover: "https://images-na.ssl-images-amazon.com/images/I/61O1tkFh+iL.jpg"
     }, {
+        favorite: false,
         id: 324,
         firstName: "Ernest",
         lastName: "Hemingway",
@@ -2924,6 +3248,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71Hd8yOv1DL.jpg"
     },
     {
+        favorite: false,
         id: 325,
         firstName: "Andrea",
         lastName: "Levy",
@@ -2933,6 +3258,7 @@ const list = [
         cover: "https://img1.od-cdn.com/ImageType-100/1855-1/%7BAA30C51E-7883-454B-8646-2B4F47CD685A%7DImg100.jpg"
     },
     {
+        favorite: false,
         id: 326,
         firstName: "Brothers Grimm",
         lastName: "",
@@ -2942,6 +3268,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51Y0MY687FL.jpg"
     },
     {
+        favorite: false,
         id: 327,
         firstName: "Barrington",
         lastName: "Moore",
@@ -2951,6 +3278,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51po9JtHuoL.jpg"
     },
     {
+        favorite: false,
         id: 328,
         firstName: "Ray",
         lastName: "Bradbury",
@@ -2960,6 +3288,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81sI0j81ttL.jpg"
     },
     {
+        favorite: false,
         id: 329,
         firstName: "Nick",
         lastName: "Hornby",
@@ -2969,6 +3298,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81e+-ZDl6-L.jpg"
     },
     {
+        favorite: false,
         id: 330,
         firstName: "George R.R.",
         lastName: "Martin",
@@ -2978,6 +3308,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/76/18/3a/76183a8844f82da3355e587f06ddba6b.jpg"
     },
     {
+        favorite: false,
         id: 331,
         firstName: "Norman",
         lastName: "Lebrecht",
@@ -2987,6 +3318,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91BAc5cqtNL.jpg"
     },
     {
+        favorite: false,
         id: 332,
         firstName: "Julia",
         lastName: "de Burgos",
@@ -2996,6 +3328,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61uMG5arPYL.jpg"
     },
     {
+        favorite: false,
         id: 333,
         firstName: "Lisa",
         lastName: "Tucker",
@@ -3005,6 +3338,7 @@ const list = [
         cover: "https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781847397379_9781847397379_hr.jpg"
     },
     {
+        favorite: false,
         id: 334,
         firstName: "William",
         lastName: "Shakespeare",
@@ -3014,6 +3348,7 @@ const list = [
         cover: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781604336153/shakespeares-sonnets-9781604336153_hr.jpg"
     },
     {
+        favorite: false,
         id: 335,
         firstName: "Elizabeth",
         lastName: "Barrett Browning",
@@ -3023,6 +3358,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81N1r6tyHCL.jpg"
     },
     {
+        favorite: false,
         id: 336,
         firstName: "William",
         lastName: "Styron",
@@ -3032,6 +3368,7 @@ const list = [
         cover: "https://globalbookclub.s3.amazonaws.com/resources/391653/sophies_choice/cover.jpg"
     },
     {
+        favorite: false,
         id: 337,
         firstName: "William",
         lastName: "Faulkner",
@@ -3041,6 +3378,7 @@ const list = [
         cover: "https://i.dr.com.tr/cache/500x400-0/originals/0000000341040-1.jpg"
     },
     {
+        favorite: false,
         id: 338,
         firstName: "Vladimir",
         lastName: "Nabokov",
@@ -3050,6 +3388,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/49/13/52/491352847319f0f666b6558b63b21591.jpg"
     },
     {
+        favorite: false,
         id: 339,
         firstName: "Ira",
         lastName: "Levin",
@@ -3059,6 +3398,7 @@ const list = [
         cover: "https://leavesandpages.files.wordpress.com/2018/01/stepford-wives-ira-levin.jpg"
     },
     {
+        favorite: false,
         id: 340,
         firstName: "Mary",
         lastName: "Roach",
@@ -3068,6 +3408,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/515ceEO3wYL.jpg"
     },
     {
+        favorite: false,
         id: 341,
         firstName: "Helen",
         lastName: "Keller",
@@ -3077,6 +3418,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9781101078150"
     },
     {
+        favorite: false,
         id: 342,
         firstName: "Robert Louis",
         lastName: "Stevenson",
@@ -3086,6 +3428,7 @@ const list = [
         cover: "https://www.gutenberg.org/files/43/43-h/images/cover.jpg"
     },
     {
+        favorite: false,
         id: 343,
         firstName: "Tennessee",
         lastName: "Williams",
@@ -3095,6 +3438,7 @@ const list = [
         cover: "https://cdn2.penguin.com.au/covers/original/9780141190273.jpg"
     },
     {
+        favorite: false,
         id: 344,
         firstName: "E.B.",
         lastName: "White",
@@ -3104,6 +3448,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91a1ogh+5JL.jpg"
     },
     {
+        favorite: false,
         id: 345,
         firstName: "T.",
         lastName: "Jefferson Parker",
@@ -3113,6 +3458,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51EErun13HL.jpg"
     },
     {
+        favorite: false,
         id: 346,
         firstName: "Ernest",
         lastName: "Hemingway",
@@ -3122,6 +3468,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51cj37KTLRL._SX322_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 347,
         firstName: "Marcel",
         lastName: "Proust",
@@ -3131,6 +3478,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780143124696"
     },
     {
+        favorite: false,
         id: 348,
         firstName: "Anne",
         lastName: "Collet",
@@ -3140,6 +3488,7 @@ const list = [
         cover: "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5713/9781571312617.jpg"
     },
     {
+        favorite: false,
         id: 349,
         firstName: "Flora Rheta",
         lastName: "Schreiber",
@@ -3149,6 +3498,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71pVaixvJmL.jpg"
     },
     {
+        favorite: false,
         id: 350,
         firstName: "Charles",
         lastName: "Dickens",
@@ -3158,6 +3508,7 @@ const list = [
         cover: "https://d1466nnw0ex81e.cloudfront.net/n_iv/600/3108479.jpg"
     },
     {
+        favorite: false,
         id: 351,
         firstName: "Edgar Allan",
         lastName: "Poe",
@@ -3167,6 +3518,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51eJpa9Gj2L.jpg"
     },
     {
+        favorite: false,
         id: 352,
         firstName: "F. Scott",
         lastName: "Fitzgerald",
@@ -3176,6 +3528,7 @@ const list = [
         cover: "https://i.pinimg.com/originals/da/c2/1e/dac21e3208cfde60a24afa8f2c000a9f.jpg"
     },
     {
+        favorite: false,
         id: 353,
         firstName: "Larry",
         lastName: "McMurtry",
@@ -3185,6 +3538,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91gj4mROK8L.jpg"
     },
     {
+        favorite: false,
         id: 354,
         firstName: "Sholem",
         lastName: "Aleichem",
@@ -3194,6 +3548,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/A1zj2UqyPKL.jpg"
     },
     {
+        favorite: false,
         id: 355,
         firstName: "Horace",
         lastName: "McCoy",
@@ -3203,6 +3558,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/714iIGk6fNL.jpg"
     },
     {
+        favorite: false,
         id: 356,
         firstName: "Dashiell",
         lastName: "Hammett",
@@ -3211,6 +3567,7 @@ const list = [
         page: 201,
         cover: "https://d.gr-assets.com/books/1321111302l/80616.jpg"
     }, {
+        favorite: false,
         id: 357,
         firstName: "Jack",
         lastName: "Finney",
@@ -3219,6 +3576,7 @@ const list = [
         page: 399,
         cover: "https://m.media-amazon.com/images/I/51j9db4d1VL.jpg"
     }, {
+        favorite: false,
         id: 358,
         firstName: "Audrey",
         lastName: "Niffenegger",
@@ -3228,6 +3586,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/817iFfLhJ+L.jpg"
     },
     {
+        favorite: false,
         id: 359,
         firstName: "Ernest",
         lastName: "Hemingway",
@@ -3237,6 +3596,7 @@ const list = [
         cover: "http://www.gdprice.com/j/14878.JPG"
     },
     {
+        favorite: false,
         id: 360,
         firstName: "Harper",
         lastName: "Lee",
@@ -3246,6 +3606,7 @@ const list = [
         cover: "https://cdn2.penguin.com.au/covers/original/9781784752637.jpg"
     },
     {
+        favorite: false,
         id: 361,
         firstName: "William",
         lastName: "Shakespeare",
@@ -3255,6 +3616,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/f8cdcf33-6d91-4aa1-8469-c6aebbd21e2d/1200/1200/False/king-richard-iii-1.jpg"
     },
     {
+        favorite: false,
         id: 362,
         firstName: "Irvine",
         lastName: "Welsh",
@@ -3264,6 +3626,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353033083l/135836.jpg"
     },
     {
+        favorite: false,
         id: 363,
         firstName: "Betty",
         lastName: "Smith",
@@ -3273,6 +3636,7 @@ const list = [
         cover: "https://tinhouse.com/wp-content/uploads/2019/07/TH80-Evans-Art-347x500.jpg"
     },
     {
+        favorite: false,
         id: 364,
         firstName: "Franz",
         lastName: "Kafka",
@@ -3282,6 +3646,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/51viLH0i8SL.jpg"
     },
     {
+        favorite: false,
         id: 365,
         firstName: "Elisabeth",
         lastName: "Robinson",
@@ -3291,6 +3656,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41kdVIAHN2L.jpg"
     },
     {
+        favorite: false,
         id: 366,
         firstName: "Ann",
         lastName: "Patchett",
@@ -3300,6 +3666,7 @@ const list = [
         cover: "https://pictures.abebooks.com/isbn/9780786269716-us.jpg"
     },
     {
+        favorite: false,
         id: 367,
         firstName: "Mitch",
         lastName: "Albom",
@@ -3309,6 +3676,7 @@ const list = [
         cover: "https://kbimages1-a.akamaihd.net/b81ff4cf-415b-4d08-82a0-4a97baa85c27/1200/1200/False/tuesdays-with-morrie-1.jpg"
     },
     {
+        favorite: false,
         id: 368,
         firstName: "James",
         lastName: "Joyce",
@@ -3317,6 +3685,7 @@ const list = [
         page: 783,
         cover: "https://kbimages1-a.akamaihd.net/7f16ca71-2e88-474d-b0d5-00192d4ec815/1200/1200/False/ulysses-by-james-joyce-2.jpg"
     }, {
+        favorite: false,
         id: 369,
         firstName: "Sylvia",
         lastName: "Plath",
@@ -3326,6 +3695,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/91Qidx2KcBL.jpg"
     },
     {
+        favorite: false,
         id: 370,
         firstName: "Milan",
         lastName: "Kundera",
@@ -3335,6 +3705,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41wW6tCBu4L._SX339_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 371,
         firstName: "Harriet",
         lastName: "Beecher Stowe",
@@ -3344,6 +3715,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51HMvWsUSPL.jpg"
     },
     {
+        favorite: false,
         id: 372,
         firstName: "Jacqueline",
         lastName: "Susann",
@@ -3353,6 +3725,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/411cT5PmmCL._SX329_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 373,
         firstName: "Carol",
         lastName: "Shields",
@@ -3362,6 +3735,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/519pzCixDiL.jpg"
     },
     {
+        favorite: false,
         id: 374,
         firstName: "Philip",
         lastName: "Meyers",
@@ -3371,6 +3745,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/51WD1MMJEVL._SX342_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 375,
         firstName: "William",
         lastName: "Makepeace Thackeray",
@@ -3380,6 +3755,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61LPft-POlL.jpg"
     },
     {
+        favorite: false,
         id: 376,
         firstName: "Jeffrey",
         lastName: "Eugenides",
@@ -3389,6 +3765,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/61IzZLAsGuL.jpg"
     },
     {
+        favorite: false,
         id: 377,
         firstName: "Jack",
         lastName: "Kerouac",
@@ -3398,6 +3775,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171864309l/123969.jpg"
     },
     {
+        favorite: false,
         id: 378,
         firstName: "Samuel",
         lastName: "Beckett",
@@ -3407,6 +3785,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/M/MV5BYjNkYWU0ODctNjM3OC00ODEwLWI3ZjEtZDBlOGFhMWViOGJmXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg"
     },
     {
+        favorite: false,
         id: 379,
         firstName: "Henry David",
         lastName: "Thoreau",
@@ -3416,6 +3795,7 @@ const list = [
         cover: "https://images.penguinrandomhouse.com/cover/9780143129264"
     },
     {
+        favorite: false,
         id: 380,
         firstName: "Leo",
         lastName: "Tolstoy",
@@ -3425,6 +3805,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71lPZpwz0HL.jpg"
     },
     {
+        favorite: false,
         id: 381,
         firstName: "Daniel",
         lastName: "Sinker",
@@ -3434,6 +3815,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41fWPocLlKL._SX330_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 382,
         firstName: "Richard Nelson",
         lastName: "Bolles",
@@ -3443,6 +3825,7 @@ const list = [
         cover: "https://m.media-amazon.com/images/I/41+Crw4LCDL.jpg"
     },
     {
+        favorite: false,
         id: 383,
         firstName: "Henry",
         lastName: "Farrell",
@@ -3452,6 +3835,7 @@ const list = [
         cover: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497999070l/1430377._SY475_.jpg"
     },
     {
+        favorite: false,
         id: 384,
         firstName: "Julie",
         lastName: "Otsuka",
@@ -3461,6 +3845,7 @@ const list = [
         cover: "https://www.urbandalelibrary.org/app/uploads/2021/04/When-the-Emperor-Was-Divine-Cover-2.jpg"
     },
     {
+        favorite: false,
         id: 385,
         firstName: "Spencer",
         lastName: "Johnson",
@@ -3470,6 +3855,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/71JpUaCKdrL.jpg"
     },
     {
+        favorite: false,
         id: 386,
         firstName: "Edward",
         lastName: "Albee",
@@ -3479,6 +3865,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/417FmvO%2Br3L.jpg"
     },
     {
+        favorite: false,
         id: 387,
         firstName: "Gregory",
         lastName: "Maguire",
@@ -3488,6 +3875,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/41B6mGHn12L.jpg"
     },
     {
+        favorite: false,
         id: 388,
         firstName: "Cheryl",
         lastName: "Strayed",
@@ -3496,6 +3884,7 @@ const list = [
         page: 315,
         cover: "https://images-na.ssl-images-amazon.com/images/I/61K2brgIMrL.jpg"
     }, {
+        favorite: false,
         id: 389,
         firstName: "John",
         lastName: "Updike",
@@ -3504,6 +3893,7 @@ const list = [
         page: 307,
         cover: "https://images-na.ssl-images-amazon.com/images/I/81xMnwn1UxL.jpg"
     }, {
+        favorite: false,
         id: 390,
         firstName: "Frank L.",
         lastName: "Baum",
@@ -3513,6 +3903,7 @@ const list = [
         cover: "https://almabooks.com/wp-content/uploads/2016/10/9781847495778.jpg"
     },
     {
+        favorite: false,
         id: 391,
         firstName: "Emily",
         lastName: "Bronte",
@@ -3522,6 +3913,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/516+qUI91tL._SX303_BO1,204,203,200_.jpg"
     },
     {
+        favorite: false,
         id: 392,
         firstName: "Marjorie",
         lastName: "Kinnan Rawlings",
@@ -3531,6 +3923,7 @@ const list = [
         cover: "https://images-na.ssl-images-amazon.com/images/I/81C2iK7DH8L.jpg"
     },
     {
+        favorite: false,
         id: 393,
         firstName: "Joan",
         lastName: "Didion",

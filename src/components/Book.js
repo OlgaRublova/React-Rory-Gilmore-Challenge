@@ -3,62 +3,31 @@ import {AiFillHeart, RiDeleteBin6Line, BiBook, BiCheckSquare, IoAddCircleOutline
 import {useFilterContext} from "../context/filter_context";
 import {useListContext} from "../context/list_context";
 
-import React, {useEffect, useRef, useState} from "react";
+import React from "react";
+import ImageColorOnScroll from "./ImageColorOnScroll";
 
-const Book = ({id, firstName, lastName, title, genre, page, cover, favorite, onHeartFavoriteHandler}) => {
-    const {removeBook} = useFilterContext();
+const Book = ({id, firstName, lastName, title, genre, page, cover, favorite}) => {
+    const {removeBook, heartFavoriteHandler} = useFilterContext();
     const {addToList} = useListContext();
-    const bookRef = useRef(null);
 
-    const [inView, setInView] = useState(false);
-    const [isLoading, setIsLoading] = useState(true)
-
-    const isInView = () => {
-        const rect = bookRef.current.getBoundingClientRect();
-        return rect.top >= 0 && rect.bottom <= window.innerHeight;
-    };
-
-
-    useEffect(() => {
-        setIsLoading(false)
-        setInView(isInView());
-        window.addEventListener("scroll", scrollHandler);
-        return () => {
-            window.removeEventListener("scroll", scrollHandler);
-        }
-    }, [])
-
-    const scrollHandler = () => {
-        setInView(isInView());
-    }
 
 
     return (
         <article key={id} className="book">
-
-            <img
-                src={cover}
-                alt={title}
-                ref={bookRef}
-                className={isLoading ? null : inView ? "book-img" : "book-img-shadow"}
-            />
+            <ImageColorOnScroll title={title} cover={cover}/>
 
             <div className="book-icons__box">
                 <BiCheckSquare/>
                 <RiDeleteBin6Line onClick={() => removeBook(id)}/>
-                <div>
-                    <AiFillHeart
-                        data-session={id}
+                <AiFillHeart
+                        data-sessionid={id}
                         className={favorite ? "favorite" : null}
-                        name="icon"
                         onClick={
                             (e) => {
-                                onHeartFavoriteHandler(e, !favorite);
+                                heartFavoriteHandler(e, !favorite);
                                 addToList(id, firstName, lastName, title, genre, page, cover);
-                            }}
-                    />
-                </div>
-
+                            }}> Liked
+                </AiFillHeart>
             </div>
 
             <div className="book-info">

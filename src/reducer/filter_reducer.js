@@ -12,6 +12,8 @@ const filter_reducer = (state, action) => {
         return {
             ...state,
             filtered_books: [...action.payload],
+            all_books: [...action.payload],
+            likes: [...action.payload],
             filters: {
                 ...state.filters,
                 max_length: maxLength,
@@ -80,12 +82,22 @@ const filter_reducer = (state, action) => {
             ...state, genres: action.payload,
         }
     }
+
     if (action.type === "REMOVE_BOOK") {
         const {filtered_books} = state;
         let newBooks = filtered_books.filter((book) => book.id !== action.payload)
 
         return {
             ...state, filtered_books: newBooks
+        }
+    }
+
+    if (action.type === "LIKE_BOOK") {
+
+        return {
+            ...state,
+            filtered_books: action.payload,
+            likes: action.payload
         }
     }
 
@@ -119,7 +131,7 @@ const filter_reducer = (state, action) => {
     }
 
     if (action.type === "FILTER_BY_GENRE") {
-        const { genre, books} = action.payload;
+        const {genre, books} = action.payload;
 
         if (genre === 'all') {
             return {
@@ -144,7 +156,7 @@ const filter_reducer = (state, action) => {
         if (genre === "all" && pagination) {
             console.log(pagination)
             paginated_books_new = paginate(action.payload.books)
-        } else{
+        } else {
             paginated_books_new = paginate(filtered_books);
         }
 
@@ -155,47 +167,47 @@ const filter_reducer = (state, action) => {
     }
 
 
-if (action.type === "PAGINATE_BOOKS_TO_PAGE") {
-    const {paginated_books, page} = state;
+    if (action.type === "PAGINATE_BOOKS_TO_PAGE") {
+        const {paginated_books, page} = state;
 
-    return {
-        ...state,
-        filtered_books: paginated_books[page]
-    }
-}
-
-if (action.type === "SET_PREV_BOOK") {
-    let {paginated_books} = state;
-    let newPage = action.payload - 1;
-
-    if (action.payload < 0) {
-        newPage = paginated_books.length - 1
+        return {
+            ...state,
+            filtered_books: paginated_books[page]
+        }
     }
 
-    return {
-        ...state,
-        page: newPage
-    }
-}
-if (action.type === "SET_NEXT_BOOK") {
-    let {paginated_books} = state;
-    let newPage = action.payload + 1;
+    if (action.type === "SET_PREV_BOOK") {
+        let {paginated_books} = state;
+        let newPage = action.payload - 1;
 
-    if (action.payload > paginated_books.length - 1) {
-        newPage = 0
-    }
+        if (action.payload < 0) {
+            newPage = paginated_books.length - 1
+        }
 
-    return {
-        ...state,
-        page: newPage
+        return {
+            ...state,
+            page: newPage
+        }
     }
-}
-if (action.type === "SET_INDEX") {
-    return {
-        ...state,
-        page: action.payload,
+    if (action.type === "SET_NEXT_BOOK") {
+        let {paginated_books} = state;
+        let newPage = action.payload + 1;
+
+        if (action.payload > paginated_books.length - 1) {
+            newPage = 0
+        }
+
+        return {
+            ...state,
+            page: newPage
+        }
     }
-}
+    if (action.type === "SET_INDEX") {
+        return {
+            ...state,
+            page: action.payload,
+        }
+    }
     if (action.type === "SET_PAGINATION") {
         console.log("set pagination")
         return {
@@ -204,21 +216,21 @@ if (action.type === "SET_INDEX") {
         }
     }
 
-if (action.type === "TOGGLE_ERROR") {
+    if (action.type === "TOGGLE_ERROR") {
 
-    let {show, msg} = action.payload;
+        let {show, msg} = action.payload;
 
-    return {
-        ...state,
-        error: {
-            ...state.error,
-            show,
-            msg
-        },
+        return {
+            ...state,
+            error: {
+                ...state.error,
+                show,
+                msg
+            },
+        }
     }
-}
 
-throw new Error(`No Matching "${action.type}" - action type`)
+    throw new Error(`No Matching "${action.type}" - action type`)
 }
 
 export default filter_reducer
