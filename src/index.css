@@ -148,20 +148,21 @@ section {
 .favorite {
     color: red;
 }
-.favorite-other{
-    color: blue;
+.checked{
+    color: green;
 }
 
 
 /* -----------Icons style-----------*/
-.icon-book__container {
+.icon-book__container,
+.form-check-box{
     display: flex;
     align-items: center;
     width: 100%;
     font-size: 0.9rem;
     text-decoration: none;
     margin-top: 1rem;
-    color: chocolate;
+    color: var(--clr-bg-btn-primary);
 
 }
 
@@ -170,6 +171,23 @@ section {
     font-size: 1.3rem;
 }
 
+.form-check-box{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+
+}
+.form-check-box input{
+    /*visibility: hidden;*/
+    box-shadow: 0 2px 15px var(--clr-bg-btn-primary);
+    margin: 1rem;
+    height: 1rem;
+    width: 1rem;
+    background: transparent !important;
+
+}
+.form-check-box label{
+    margin-right: 1rem;
+}
 
 /* -----------Text style-----------*/
 .section-info {

@@ -1,25 +1,25 @@
 import SearchForm from "./SearchForm";
 import {useFilterContext} from "../context/filter_context";
-import React from "react";
+import React, {useState} from "react";
 
 const Genres = () => {
-    const {genres, main, filterBooksByGenre} = useFilterContext();
-
+    const {all_books: books, updateFilters, genre} = useFilterContext();
+    let genres = ['all', ...new Set(books.map((book) => book.genre))];
 
     return (
         <section>
             <SearchForm/>
             <div className="genre-btn__container">
-                {genres.map((genre, id) => {
+                {genres.map((g, id) => {
                     return (
                         <button
                             name="genre"
                             type='button'
-                            className={`${genre === main ? "genre-btn genre-btn--active" : "genre-btn "}`}
+                            className={`${genre === g ? "genre-btn genre-btn--active" : "genre-btn "}`}
                             key={id}
-                            onClick={() => filterBooksByGenre(genre)}
+                            onClick={updateFilters}
                         >
-                            {genre}
+                            {g}
                         </button>
                     )
                 })

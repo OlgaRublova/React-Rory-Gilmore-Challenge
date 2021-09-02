@@ -12,6 +12,9 @@ const ImageColorOnScroll = ({title, cover}) => {
         return rect.top >= 0 && rect.bottom <= window.innerHeight;
     };
 
+    const scrollHandler = () => {
+        setInView(isInView());
+    }
 
     useEffect(() => {
         setIsLoading(false)
@@ -24,9 +27,7 @@ const ImageColorOnScroll = ({title, cover}) => {
 
     }, [])
 
-    const scrollHandler = () => {
-        setInView(isInView());
-    }
+
     return(
         <img
             src={cover}

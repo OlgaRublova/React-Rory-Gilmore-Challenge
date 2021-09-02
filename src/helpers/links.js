@@ -1,5 +1,5 @@
 import React from 'react'
-import {BiHomeHeart, BsBook, AiOutlineCoffee, AiOutlineComment, BiHeart, RiBook2Line} from 'react-icons/all'
+import {BiHomeHeart, BsBook, AiOutlineCoffee, AiOutlineComment, BiHeart} from 'react-icons/all'
 
 const links = [
     {

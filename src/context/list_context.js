@@ -1,4 +1,4 @@
-import React, {useEffect, useContext, useReducer, useState} from 'react'
+import React, {useEffect, useContext, useReducer} from 'react'
 import reducer from "../reducer/list_reducer"
 
 const getStorageList = () => {

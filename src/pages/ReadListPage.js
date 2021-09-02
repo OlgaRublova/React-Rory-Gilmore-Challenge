@@ -1,9 +1,6 @@
 import React from "react";
-import {RiDeleteBin6Line} from "react-icons/all";
-import {useListContext} from "../context/list_context";
 
 const ReadListItem = ({id, title, lastName, firstName, cover, page}) => {
-    const {removeItem} = useListContext();
 
     return (
         <h1>LikedListItem</h1>

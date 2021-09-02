@@ -1,5 +1,3 @@
-import React from "react";
-
 
 export const imageUrls = [
     "https://ooligan.pdx.edu/img/rorygilmore.jpg",

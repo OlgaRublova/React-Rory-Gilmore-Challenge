@@ -72,32 +72,67 @@ const filter_reducer = (state, action) => {
     }
 
     if (action.type === "FILTER_BOOKS") {
+        const {all_books} = state;
+        const {genre, pulitzer_prize} = state.filters;
+
+        let tempBooks = [...all_books];
+
+        if (genre !== 'all') {
+            tempBooks = tempBooks.filter(book => book.genre === genre)
+        }
+
+        if (pulitzer_prize) {
+            tempBooks = tempBooks.filter(book => book.pulitzer)
+        }
         return {
             ...state,
+            filtered_books: tempBooks,
+            genre,
+            pulitzer_prize
         }
     }
 
-    if (action.type === "LOAD_GENRES") {
-        return {
-            ...state, genres: action.payload,
-        }
-    }
 
     if (action.type === "REMOVE_BOOK") {
         const {filtered_books} = state;
-        let newBooks = filtered_books.filter((book) => book.id !== action.payload)
-
+        let tempBooks = [...filtered_books];
+        let newBooks = tempBooks.filter((book) => book.id !== action.payload)
         return {
             ...state, filtered_books: newBooks
         }
     }
 
-    if (action.type === "LIKE_BOOK") {
+// if (action.type === "FILTER_PULITZER_BOOKS") {
+//     const {filtered_books, all_books} = state;
+//     let tempBooks = [...filtered_books];
+//
+//     if (action.payload) {
+//         tempBooks = tempBooks.filter((book) => (book.pulitzer));
+//         return {
+//             ...state,
+//             filtered_books: tempBooks
+//         }
+//     } else {
+//         return {
+//             ...state,
+//             filtered_books: all_books
+//         }
+//     }
+// }
 
+
+    if (action.type === "LIKE_BOOK") {
         return {
             ...state,
             filtered_books: action.payload,
             likes: action.payload
+        }
+    }
+    if (action.type === "CHECK_BOOK") {
+        return {
+            ...state,
+            filtered_books: action.payload,
+            checked: action.payload
         }
     }
 
@@ -130,24 +165,6 @@ const filter_reducer = (state, action) => {
         }
     }
 
-    if (action.type === "FILTER_BY_GENRE") {
-        const {genre, books} = action.payload;
-
-        if (genre === 'all') {
-            return {
-                ...state,
-                filtered_books: books,
-                genre,
-            }
-        } else {
-            let tempBooks = books.filter(book => book.genre === genre)
-            return {
-                ...state,
-                filtered_books: tempBooks,
-                genre
-            }
-        }
-    }
 
     if (action.type === "PAGINATE_BOOKS") {
         let {genre, filtered_books, pagination} = state;

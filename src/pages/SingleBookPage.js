@@ -32,11 +32,6 @@ const SingleBookPage = () => {
         return result
     }
 
-
-
-
-
-
     let {title, cover, firstName, lastName, genre, page} = data[result];
 
     return (
