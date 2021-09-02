@@ -16,8 +16,9 @@ const initialState = {
     filters: {
         min_length: 0,
         max_length: 0,
-        pulitzer_prize: true,
+        pulitzer_prize: false,
         genre: "all",
+        book_size: "ALL"
     },
     page: 0,
     showPagination: false,
@@ -59,6 +60,9 @@ export const FilterProvider = ({children}) => {
 
         if (name === "pulitzer_prize") {
             value = e.target.checked;
+        }
+        if (name === "book_size") {
+            value = e.target.textContent;
         }
 
         dispatch({type: "UPDATE_FILTERS", payload: {name, value}})

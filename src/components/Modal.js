@@ -2,18 +2,16 @@ import Books from "../pages/Books";
 import Genres from "./Genres";
 import Pages from "./Pages";
 import Sort from "./Sort"
-import {useFilterContext} from "../context/filter_context";
+import Checkbox from "./Checkbox";
 
 const Modal = () => {
-
-    const {genres, filterBooksByGenre} = useFilterContext();
-
 
     return (
 
         <section >
-            <Genres genres={genres} filterBooksByGenre={filterBooksByGenre}/>
+            <Genres/>
             <Pages/>
+            <Checkbox/>
             <Sort/>
             <Books/>
 

@@ -73,7 +73,7 @@ const filter_reducer = (state, action) => {
 
     if (action.type === "FILTER_BOOKS") {
         const {all_books} = state;
-        const {genre, pulitzer_prize} = state.filters;
+        const {genre, pulitzer_prize, book_size} = state.filters;
 
         let tempBooks = [...all_books];
 
@@ -84,11 +84,29 @@ const filter_reducer = (state, action) => {
         if (pulitzer_prize) {
             tempBooks = tempBooks.filter(book => book.pulitzer)
         }
+        if (book_size !== "ALL") {
+            if(book_size === "XS"){
+                tempBooks = tempBooks.filter(book => book.page <= 100)
+            }
+            if(book_size === "S"){
+                tempBooks = tempBooks.filter(book => book.page <= 300 && book.page > 100)
+            }
+            if(book_size === "M"){
+                tempBooks = tempBooks.filter(book => book.page <= 400 && book.page > 300)
+            }
+            if(book_size === "L"){
+                tempBooks = tempBooks.filter(book => book.page <= 500 && book.page > 400)
+            }
+            if(book_size === "XL"){
+                tempBooks = tempBooks.filter(book => book.page > 800)
+            }
+        }
         return {
             ...state,
             filtered_books: tempBooks,
             genre,
-            pulitzer_prize
+            pulitzer_prize,
+            book_size
         }
     }
 
@@ -101,25 +119,6 @@ const filter_reducer = (state, action) => {
             ...state, filtered_books: newBooks
         }
     }
-
-// if (action.type === "FILTER_PULITZER_BOOKS") {
-//     const {filtered_books, all_books} = state;
-//     let tempBooks = [...filtered_books];
-//
-//     if (action.payload) {
-//         tempBooks = tempBooks.filter((book) => (book.pulitzer));
-//         return {
-//             ...state,
-//             filtered_books: tempBooks
-//         }
-//     } else {
-//         return {
-//             ...state,
-//             filtered_books: all_books
-//         }
-//     }
-// }
-
 
     if (action.type === "LIKE_BOOK") {
         return {

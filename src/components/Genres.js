@@ -1,6 +1,6 @@
 import SearchForm from "./SearchForm";
 import {useFilterContext} from "../context/filter_context";
-import React, {useState} from "react";
+import React from "react";
 
 const Genres = () => {
     const {all_books: books, updateFilters, genre} = useFilterContext();
@@ -24,9 +24,7 @@ const Genres = () => {
                     )
                 })
                 }
-
             </div>
-
         </section>
 
 

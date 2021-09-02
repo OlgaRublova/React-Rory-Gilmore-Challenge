@@ -1,7 +1,6 @@
 import React from 'react'
 import {useFilterContext} from "../context/filter_context";
 import {FcGenericSortingDesc} from "react-icons/all";
-import Pulitzer from "./Pulitzer";
 
 const Sort = () => {
     const {
@@ -9,8 +8,6 @@ const Sort = () => {
     } = useFilterContext();
     return (
         <section>
-            <Pulitzer/>
-
             <article className="section-info">
                 <div className="section-info__heading">
                     We found <span>{books.length}</span> books
