@@ -1,19 +1,16 @@
-import Books from "../pages/Books";
-import Genres from "./Genres";
-import Pages from "./Pages";
-import Sort from "./Sort"
-import Checkbox from "./Checkbox";
+import React from "react";
+import {Genres, Sort, Checkbox, BooksView} from "./"
 
 const Modal = () => {
 
     return (
 
         <section >
+
             <Genres/>
-            <Pages/>
             <Checkbox/>
             <Sort/>
-            <Books/>
+            <BooksView/>
 
         </section>
     )

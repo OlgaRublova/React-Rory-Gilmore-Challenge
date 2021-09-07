@@ -1,10 +1,11 @@
 import React from 'react'
-
-import links from "./../helpers/links"
-import logo from "../assets/logo.jpeg"
 import styled from 'styled-components'
 import {Link} from "react-router-dom";
 import {BsMoon, BsSun} from "react-icons/all";
+
+import links from "./../helpers/links"
+import logo from "../assets/logo.jpeg"
+
 import {useGlobalContext} from "../context/global_context";
 
 const Navbar = () => {

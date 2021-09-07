@@ -1,12 +1,11 @@
 import React from "react";
-import Pulitzer from "./Pulitzer";
-import LengthButtons from "./LengthButtons";
+import {LengthButtons, Pulitzer } from "./";
 
 const Checkbox = () => {
 
     return (
         <section>
-            <div className="form-check-box">
+            <div className="pulitzer-prize-size-filter__wrapper">
                 <Pulitzer/>
                 <LengthButtons/>
             </div>

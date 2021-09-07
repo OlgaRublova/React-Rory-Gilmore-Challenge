@@ -1,5 +1,5 @@
-import {useFilterContext} from "../context/filter_context";
 import React from "react";
+import {useFilterContext} from "../context/filter_context"
 
 const Pages = () => {
     const {
@@ -13,21 +13,21 @@ const Pages = () => {
     return (
 
           <section className="btn-container--page">
-                {
-                    paginated_books.map((item, index) => {
-                        return (
-                            <button
+                {/*{*/}
+                {/*    paginated_books.map((item, index) => {*/}
+                {/*        return (*/}
+                {/*            <button*/}
 
-                                key={index}
-                                className={`pagination-btn ${index === page ? 'pagination-btn--active' : null}`}
-                                onClick={() => {
-                                    handlePage(index)
-                                }}>
-                                {index + 1}
-                            </button>
-                        )
-                    })
-                }
+                {/*                key={index}*/}
+                {/*                className={`pagination-btn ${index === page ? 'pagination-btn--active' : null}`}*/}
+                {/*                onClick={() => {*/}
+                {/*                    handlePage(index)*/}
+                {/*                }}>*/}
+                {/*                {index + 1}*/}
+                {/*            </button>*/}
+                {/*        )*/}
+                {/*    })*/}
+                {/*}*/}
             </section>
 
 

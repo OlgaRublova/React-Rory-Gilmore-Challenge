@@ -22,6 +22,19 @@ const filter_reducer = (state, action) => {
         }
     }
 
+    if (action.type === "SET_GRIDVIEW") {
+        return {
+            ...state,
+            grid_view: true
+        }
+    }
+    if (action.type === "SET_LISTVIEW") {
+        return {
+            ...state,
+            grid_view: false
+        }
+    }
+
     if (action.type === "UPDATE_SORT") {
         return {
             ...state,
@@ -37,7 +50,6 @@ const filter_reducer = (state, action) => {
             filters: {...state.filters, [name]: value}
         }
     }
-
     if (action.type === "SORT_BOOKS") {
         const {sort, filtered_books} = state;
         if (filtered_books) {
@@ -70,6 +82,31 @@ const filter_reducer = (state, action) => {
         }
 
     }
+    // if (action.type === "SORT_BOOKS") {
+    //     const {sort, filtered_books} = state;
+    //     let tempBooks = [...filtered_books];
+    //
+    //     if (sort === 'page-lowest') {
+    //         tempBooks = tempBooks.sort((a, b) => a.page - b.page);
+    //     }
+    //     if (sort === 'page-highest') {
+    //         tempBooks = tempBooks.sort((a, b) => b.page - a.page);
+    //     }
+    //
+    //     if (sort === 'name-a') {
+    //         tempBooks = tempBooks.sort((a, b) => a.lastName.localeCompare(b.lastName));
+    //     }
+    //
+    //     if (sort === 'name-z') {
+    //         tempBooks = tempBooks.sort((a, b) => b.lastName.localeCompare(a.lastName));
+    //     }
+    //
+    //     return {
+    //         ...state,
+    //         filtered_books: tempBooks,
+    //
+    //     }
+    // }
 
     if (action.type === "FILTER_BOOKS") {
         const {all_books} = state;
@@ -85,19 +122,19 @@ const filter_reducer = (state, action) => {
             tempBooks = tempBooks.filter(book => book.pulitzer)
         }
         if (book_size !== "ALL") {
-            if(book_size === "XS"){
+            if (book_size === "XS") {
                 tempBooks = tempBooks.filter(book => book.page <= 100)
             }
-            if(book_size === "S"){
+            if (book_size === "S") {
                 tempBooks = tempBooks.filter(book => book.page <= 300 && book.page > 100)
             }
-            if(book_size === "M"){
+            if (book_size === "M") {
                 tempBooks = tempBooks.filter(book => book.page <= 400 && book.page > 300)
             }
-            if(book_size === "L"){
+            if (book_size === "L") {
                 tempBooks = tempBooks.filter(book => book.page <= 500 && book.page > 400)
             }
-            if(book_size === "XL"){
+            if (book_size === "XL") {
                 tempBooks = tempBooks.filter(book => book.page > 800)
             }
         }

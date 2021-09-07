@@ -23,7 +23,6 @@ const ListContext = React.createContext();
 
 export const ListProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initialState);
-    // const [isOnline, setIsOnline] = useState(null);
 
 
     useEffect(() => {
@@ -31,12 +30,9 @@ export const ListProvider = ({children}) => {
     }, [state.list])
 
 
-
-
     //  add to cart
-    const addToList = (id, firstName, lastName, title, genre, page, cover,favorite) => {
-        // setIsOnline(id)
-        dispatch({type: "ADD_TO_LIST", payload: {id, firstName, lastName, title, genre, page, cover,favorite}})
+    const addToList = (id, firstName, lastName, title, genre, page, cover, favorite) => {
+        dispatch({type: "ADD_TO_LIST", payload: {id, firstName, lastName, title, genre, page, cover, favorite}})
 
     }
 
@@ -45,8 +41,6 @@ export const ListProvider = ({children}) => {
     }
 
     const clearList = () => {
-
-
         dispatch({type: "CLEAR_LIST"})
     }
 
@@ -57,9 +51,6 @@ export const ListProvider = ({children}) => {
             addToList,
             removeItem,
             clearList,
-            // isOnline
-            // query
-
         }}>
             {children}
         </ListContext.Provider>

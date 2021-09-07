@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import {useListContext} from "../context/list_context";
+import {useListContext} from "../context/list_context"
 
 const ListTotals = () => {
 const {list, clearList} = useListContext();

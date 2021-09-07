@@ -1,5 +1,5 @@
-import axios from 'axios'
-import React, {useContext, useEffect, useReducer} from 'react'
+import React, {useContext, useEffect, useReducer} from 'react';
+import axios from 'axios';
 import reducer from '../reducer/books_reducer';
 
 

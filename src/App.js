@@ -11,8 +11,7 @@ import ErrorPage from "./pages/ErrorPage";
 import AboutOlga from "./pages/AboutOlga";
 import AboutRory from "./pages/AboutRory";
 import WishListPage from "./pages/WishListPage";
-import LikedListPage from "./pages/LikedListPage";
-import ReadListPage from "./pages/ReadListPage";
+
 
 
 function App() {
@@ -40,12 +39,6 @@ function App() {
 
                 <Route exact path="/wish-list">
                     <WishListPage/>
-                </Route>
-                <Route exact path="/liked-list">
-                    <LikedListPage/>
-                </Route>
-                <Route exact path="/read-list">
-                    <ReadListPage/>
                 </Route>
 
                 <Route path="*">

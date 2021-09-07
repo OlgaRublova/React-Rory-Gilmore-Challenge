@@ -15,10 +15,6 @@ const WishListPage = () => {
             </article>
         )
     }
-    return (
-        <>
-            <ListContent/>
-        </>
-    )
+    return ( <ListContent/>)
 }
 export default WishListPage;

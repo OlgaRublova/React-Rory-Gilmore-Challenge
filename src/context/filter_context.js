@@ -1,4 +1,4 @@
-import React, {useContext, useReducer, useEffect, useState} from 'react';
+import React, {useContext, useReducer, useEffect} from 'react';
 import reducer from "../reducer/filter_reducer"
 import {useBooksContext} from "./books_context";
 
@@ -6,9 +6,8 @@ import {useBooksContext} from "./books_context";
 const initialState = {
     filtered_books: [],
     all_books: [],
-    paginated_books: [],
-    sort: "page-lowest",
     grid_view: false,
+    sort: "page-lowest",
     error: {
         show: false,
         msg: ""
@@ -43,13 +42,20 @@ export const FilterProvider = ({children}) => {
         dispatch({type: "FILTER_BOOKS"})
     }, [books, state.sort, state.filters])
 
-
-
-
-    const updateSort = (e) => {
+    const updateSort = (e) =>{
         const value = e.target.value;
         dispatch({type: "UPDATE_SORT", payload: value})
     }
+
+    const setGridView = () => {
+        dispatch({type: "SET_GRIDVIEW"})
+    }
+    const setListView = () => {
+        dispatch({type: "SET_LISTVIEW"})
+    }
+
+
+
     const updateFilters = e => {
         let name = e.target.name;
         let value = e.target.value;
@@ -76,11 +82,17 @@ export const FilterProvider = ({children}) => {
     }
 
     const heartFavoriteHandler = (e, favoriteValue) => {
+        console.log("heart")
+        console.log(e.target.parentElement)
+
         e.preventDefault();
         const sessionId = Number(e.target.parentElement.attributes['data-sessionid'].value);
+        console.log("sessionId")
+        console.log(sessionId)
         let newLikes = state.filtered_books.map((like) => {
             const {id} = like;
-
+            console.log("id: ")
+            console.log(id)
             if (id === sessionId) {
                 return {...like, favorite: favoriteValue}
             }
@@ -129,6 +141,7 @@ export const FilterProvider = ({children}) => {
     return (
         <FilterContext.Provider value={{
             ...state,
+            setListView, setGridView,
             updateSort, updateFilters,
             removeBook, findBook,
             toggleError,

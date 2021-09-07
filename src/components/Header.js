@@ -1,7 +1,7 @@
-import {imageUrls} from "../helpers/image-urls";
-import {textUrls} from "../helpers/image-urls";
-import styled from 'styled-components'
 import React from "react";
+
+import {imageUrls, textUrls} from "../helpers/image-urls";
+import styled from 'styled-components'
 
 const Header =()=> {
 

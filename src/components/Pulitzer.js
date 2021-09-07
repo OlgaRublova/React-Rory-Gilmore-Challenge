@@ -1,5 +1,5 @@
-import {useFilterContext} from "../context/filter_context";
 import React from "react";
+import {useFilterContext} from "../context/filter_context"
 
 const Pulitzer = () => {
     const {pulitzer_prize, updateFilters} = useFilterContext();

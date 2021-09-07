@@ -1,5 +1,5 @@
 import React from "react";
-import {useFilterContext} from "../context/filter_context";
+import {useFilterContext} from "../context/filter_context"
 
 const book_sizes = [
     {
@@ -33,7 +33,7 @@ const LengthButtons = () => {
     const {book_size, updateFilters} = useFilterContext();
 
     return (
-        <div className="length-btn__container">
+        <div className="length-buttons__container">
             <h5>Book size: </h5>
             {
                 book_sizes.map((item) => {
@@ -45,7 +45,7 @@ const LengthButtons = () => {
                             type="button"
                             onClick={updateFilters}
                             name="book_size"
-                            className={`${book_size === size ? "length__btn active" : "length__btn"}`}
+                            className={`${book_size === size ? "length__button--active" : "length__button"}`}
                         >
                             {size}
                         </button>

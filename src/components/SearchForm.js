@@ -1,7 +1,6 @@
+import React, {useRef, useEffect, useState} from "react";
 import {MdSearch} from "react-icons/all";
-import {useRef, useEffect, useState} from "react";
-import {useFilterContext} from "../context/filter_context";
-import React from "react";
+import {useFilterContext} from "../context/filter_context"
 
 const SearchForm = () => {
     const {findBook, error, toggleError} = useFilterContext()
@@ -37,7 +36,7 @@ const SearchForm = () => {
             <div className="errorMessage">{show && <p>{msg}</p>}</div>
 
 
-            <form className="form-control"
+            <form className="input-search-form-wrapper"
                   onSubmit={handleSubmit}>
                 <MdSearch style={{"marginLeft": "1rem"}}/>
                 <input
