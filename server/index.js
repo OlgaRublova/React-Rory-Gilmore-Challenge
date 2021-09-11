@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose"); // you have to create a mongodb atlas cluster
 const dotenv = require("dotenv");
-// const authRoute = require("./routes/auth");
-// const userRoute = require("./routes/users");
+const authRoute = require("./routes/auth");
+const userRoute = require("./routes/users");
 // const movieRoute = require("./routes/movies");
 // const listRoute = require("./routes/lists");
 
@@ -25,8 +25,8 @@ mongoose.connect(process.env.MONGO_URL, {
 app.use(express.json());
 
 //  if you're making a request - use this end point, which leads to this route
-// app.use("/api/auth", authRoute)
-// app.use("/api/users", userRoute)
+app.use("/api/auth", authRoute)
+app.use("/api/users", userRoute)
 // app.use("/api/movies", movieRoute)
 // app.use("/api/lists", listRoute)
 
