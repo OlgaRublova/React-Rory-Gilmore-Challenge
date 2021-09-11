@@ -1,5 +1,6 @@
 [
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -12,6 +13,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/518gNiNACGL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -24,6 +26,7 @@
     "cover": "https://2f96be1b505f7f7a63c3-837c961929b51c21ec10b9658b068d6c.ssl.cf2.rackcdn.com/products/034670.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -36,6 +39,7 @@
     "cover": "https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781447279990.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -48,6 +52,7 @@
     "cover": "https://m.media-amazon.com/images/I/51UjnBmJNZL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -60,6 +65,7 @@
     "cover": "https://image.winudf.com/v2/image/Y29tLm1lZ2Fib29rcy5iZXN0LmFtZXJpY2FudHJhZ2VkeTMxMDdfc2NyZWVuXzRfMTUzNDgxNzMyNV8wMzg/screen-4.jpg?fakeurl=1&type=.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -72,6 +78,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51A2T03B4SL._SX282_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -84,6 +91,7 @@
     "cover": "https://images.booksense.com/images/250/293/9781978293250.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -96,6 +104,7 @@
     "cover": "https://cdn.waterstones.com/bookjackets/large/9780/2419/9780241952443.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -108,6 +117,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61scRwQ8QUL._AC_UL600_SR387,600_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -120,6 +130,7 @@
     "cover": "https://m.media-amazon.com/images/I/41x+Hy-asKL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -132,6 +143,7 @@
     "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781625583369/the-art-of-living-9781625583369_hr.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -144,6 +156,7 @@
     "cover": "https://jamesclear.com/wp-content/uploads/2015/11/TheArtofWar-by-SunTzu.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -156,6 +169,7 @@
     "cover": "https://m.media-amazon.com/images/I/51XkvLIHxxL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -168,6 +182,7 @@
     "cover": "https://images.randomhouse.com/cover/9780676974560"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -180,6 +195,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81J+xlUugnL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -192,6 +208,7 @@
     "cover": "https://d28hgpri8am2if.cloudfront.net/tagged_assets/cvr9780743487672/9780743487672_hr.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -204,6 +221,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81lY0OpaL8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -216,6 +234,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386922920l/200883.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -228,6 +247,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91Kkc0ZHa0L.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -240,6 +260,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71816gRUnLL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -252,6 +273,7 @@
     "cover": "http://prodimage.images-bn.com/pimages/9780060838720_p0_v2_s1200x630.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -264,6 +286,7 @@
     "cover": "https://images.thenile.io/r1000/9780060837020.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -276,6 +299,7 @@
     "cover": "https://s26162.pcdn.co/wp-content/uploads/2017/09/Belove_BookCover_WeAreTeachers.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -288,6 +312,7 @@
     "cover": "https://g.christianbook.com/g/slideshow/3/320979/main/320979_1_ftc_dp.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -300,6 +325,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/9167y6YkDZL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -312,6 +338,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51Saz99PESL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -324,6 +351,7 @@
     "cover": "https://m.media-amazon.com/images/I/51x-XPTS0bL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -336,6 +364,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41BMB-JUjmL._SX338_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -348,6 +377,7 @@
     "cover": "https://i.pinimg.com/originals/25/e7/c0/25e7c09587e746b53941bbeffbe90d89.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -360,6 +390,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433730686l/18723.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -372,6 +403,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/410MirCwX4L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -384,6 +416,7 @@
     "cover": "https://m.media-amazon.com/images/I/51o5uPXRSgL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -396,6 +429,7 @@
     "cover": "https://images2.penguinrandomhouse.com/cover/9780553902525"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -408,6 +442,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/916W3jMu+mL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -420,6 +455,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51eW-wH1K-L._SX324_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -432,6 +468,7 @@
     "cover": "https://i.pinimg.com/originals/59/7f/b4/597fb48556f2d63ae86cb49197d0b477.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -444,6 +481,7 @@
     "cover": "https://m.media-amazon.com/images/I/41W4wuKH2pL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -456,6 +494,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/916JW20V3yL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -468,6 +507,7 @@
     "cover": "http://www.theatremclean.org/wp-content/uploads/2017/01/childrens-hour_page-poster_400x560.png"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -480,6 +520,7 @@
     "cover": "https://d3525k1ryd2155.cloudfront.net/h/309/329/1349329309.0.x.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -492,18 +533,20 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91r7kYxAAyL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
     "id": 42,
     "firstName": "Brothers Grimm",
-    "lastName": "",
+    "lastName": "Brothers Grimm",
     "title": "Cinderella",
     "genre": "Children's",
     "page": 32,
     "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780735842946/cinderella-9780735842946_hr.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -516,6 +559,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41mN6FBCVGL._SX316_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -528,6 +572,7 @@
     "cover": "https://covers.openlibrary.org/b/id/254199-L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -540,6 +585,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/511WBcHJZeL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -552,6 +598,7 @@
     "cover": "https://m.media-amazon.com/images/I/51xfuF6iB0L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -564,6 +611,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41lW1FYmGFL._SX311_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -576,6 +624,7 @@
     "cover": "https://m.media-amazon.com/images/I/51ieMWY9pJL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -588,6 +637,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387735027l/322658.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -600,6 +650,7 @@
     "cover": "https://pictures.abebooks.com/inventory/30185614561.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -612,6 +663,7 @@
     "cover": "https://g.christianbook.com/g/slideshow/4/41591/main/41591_1_ftc_dp.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -624,6 +676,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41Kqqz6v7BL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -636,6 +689,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602082958l/61666._SY475_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -648,6 +702,7 @@
     "cover": "https://i.pinimg.com/originals/74/5e/6b/745e6bee4404bdec395fff084175cc48.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -660,6 +715,7 @@
     "cover": "https://i.ebayimg.com/images/g/djMAAOSwX7hf~ec3/s-l500.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -672,6 +728,7 @@
     "cover": "http://prodimage.images-bn.com/pimages/9781631495311_p0_v6_s1200x630.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -684,6 +741,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51t4JqIkY6L._SX330_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -696,6 +754,7 @@
     "cover": "https://donnasgeneralstore.com/wp-content/uploads/TheCrucible.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -708,6 +767,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71AKaPbpeYL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -720,6 +780,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61q11L2zo6L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -732,6 +793,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/818gq1W75xL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -744,6 +806,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/719fQ9sJceS.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -756,6 +819,7 @@
     "cover": "https://m.media-amazon.com/images/I/51TrWpIwMfL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -768,6 +832,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91Q5dCjc2KL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -780,6 +845,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71mjbyBGQ0L.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -792,6 +858,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71ZUsis6HjL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -804,6 +871,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61qM3h4ZpFL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -816,6 +884,7 @@
     "cover": "https://i.pinimg.com/originals/2e/39/cc/2e39cce395898c3ad056e9bfc2465247.png"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -828,6 +897,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91nh+RL7nPL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -840,6 +910,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81rjVu119KL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -852,6 +923,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91vybHeMSxL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -864,6 +936,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51Hn77QFjkL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -876,6 +949,7 @@
     "cover": "https://m.media-amazon.com/images/I/51iQq6ZYedL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -888,6 +962,7 @@
     "cover": "https://m.media-amazon.com/images/I/51F49MFtd8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -900,6 +975,7 @@
     "cover": "https://m.media-amazon.com/images/I/41h9jc3k7vL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -912,6 +988,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81kJufCw2yL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -924,6 +1001,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81ayAcK+91L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -936,6 +1014,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51UMpPPd53L._SX330_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -948,6 +1027,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81vjpjJ0R7L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -960,6 +1040,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71lUKI+wm4L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -972,6 +1053,7 @@
     "cover": "https://m.media-amazon.com/images/I/51TPSVrIw0L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -984,6 +1066,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51m1BWsfUCL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -996,6 +1079,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71L0e5sfpyL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1008,6 +1092,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/810PMLLHUPL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1020,6 +1105,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81iP6KeWlQL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1032,6 +1118,7 @@
     "cover": "https://m.media-amazon.com/images/I/51tIpRAJbfL._SL500_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1044,6 +1131,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51qq6csQfRL._SX320_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1056,6 +1144,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51m+Xj6mAwL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1068,6 +1157,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51BzPAcxmXL._SX328_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1080,6 +1170,7 @@
     "cover": "https://m.media-amazon.com/images/I/41UeZ3YvSrL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1092,6 +1183,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71OFqSRFDgL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1104,6 +1196,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/518oyI4vZVL._SX307_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1116,6 +1209,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61EHnzIPMvL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1128,6 +1222,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71i6t+7AO2L.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1140,6 +1235,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/718WrWeyy6L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1152,6 +1248,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91jBdaRVqML.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1164,6 +1261,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71GaP6oxC7L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1176,6 +1274,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780141181264"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1188,6 +1287,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41CdFqzQ84L.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1200,6 +1300,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51emiSTYUaL._SX326_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1212,6 +1313,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/31fzDDwtE3L._SX301_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1224,6 +1326,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91n6eeetsuL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1236,6 +1339,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91yszMADa7L.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1248,6 +1352,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/416QjTxduzL._SX311_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1260,6 +1365,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51Se-s2ZglL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1272,6 +1378,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51UUsU2cdQL._SX334_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1284,6 +1391,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71B68jttiYL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1296,6 +1404,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41wmzC9GroL._SX319_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1308,6 +1417,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51N8tkSefkS._SX311_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1320,6 +1430,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/911wD8a7AHL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1332,6 +1443,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51TLj55E9mL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1344,6 +1456,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81MGfnTQ9ZL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1356,6 +1469,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51cYTMLCyLL._SX318_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1368,6 +1482,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81IHPwG1tbL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1380,6 +1495,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91EFcae8moL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1392,6 +1508,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/810POGQWWnL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1404,6 +1521,7 @@
     "cover": "https://m.media-amazon.com/images/I/51vXH2JGV8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1416,6 +1534,7 @@
     "cover": "https://64.media.tumblr.com/64e236455719444346c90baddb174f38/tumblr_ne88bihzmZ1s4pbxso1_1280.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1428,6 +1547,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71SIzet4opL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1440,6 +1560,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1519393758l/28859.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1452,6 +1573,7 @@
     "cover": "https://m.media-amazon.com/images/I/41SZPxxP3AL.SX316.SY480._SL500_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1464,6 +1586,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780670016907"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1476,6 +1599,7 @@
     "cover": "https://m.media-amazon.com/images/I/51pqUWvj6NL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1488,6 +1612,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81djg0KWthS.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1500,6 +1625,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51MSzxxIFxL._SX342_SY445_QL70_ML2_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1512,6 +1638,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/519jjD631OL._SX365_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1524,6 +1651,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41stzQ0MsgL._SX318_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1536,6 +1664,7 @@
     "cover": "https://m.media-amazon.com/images/I/71ykU-RQ0nL._AC_SL1000_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1548,6 +1677,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/515iJ1-+IvL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1560,6 +1690,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81jWHraFo+L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1572,6 +1703,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/e278c62e-943a-473e-846a-3e19bce5b5d8/353/569/90/False/heart-of-darkness-12.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1584,6 +1716,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81d-DNnl8xL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1596,6 +1729,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41eZAOsiLZL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1608,6 +1742,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/712X73igwvL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1620,6 +1755,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51FkIGvFv6L._SX306_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1632,6 +1768,7 @@
     "cover": "https://m.media-amazon.com/images/I/51bdrrjTlmL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1644,6 +1781,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91JAKAiiA5L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1656,6 +1794,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61H9uerdrdL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1668,6 +1807,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81Grx7267uL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1680,6 +1820,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/519labstQ5L._SX318_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1692,6 +1833,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71t0yJrW7UL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1704,6 +1846,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/514F1xvQYBL._SX355_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1716,6 +1859,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91jgrV6XiiL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1728,6 +1872,7 @@
     "cover": "https://m.media-amazon.com/images/I/51JB9NCDFRL._SL160_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1740,6 +1885,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51fxADjREWL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1752,6 +1898,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71HbJJA7XdL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1764,6 +1911,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91Q9eneR7BL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1776,6 +1924,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71B1NiNdEHL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1788,6 +1937,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348460321l/251052.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1800,6 +1950,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780451531513"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1812,6 +1963,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/31Y6BLQetUS._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1824,6 +1976,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/fe5292f0-1209-46b8-a12a-b1c5df4714c5/1200/1200/False/the-iliad-of-homer-129.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1836,6 +1989,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51nwhfkqlgL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1848,6 +2002,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61B3wTSzH8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1860,6 +2015,7 @@
     "cover": "https://m.media-amazon.com/images/I/51e+K6wNNEL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1872,6 +2028,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/511265rdCRL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1884,6 +2041,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/515UL7box5L._SX322_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1896,6 +2054,7 @@
     "cover": "https://d.gr-assets.com/books/1408926209l/267243.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1908,6 +2067,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51T83eiOMML._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1920,6 +2080,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81zFP9e6z8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1932,6 +2093,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71FISsF-abL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1944,6 +2106,7 @@
     "cover": "https://m.media-amazon.com/images/I/41l+kKRNZAL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1956,6 +2119,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51EJZaHxpHL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1968,6 +2132,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81rBVCDfrgL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1980,6 +2145,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387714001l/760022.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -1992,6 +2158,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1396833031l/95141.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2004,6 +2171,7 @@
     "cover": "https://usishield.com/wp-content/uploads/2019/02/kitchen.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2016,6 +2184,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51aC4tiXgiL._SX309_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2028,6 +2197,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/413yD+k+hDL._SX302_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2040,6 +2210,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/516nGMGJcHL._SX319_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2052,6 +2223,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51dfpAIGM0L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2064,6 +2236,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41G0Dt5SKrL._SX320_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2076,6 +2249,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/5189mbZiOKL._SX320_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2088,6 +2262,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41fmy4COtML._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2100,6 +2275,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51cgd8A2DNL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2112,6 +2288,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91MQx+N9y+L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2124,6 +2301,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81Vz857kwxL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2136,6 +2314,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91ovm7yyN8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2148,6 +2327,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51dCQg04gvL._SX333_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2160,6 +2340,7 @@
     "cover": "https://m.media-amazon.com/images/I/51YUQZHDI8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2172,6 +2353,7 @@
     "cover": "https://m.media-amazon.com/images/I/51+lKXN6OZL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2184,6 +2366,7 @@
     "cover": "https://covers.audiobooks.com/images/covers/full/9781494578947.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2196,6 +2379,7 @@
     "cover": "https://img1.od-cdn.com/ImageType-100/1294-1/%7B97B260FA-8E07-487C-89FF-032C0163634F%7DImg100.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2208,6 +2392,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51ypXbTPrUL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2220,6 +2405,7 @@
     "cover": "https://www.pluggedin.com/wp-content/uploads/2020/01/lion-witch-and-wardrobe-cover.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2232,6 +2418,7 @@
     "cover": "https://images.macmillan.com/folio-assets/macmillan_us_frontbookcovers_1000H/9780312871796.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2244,6 +2431,7 @@
     "cover": "https://covers.feedbooks.net/book/687.jpg?size=large&t=1549045847"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2256,6 +2444,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91jsOzK+K1L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2268,6 +2457,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/419RMV6HE0L._SX310_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2280,6 +2470,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1360519957l/595948.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2292,6 +2483,7 @@
     "cover": "https://res.cloudinary.com/bookbub/image/upload/t_ci_ar_6:9_scaled,f_auto,q_auto,dpr_2,c_scale,w_405/v1587403863/pro_pbid_968567.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2304,6 +2496,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41zWbcsr8ML._SX325_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2316,6 +2509,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81uc0ffe6xL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2328,6 +2522,7 @@
     "cover": "https://nationalbookswap.com/pbs/xl/27/9027/9780618129027.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2340,6 +2535,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1416448200l/89723.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2352,6 +2548,7 @@
     "cover": "https://readinggroupchoices.com/wp/wp-content/uploads/2016/08/the-lovely-bones@2x-e1571668647187.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2364,6 +2561,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41DxtTcXDsL._SX328_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2376,6 +2574,7 @@
     "cover": "https://m.media-amazon.com/images/I/41a4pN3JXuL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2388,6 +2587,7 @@
     "cover": "http://languagetrainers.com/reviews/book-reviews/uploads/5679-madame%20bovary%20cover.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2400,6 +2600,7 @@
     "cover": "https://d3525k1ryd2155.cloudfront.net/h/401/200/1402200401.0.x.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2412,6 +2613,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71iR0-b77pL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2424,6 +2626,7 @@
     "cover": "https://www.indexoncensorship.org/wp-content/uploads/2016/09/The-Master-And-Margarita.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2436,6 +2639,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780807083871"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2448,6 +2652,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91Mwl2NTHAL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2460,6 +2665,7 @@
     "cover": "https://prodimage.images-bn.com/pimages/9781543130102_p0_v1_s550x406.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2472,6 +2678,7 @@
     "cover": "https://www.team1global.com.au/store/wp-content/uploads/2018/09/TM1-B225.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2484,6 +2691,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61YGEYd2W4L._SX313_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2496,6 +2704,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780451529961"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2508,6 +2717,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91mWfTCab-L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2520,6 +2730,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/911IPbfO8BL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -2532,6 +2743,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71sJpKGagtL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2544,6 +2756,7 @@
     "cover": "https://i.pinimg.com/originals/86/df/71/86df719f3277caef592b5a8c0e8ee309.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2556,6 +2769,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51EaShGyF4L._SX328_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2568,6 +2782,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1449956772l/28181799._SY475_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2580,6 +2795,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1257877982l/1099175.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2592,6 +2808,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/913FLAudHML.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2604,6 +2821,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41XjWM3pmJL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2616,6 +2834,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71oOwcq8wzL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2628,6 +2847,7 @@
     "cover": "https://pup-assets.imgix.net/onix/images/9780691003542.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2640,6 +2860,7 @@
     "cover": "https://pictures.abebooks.com/isbn/9782221141441-us.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2652,6 +2873,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41SF8GXB76L._SX332_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2664,6 +2886,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/510Q9HM5M5L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2676,6 +2899,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51GR9N3BanL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2688,6 +2912,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61KiwSu7+lL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2700,6 +2925,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51qyu+CxlaL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2712,6 +2938,7 @@
     "cover": "https://i.ebayimg.com/images/g/41QAAOSwJVZgAE2f/s-l500.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2724,6 +2951,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71yW-SGVeRL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2736,6 +2964,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91crwoRnDOL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2748,6 +2977,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91mhnbJ60zL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2760,6 +2990,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61QfgLeRAEL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2772,6 +3003,7 @@
     "cover": "https://m.media-amazon.com/images/I/51W0ttfaSmL._SL500_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2784,6 +3016,7 @@
     "cover": "https://pictures.abebooks.com/inventory/17004357408.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2796,6 +3029,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51s5Je-MYyL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2808,6 +3042,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51Q2RYbNslL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2820,6 +3055,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71xP8C6bBTL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2832,6 +3068,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348765940l/9578496.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2844,6 +3081,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51LI05U8O-L._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2856,6 +3094,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51Zdbg9-laL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2868,6 +3107,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/712YLhunOJL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2880,6 +3120,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/4e4e6558-ef00-4c92-b7bb-bf0a3fb53e3c/1200/1200/False/northanger-abbey-41.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2892,6 +3133,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780679423072"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2904,6 +3146,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51HCyHgcL4L._SX322_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2916,6 +3159,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51c4Mt5DnjL._SX342_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2928,6 +3172,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387733455l/19816003.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2940,6 +3185,7 @@
     "cover": "https://m.media-amazon.com/images/M/MV5BY2UwOTAzOWEtZTk1My00YTU0LWJhMWEtNzkwMTc0NGUxNTM1XkEyXkFqcGdeQXVyNzQzNzQxNzI@._V1_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2952,6 +3198,7 @@
     "cover": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Of_Mice_and_Men_%281937_1st_ed_dust_jacket%29.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2964,6 +3211,7 @@
     "cover": "https://pictures.abebooks.com/inventory/30238732668.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2976,6 +3224,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91nOyDA5i9L.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -2988,6 +3237,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51Rb4jnb1yL._SX308_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3000,6 +3250,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91QerkARMLL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3012,6 +3263,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91mftQtgAkL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3024,6 +3276,7 @@
     "cover": "https://i.pinimg.com/originals/10/cd/7c/10cd7cdb91d200ceb90e42133c404882.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3036,6 +3289,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41hv0jQ42kL._SX329_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3048,6 +3302,7 @@
     "cover": "https://m.media-amazon.com/images/I/51hOyBUMgPL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3060,6 +3315,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1296247911l/5088200.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3072,6 +3328,7 @@
     "cover": "https://m.media-amazon.com/images/I/51AStJesndL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3084,6 +3341,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/b45f78ed-5d09-4c52-9f06-f64a8b5f1e32/353/569/90/False/our-mutual-friend-175.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3096,6 +3354,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41YR7qFKvVL._SX331_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3108,6 +3367,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780679724759"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3120,6 +3380,7 @@
     "cover": "https://m.media-amazon.com/images/I/51jORwiBQAL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3132,6 +3393,7 @@
     "cover": "https://img1.od-cdn.com/ImageType-400/3580-1/334/823/C9/%7B334823C9-E078-4A5C-9FCB-0C8376FAADDD%7DImg400.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3144,6 +3406,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61v3nfpdDWL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3156,6 +3419,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/417+Cq07wML._SX355_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3168,18 +3432,20 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/515bJ5j4FxL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
     "id": 266,
     "firstName": "Oscar",
     "lastName": "Wilde",
-    "title": "The Picture of Dorian",
+    "title": "The Picture of Dorian Grey",
     "genre": "Classics",
     "page": 272,
     "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781476788128/the-picture-of-dorian-gray-9781476788128_hr.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3192,6 +3458,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/8123yQEIQfL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3204,6 +3471,7 @@
     "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9780735843288/pinocchio-9780735843288_hr.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3216,6 +3484,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61MFYNjUSNL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3228,6 +3497,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348860701l/564002.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3240,6 +3510,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51WRV-4G2AL._SX342_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3252,6 +3523,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71Hph3hh-ML.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3264,6 +3536,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41TvvRTB78S._SX324_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3276,6 +3549,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91eKRbuhgaL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3288,6 +3562,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81hdkBR1yeL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3300,6 +3575,7 @@
     "cover": "https://d1ldy8a769gy68.cloudfront.net/300/038/550/408/038550408X.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3312,6 +3588,7 @@
     "cover": "https://www.antikvariat.net/files/store_ryo/ryo102226_0.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3324,6 +3601,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81KPrfOb-FL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3336,6 +3614,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/A1IlKDR3vaL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3348,6 +3627,7 @@
     "cover": "https://m.media-amazon.com/images/I/51n1DstcJFL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3360,6 +3640,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71QKKKYcV-L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3372,18 +3653,20 @@
     "cover": "https://timelife.com/system/cover_images/images/000/000/277/full/350_Vol3_SweetLove_Cover.jpg?1345495420"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
     "id": 283,
     "firstName": "Brothers Grimm",
-    "lastName": "",
+    "lastName": "Brothers Grimm",
     "title": "Rapunzel",
     "genre": "Children's",
     "page": 32,
     "cover": "https://images-na.ssl-images-amazon.com/images/I/A16h8HWhDUL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3396,6 +3679,7 @@
     "cover": "http://prodimage.images-bn.com/pimages/9781476759685_p0_v5_s1200x630.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3408,6 +3692,7 @@
     "cover": "https://images.theconversation.com/files/364192/original/file-20201019-19-15ey6l2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1000&fit=clip"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3420,6 +3705,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171743413l/117834.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3432,6 +3718,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51vrv0hceML._SX342_SY445_QL70_ML2_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3444,6 +3731,7 @@
     "cover": "https://m.media-amazon.com/images/I/51t0BaaWdjL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3456,6 +3744,7 @@
     "cover": "https://covers.feedbooks.net/book/4527.jpg?size=large&t=1549045887"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3468,6 +3757,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/5146GkyMe2S._SX327_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3480,6 +3770,7 @@
     "cover": "https://pictures.abebooks.com/isbn/9780743222853-us.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3492,6 +3783,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/7edc9f4f-d5ba-4398-a3f0-3fe063b0666f/353/569/90/False/the-return-of-the-king-the-lord-of-the-rings-book-3-1.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3504,6 +3796,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51WM+auruqL._SX327_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3516,6 +3809,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81ozsSH1wDL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3528,6 +3822,7 @@
     "cover": "https://images.booksense.com/images/219/241/9780425241219.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3540,6 +3835,7 @@
     "cover": "https://www.hachette.co.uk/wp-content/uploads/2020/08/hbg-title-9781529363487-15.jpg?fit=440%2C675"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3552,6 +3848,7 @@
     "cover": "https://www.publicaffairsbooks.com/wp-content/uploads/2020/09/9781541797703.jpg?fit=436%2C675"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3564,6 +3861,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1315441174l/2529463.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3576,6 +3874,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/cd5d681a-a30f-4576-be4c-dac1c221c85a/353/569/90/False/romeo-and-juliet-170.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3588,6 +3887,7 @@
     "cover": "https://broadviewpress.com/wp-content/uploads/2016/06/9781551114286.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3600,6 +3900,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91qxd9-pqyL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3612,6 +3913,7 @@
     "cover": "https://i.pinimg.com/originals/2e/0a/f7/2e0af71bd2ef95597827e89395ea0ca6.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3624,6 +3926,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61JwIE6Mt3S.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3636,6 +3939,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91Gm5o5FUQL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3648,6 +3952,7 @@
     "cover": "http://www.freethinkerscorner.com/uploads/1/0/6/1/106189835/s824075240130343247_p268_i1_w313.jpeg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3660,6 +3965,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41NTDeFeezL._SX293_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3672,6 +3978,7 @@
     "cover": "https://s3.amazonaws.com/images.hamlethub.com/hh20mediafolder/1045/201507/Daisy.png"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3684,6 +3991,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71GCR1EQ47L._SX313_BO1,204,203,200_.gif"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3696,6 +4004,7 @@
     "cover": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4351/9781435159655.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3708,6 +4017,7 @@
     "cover": "https://www.qbbooks.com/pictures/medium/43036.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3720,6 +4030,7 @@
     "cover": "https://pictures.abebooks.com/isbn/9780307265562-us.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3732,6 +4043,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51xDldx8enL._SX372_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3744,6 +4056,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81mAdDoKiiL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3756,6 +4069,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/513N0MSSGXL._SX310_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3768,6 +4082,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91Mpe6aduKL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3780,6 +4095,7 @@
     "cover": "https://www.pluggedin.com/wp-content/uploads/2020/01/separate-peace-cover-image-669x1024.jpeg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3792,6 +4108,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1179094752l/873897._SY475_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3804,6 +4121,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347296353l/9529.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3816,6 +4134,7 @@
     "cover": "https://pictures.abebooks.com/inventory/30410181039.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3828,6 +4147,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51jSPyJ8v2L._SX302_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3840,6 +4160,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/ef590318-6966-4125-aa2f-adcd74241d07/1200/1200/False/siddhartha-65.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3852,6 +4173,7 @@
     "cover": "https://m.media-amazon.com/images/I/41Xok7vTuEL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3864,6 +4186,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61O1tkFh+iL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3876,6 +4199,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71Hd8yOv1DL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3888,18 +4212,20 @@
     "cover": "https://img1.od-cdn.com/ImageType-100/1855-1/%7BAA30C51E-7883-454B-8646-2B4F47CD685A%7DImg100.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
     "id": 326,
     "firstName": "Brothers Grimm",
-    "lastName": "",
+    "lastName": "Brothers Grimm",
     "title": "Snow White and Rose Red",
     "genre": "Children's",
     "page": 9,
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51Y0MY687FL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3912,6 +4238,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51po9JtHuoL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3924,6 +4251,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81sI0j81ttL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3936,6 +4264,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81e+-ZDl6-L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3948,6 +4277,7 @@
     "cover": "https://i.pinimg.com/originals/76/18/3a/76183a8844f82da3355e587f06ddba6b.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3960,6 +4290,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91BAc5cqtNL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3972,6 +4303,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61uMG5arPYL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3984,6 +4316,7 @@
     "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/cvr9781847397379_9781847397379_hr.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -3996,6 +4329,7 @@
     "cover": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781604336153/shakespeares-sonnets-9781604336153_hr.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4008,6 +4342,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81N1r6tyHCL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4020,6 +4355,7 @@
     "cover": "https://globalbookclub.s3.amazonaws.com/resources/391653/sophies_choice/cover.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4032,6 +4368,7 @@
     "cover": "https://i.dr.com.tr/cache/500x400-0/originals/0000000341040-1.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4044,6 +4381,7 @@
     "cover": "https://i.pinimg.com/originals/49/13/52/491352847319f0f666b6558b63b21591.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4056,6 +4394,7 @@
     "cover": "https://leavesandpages.files.wordpress.com/2018/01/stepford-wives-ira-levin.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4068,6 +4407,7 @@
     "cover": "https://m.media-amazon.com/images/I/515ceEO3wYL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4080,6 +4420,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9781101078150"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4092,6 +4433,7 @@
     "cover": "https://www.gutenberg.org/files/43/43-h/images/cover.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4104,6 +4446,7 @@
     "cover": "https://cdn2.penguin.com.au/covers/original/9780141190273.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4116,6 +4459,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91a1ogh+5JL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4128,6 +4472,7 @@
     "cover": "https://m.media-amazon.com/images/I/51EErun13HL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4140,6 +4485,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51cj37KTLRL._SX322_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4152,6 +4498,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780143124696"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4164,6 +4511,7 @@
     "cover": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5713/9781571312617.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4176,6 +4524,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71pVaixvJmL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4188,6 +4537,7 @@
     "cover": "https://d1466nnw0ex81e.cloudfront.net/n_iv/600/3108479.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4200,6 +4550,7 @@
     "cover": "https://m.media-amazon.com/images/I/51eJpa9Gj2L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4212,6 +4563,7 @@
     "cover": "https://i.pinimg.com/originals/da/c2/1e/dac21e3208cfde60a24afa8f2c000a9f.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4224,6 +4576,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91gj4mROK8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4236,6 +4589,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/A1zj2UqyPKL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4248,6 +4602,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/714iIGk6fNL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4260,6 +4615,7 @@
     "cover": "https://d.gr-assets.com/books/1321111302l/80616.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4272,6 +4628,7 @@
     "cover": "https://m.media-amazon.com/images/I/51j9db4d1VL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4284,6 +4641,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/817iFfLhJ+L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4296,6 +4654,7 @@
     "cover": "http://www.gdprice.com/j/14878.JPG"
   },
   {
+    "isMovie": true,
     "pulitzer": true,
     "checked": false,
     "favorite": false,
@@ -4308,6 +4667,7 @@
     "cover": "https://cdn2.penguin.com.au/covers/original/9781784752637.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4320,6 +4680,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/f8cdcf33-6d91-4aa1-8469-c6aebbd21e2d/1200/1200/False/king-richard-iii-1.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4332,6 +4693,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353033083l/135836.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4344,6 +4706,7 @@
     "cover": "https://tinhouse.com/wp-content/uploads/2019/07/TH80-Evans-Art-347x500.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4356,6 +4719,7 @@
     "cover": "https://m.media-amazon.com/images/I/51viLH0i8SL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4368,6 +4732,7 @@
     "cover": "https://m.media-amazon.com/images/I/41kdVIAHN2L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4380,6 +4745,7 @@
     "cover": "https://pictures.abebooks.com/isbn/9780786269716-us.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4392,6 +4758,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/b81ff4cf-415b-4d08-82a0-4a97baa85c27/1200/1200/False/tuesdays-with-morrie-1.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4404,6 +4771,7 @@
     "cover": "https://kbimages1-a.akamaihd.net/7f16ca71-2e88-474d-b0d5-00192d4ec815/1200/1200/False/ulysses-by-james-joyce-2.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4416,6 +4784,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/91Qidx2KcBL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4428,6 +4797,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41wW6tCBu4L._SX339_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4440,6 +4810,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51HMvWsUSPL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4452,6 +4823,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/411cT5PmmCL._SX329_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4464,6 +4836,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/519pzCixDiL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4476,6 +4849,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/51WD1MMJEVL._SX342_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4488,6 +4862,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61LPft-POlL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4500,6 +4875,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61IzZLAsGuL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4512,6 +4888,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171864309l/123969.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4524,6 +4901,7 @@
     "cover": "https://m.media-amazon.com/images/M/MV5BYjNkYWU0ODctNjM3OC00ODEwLWI3ZjEtZDBlOGFhMWViOGJmXkEyXkFqcGdeQXVyNjI2OTgxNzY@._V1_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4536,6 +4914,7 @@
     "cover": "https://images.penguinrandomhouse.com/cover/9780143129264"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4548,6 +4927,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71lPZpwz0HL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4560,6 +4940,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41fWPocLlKL._SX330_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4572,6 +4953,7 @@
     "cover": "https://m.media-amazon.com/images/I/41+Crw4LCDL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4584,6 +4966,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497999070l/1430377._SY475_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4596,6 +4979,7 @@
     "cover": "https://www.urbandalelibrary.org/app/uploads/2021/04/When-the-Emperor-Was-Divine-Cover-2.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4608,6 +4992,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/71JpUaCKdrL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4620,6 +5005,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/417FmvO%2Br3L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4632,6 +5018,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/41B6mGHn12L.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4644,6 +5031,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/61K2brgIMrL.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4656,6 +5044,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81xMnwn1UxL.jpg"
   },
   {
+    "isMovie": true,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4668,6 +5057,7 @@
     "cover": "https://almabooks.com/wp-content/uploads/2016/10/9781847495778.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4680,6 +5070,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/516+qUI91tL._SX303_BO1,204,203,200_.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,
@@ -4692,6 +5083,7 @@
     "cover": "https://images-na.ssl-images-amazon.com/images/I/81C2iK7DH8L.jpg"
   },
   {
+    "isMovie": false,
     "pulitzer": false,
     "checked": false,
     "favorite": false,

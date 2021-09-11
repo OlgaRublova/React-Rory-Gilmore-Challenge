@@ -1,6 +1,6 @@
 import React from "react";
 
-import {SearchForm} from "./";
+import {SearchForm} from "./index";
 import {useFilterContext} from "../context/filter_context"
 
 

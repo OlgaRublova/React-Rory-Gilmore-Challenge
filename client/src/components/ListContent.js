@@ -1,7 +1,7 @@
 import React from "react";
 import {useListContext} from "../context/list_context"
 
-import {ListItem, ListTotals, ListColumns} from "./";
+import {ListItem, ListTotals, ListColumns} from "./index";
 
 const ListContent = () => {
     const {list} = useListContext();

@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom"
-import Header from "../components/Header";
+import ImageGallery from "../components/ImageGallery";
 
 
 const AboutRory = () => {
@@ -8,7 +8,7 @@ const AboutRory = () => {
     return (
 
         <section>
-            <Header/>
+            <ImageGallery/>
             <div className="section-info">
                 <h1 className="section-info__heading">
                     Want to read like <span>Rory Gilmore</span> from Gilmore Girls?

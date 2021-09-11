@@ -3,7 +3,7 @@ import {AiFillHeart, BiCheckSquare, RiDeleteBin6Line} from "react-icons/all";
 
 import {useFilterContext} from "../context/filter_context"
 import {useListContext} from "../context/list_context"
-import {ImageColorOnScroll} from "./";
+import {ImageColorOnScroll} from "./index";
 
 const ListView = () => {
     const {filtered_books: books} = useFilterContext();

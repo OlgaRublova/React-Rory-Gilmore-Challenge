@@ -1,5 +1,5 @@
 import React from "react";
-import {Genres, Sort, Checkbox, BooksView} from "./"
+import {Genres, Sort, Checkbox, BooksView} from "./index"
 
 const Modal = () => {
 

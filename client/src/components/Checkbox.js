@@ -1,5 +1,5 @@
 import React from "react";
-import {LengthButtons, Pulitzer } from "./";
+import {LengthButtons, Pulitzer } from "./index";
 
 const Checkbox = () => {
 

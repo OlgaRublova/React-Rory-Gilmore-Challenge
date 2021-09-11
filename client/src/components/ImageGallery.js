@@ -3,7 +3,7 @@ import React from "react";
 import {imageUrls, textUrls} from "../helpers/image-urls";
 import styled from 'styled-components'
 
-const Header =()=> {
+const ImageGallery =()=> {
 
     return(
         <Wrapper>
@@ -61,4 +61,4 @@ const Wrapper = styled.section`
   }
 
 `;
-export default Header;
+export default ImageGallery;

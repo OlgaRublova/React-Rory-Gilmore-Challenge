@@ -4,7 +4,7 @@ export { default as GridView} from "./GridView"
 
 export { default as Checkbox} from "./Checkbox"
 export { default as Genres} from "./Genres"
-export { default as Header} from "./Header"
+export { default as ImageGallery} from "./ImageGallery"
 export { default as ImageColorOnScroll} from "./ImageColorOnScroll"
 export { default as LengthButtons} from "./LengthButtons"
 

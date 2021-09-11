@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {AiFillHeart, BiBook, BiCheckSquare, RiDeleteBin6Line} from "react-icons/all";
 
-import {ImageColorOnScroll} from "./";
+import {ImageColorOnScroll} from "./index";
 
 import {useFilterContext} from "../context/filter_context"
 import {useListContext} from "../context/list_context"
