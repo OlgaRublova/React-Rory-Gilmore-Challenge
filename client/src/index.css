@@ -51,7 +51,7 @@ body {
 section {
     position: relative;
     background-color: var(--clr-bcg);
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: inherit;
     width: 100vw;
     padding: 0 1rem;
 }
@@ -59,6 +59,7 @@ section {
 /* -----------Sign Up / Login style-----------*/
 
 .auth__form-container {
+    padding: 2rem 0;
     margin-top: 2rem;
     display: flex;
     background-color: var(--clr-bcg);
@@ -72,6 +73,7 @@ section {
     justify-content: center;
     background-color: var(--clr-bcg);
 }
+
 .auth__form-container_image {
     position: relative;
     flex: 2;
@@ -80,10 +82,11 @@ section {
     box-shadow: 1px 0 5px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
 }
-.auth__form-container_image:after{
+
+.auth__form-container_image:after {
     position: absolute;
     content: "";
-    top:0;
+    top: 0;
     left: 0;
     height: 100%;
     width: 100%;
@@ -91,7 +94,8 @@ section {
     opacity: 0.4;
     transition: all 1s;
 }
-.auth__form-container_image:hover:after{
+
+.auth__form-container_image:hover:after {
     opacity: 0;
 }
 
@@ -220,7 +224,6 @@ section {
 }
 
 
-
 /* -----------Buttons style-----------*/
 .genre-buttons_wrapper {
     position: relative;
@@ -230,7 +233,7 @@ section {
     gap: 10px;
 }
 
-.genre-button{
+.genre-button {
     background-color: var(--clr-btn);
     color: var(--clr-font-primary);
     text-transform: capitalize;
@@ -240,7 +243,8 @@ section {
     font-size: 1rem;
     transition: all 1s;
 }
-.genre-button--active{
+
+.genre-button--active {
     background: var(--clr-btn-hover);
     color: var(--clr-font-primary);
     text-transform: capitalize;
@@ -252,7 +256,7 @@ section {
 
 }
 
-.genre-button:hover{
+.genre-button:hover {
     background: var(--clr-btn-hover);
 }
 
@@ -300,7 +304,7 @@ section {
 }
 
 .input-search-form-wrapper button,
-.input-sort-form-wrapper button{
+.input-sort-form-wrapper button {
     border-color: transparent;
     padding: 0.25rem 0.5rem;
     text-transform: capitalize;
@@ -358,7 +362,8 @@ section {
     font-size: 1rem;
     transition: all 1s;
 }
-.length__button--active{
+
+.length__button--active {
     color: var(--clr-font-primary);
     background-color: var(--clr-btn-hover);
     font-family: 'Roboto Condensed', sans-serif;
@@ -371,11 +376,10 @@ section {
     padding: 0.25rem;
 }
 
-.view__btn{
+.view__btn {
     background-color: var(--clr-view) !important;
-    color: var(--clr-input-bg) ;
+    color: var(--clr-input-bg);
 }
-
 
 
 /* -----------Icons style-----------*/
@@ -395,9 +399,6 @@ section {
     color: green;
     font-size: 1.3rem;
 }
-
-
-
 
 
 /* -----------Checkbox style-----------*/
@@ -506,7 +507,7 @@ section {
 
 .section-info__text {
     font-weight: lighter;
-    text-align: justify;
+    text-align: justify-all;
 }
 
 .section-info__text div:not(:first-of-type) {
@@ -539,7 +540,6 @@ section {
 .books-container--grid__book {
     position: relative;
     overflow: hidden;
-    font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     border: 1px solid var(--clr-font-primary);
     transition: opacity 2s;
@@ -597,11 +597,11 @@ section {
     font-size: 1.4rem;
     padding: 0.2rem;
     transition: all 1s;
-    /*background: black;*/
     background: var(--clr-bcg);
     border-bottom: 1px solid var(--clr-font-primary);
 }
-.link-read-more-wrapper{
+
+.link-read-more-wrapper {
     color: chocolate;
     text-decoration: none;
     display: flex;
@@ -612,14 +612,18 @@ section {
 }
 
 /* -----------List View Book style-----------*/
-.books-container--list{
+.books-container--list {
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: repeat( auto-fit, minmax(30rem, 1fr));
+
     grid-column-gap: 1rem;
 }
+
 .books-container--list__book {
     display: grid;
-    grid-template-columns: 0.5fr 2fr auto ;
+    grid-template-columns: 0.5fr 2fr auto;
     background-color: var(--clr-bcg);
     border-bottom: 1px dashed var(--clr-font-secondary) !important;
 }
@@ -636,10 +640,12 @@ section {
     width: 100%;
     padding: 0 2rem;
 }
+
 .books-container--list__book__info__title {
     color: var(--clr-font-secondary);
     font-weight: bold;
 }
+
 .books-container--list__book__info__author {
     font-weight: bold;
 }
@@ -651,9 +657,11 @@ section {
     align-items: center;
     font-size: 1.5rem;
 }
+
 .books-container--list__book__icons-wrapper > * {
     margin: 0.3rem;
 }
+
 /* -----------Single Book style-----------*/
 
 .single-book {
@@ -748,8 +756,7 @@ section {
 
 .input-search-form-wrapper input,
 .input-sort-form-wrapper #sort,
-.input-sort-form-wrapper input
-{
+.input-sort-form-wrapper input {
     background: var(--clr-input-bg);
     outline-color: var(--clr-input);
     color: var(--clr-input);

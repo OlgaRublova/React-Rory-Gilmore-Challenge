@@ -20,29 +20,28 @@ const Navbar = () => {
     return (
         <NavContainer>
             <section className={isScrolled ? "nav-center scrolled" : "nav-center"}>
-                    <div className="nav-header">
-                        <Link to="/">
-                            <img src={logo} alt="olga's icon"/>
-                        </Link>
-                    </div>
+                <div className="nav-header">
+                    <Link to="/">
+                        <img src={logo} alt="olga's icon"/>
+                    </Link>
+                </div>
 
-                    <ul className="nav-links">
-                        {links.map((link) => {
-                            const {id, title, url, icon} = link;
-                            return (
-                                <li key={id}>
-                                    <Link to={url} className="link"> {icon} {title}</Link>
-                                </li>
-                            )
-                        })}
-                    </ul>
+                <ul className="nav-links">
+                    {links.map((link) => {
+                        const {id, title, url, icon} = link;
+                        return (
+                            <li key={id}>
+                                <Link to={url} className="link"> {icon} {title}</Link>
+                            </li>
+                        )
+                    })}
+                </ul>
 
-                    <button
-                        className="theme"
-                        onClick={toggleTheme}>
-                        {(theme === "light-theme") ? <BsMoon/> : <BsSun/>}
-                    </button>
-
+                <button
+                    className="theme"
+                    onClick={toggleTheme}>
+                    {(theme === "light-theme") ? <BsMoon/> : <BsSun/>}
+                </button>
 
 
             </section>
@@ -70,12 +69,12 @@ const NavContainer = styled.nav`
 
     &.scrolled {
       background-color: var(--clr-btn-hover);
-      & .link{
+
+      & .link {
         color: var(--clr-font-primary) !important;
 
       }
     }
-
 
 
     .theme {
@@ -91,6 +90,7 @@ const NavContainer = styled.nav`
       justify-content: center;
       align-items: center;
       list-style: none;
+      width: 100%;
 
       li {
         margin: 0 0.5rem;
@@ -130,6 +130,21 @@ const NavContainer = styled.nav`
 
   }
 
+  @media screen and (max-width: 800px) {
+
+    .nav-links {
+      width: 100%;
+      padding: 1rem 0;
+    }
+
+    .theme, .nav-header {
+      display: none;
+    }
+    .link{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
 
 `

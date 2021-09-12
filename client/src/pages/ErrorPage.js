@@ -14,11 +14,9 @@ const ErrorPage = () => {
     )
 }
 
-const Wrapper = styled.main`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+const Wrapper = styled.section`
   text-align: center;
+  margin: 10rem auto;
 
   h1 {
     font-size: 10rem;

@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose"); // you have to create a mongodb atlas cluster
 const dotenv = require("dotenv");
+const cors = require("cors");
+
 const authRoute = require("./routes/auth");
-const userRoute = require("./routes/users");
+// const userRoute = require("./routes/users");
 // const movieRoute = require("./routes/movies");
 // const listRoute = require("./routes/lists");
 
@@ -17,16 +19,25 @@ mongoose.connect(process.env.MONGO_URL, {
     useCreateIndex: true,
 })
     //  to see that db is connected
-    .then(()=> console.log("DB is connected!"))
+    .then(() => console.log("DB is connected!"))
     .catch((err) => console.log(err))
 ;
 
-    // to be able to except requests in json. In Postmaster we pick Body-raw-json
+// to be able to except requests in json. In Postmaster we pick Body-raw-json
 app.use(express.json());
 
+
+const corsOptions = {
+    origin: '*',
+    credentials: true,            //access-control-allow-credentials:true
+    optionSuccessStatus: 200,
+}
+app.use(cors(corsOptions)) // Use this after the variable declaration
+
+
 //  if you're making a request - use this end point, which leads to this route
-app.use("/api/auth", authRoute)
-app.use("/api/users", userRoute)
+app.use("/auth", authRoute)
+// app.use("/api/users", userRoute)
 // app.use("/api/movies", movieRoute)
 // app.use("/api/lists", listRoute)
 

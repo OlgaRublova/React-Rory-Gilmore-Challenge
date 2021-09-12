@@ -1,21 +1,18 @@
-import React, {useState} from 'react'
-import signInImage from "../assets/signup-1.jpg"
-import { Title} from "./index";
+import React, {useState} from 'react';
+import {Link} from "react-router-dom";
+import signInImage from "../assets/signup-1.jpg";
 import axios from "axios";
 
 const initialState = {
-    fullName: "",
+    username: "",
     password: "",
-    confirmPassword: "",
+    passwordConfirm: "",
     email: ""
 }
-const Auth = () => {
-    const [form, setForm] = useState(initialState);
-    const [isSignup, setIsSignUp] = useState(true);
 
-    const switchMode = () => {
-        setIsSignUp((prevIsSignUp) => !prevIsSignUp);
-    }
+const Login = () => {
+    const [form, setForm] = useState(initialState);
+
 
     const handleChange = e => {
         setForm({
@@ -25,11 +22,24 @@ const Auth = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const { email, password} = form;
+
+        const URL = "http://localhost:8000/auth";
+
+        axios
+            .post(`${URL}/login`, {
+                email, password
+            })
+            .then(res => {
+                console.log(res);
+                console.log(res.data);
+            })
+
     }
 
     return (
         <section>
-            <Title title="Rory Gilmore Reading Challenge"/>
             <div className="section-info">
                 <h1 className="section-info__heading">
                     Want to read like <span>Rory Gilmore</span> from Gilmore Girls?
@@ -42,23 +52,11 @@ const Auth = () => {
             <div className="auth__form-container">
                 <div className="auth__form-container_fields">
                     <div className="auth__form-container_fields-content">
-                        <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
+                        <p>Sign In</p>
                         <form>
-                            {isSignup && (
-                                <div className="auth__form-container_fields-content_input">
-                                    <label htmlFor="fullName">Full Name</label>
-                                    <input
-                                        name="fullName"
-                                        type="text"
-                                        placeholder="Full Name"
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                            )}
 
                             <div className="auth__form-container_fields-content_input">
-                                <label htmlFor="fullName">Email</label>
+                                <label htmlFor="username">Email</label>
                                 <input
                                     name="email"
                                     type="email"
@@ -67,7 +65,6 @@ const Auth = () => {
                                     required
                                 />
                             </div>
-
 
                             <div className="auth__form-container_fields-content_input">
                                 <label htmlFor="password">Password</label>
@@ -79,40 +76,29 @@ const Auth = () => {
                                     required
                                 />
                             </div>
-                            {isSignup && (
-                                <div className="auth__form-container_fields-content_input">
-                                    <label htmlFor="confirmPassword">Confirm Password</label>
-                                    <input
-                                        name="confirmPassword"
-                                        type="password"
-                                        placeholder="Confirm Password"
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div>
-                            )}
+
+
                             <div className="auth__form-container_fields-content_button">
-                                <button onClick={handleSubmit}>{isSignup ? "Sign Up" : "Sign In"}</button>
+                                <button onClick={handleSubmit}>Sign In</button>
                             </div>
                         </form>
+
                         <div className="auth__form-container_fields-account">
-                            <p>
-                                {isSignup
-                                    ? "Already have an account?"
-                                    : "Don't have an account?"
-                                }
-                                <span onClick={switchMode}>
-                             {isSignup ? " Sign In" : " Sign Up"}
-                             </span>
+                            <p> Don't have an account?
+                                <Link to="/register">
+                                    <span> Sign Up</span>
+                                </Link>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className="auth__form-container_image">
-                    <img src={signInImage} alt="sign in"/>
+                    <img src={signInImage} alt="sign up"/>
                 </div>
             </div>
         </section>
     )
 }
-export default Auth;
+
+
+export default Login;

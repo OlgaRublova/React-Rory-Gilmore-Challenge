@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router} from "react-router-dom";
+
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-import {BrowserRouter as Router} from "react-router-dom";
 import {FilterProvider} from "./context/filter_context";
 import {BooksProvider} from "./context/books_context";
 import {GlobalProvider} from "./context/global_context";
 import {ListProvider} from "./context/list_context";
+import {UserProvider} from "./context/user_context";
 
 
 ReactDOM.render(
@@ -17,9 +18,13 @@ ReactDOM.render(
             <BooksProvider>
                 <FilterProvider>
                     <ListProvider>
-                        <Router>
-                            <App/>
-                        </Router>
+                        <UserProvider>
+
+                            <Router>
+                                <App/>
+                            </Router>
+                        </UserProvider>
+
                     </ListProvider>
                 </FilterProvider>
             </BooksProvider>
@@ -30,4 +35,3 @@ ReactDOM.render(
 );
 
 
-reportWebVitals();

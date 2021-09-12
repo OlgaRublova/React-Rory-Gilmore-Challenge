@@ -1,6 +1,5 @@
 import React from 'react'
-import Title from "../components/Title";
-import Auth from "../components/Auth";
+
 
 
 const Home = () => {
@@ -8,8 +7,8 @@ const Home = () => {
 
     return (
         <section>
-            <Title title="Rory Gilmore Reading Challenge"/>
-            <Auth/>
+            <h1>Home page</h1>
+
         </section>
     )
 
