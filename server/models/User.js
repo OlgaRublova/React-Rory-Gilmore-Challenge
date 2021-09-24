@@ -32,13 +32,18 @@ const userSchema = new mongoose.Schema(
                 message: 'Passwords are not the same!'
             }
         },
+        profilePicture: {
+            data: Buffer,
+            contentType: String,
+        },
         isAdmin: {type: Boolean, default: false},
     },
     //  to be able to add "created at" || "updated at"
-    {timestamps: true}
+    {timestamps: true},
+    {collection: "users"}
 );
 
-userSchema.pre('save', async function(next) {
+userSchema.pre('save', async function (next) {
 
     // Hash the password with cost of 12
     this.password = await bcrypt.hash(this.password, 12);
@@ -48,7 +53,7 @@ userSchema.pre('save', async function(next) {
     next();
 });
 
-userSchema.methods.correctPassword = async function(
+userSchema.methods.correctPassword = async function (
     candidatePassword,
     userPassword
 ) {

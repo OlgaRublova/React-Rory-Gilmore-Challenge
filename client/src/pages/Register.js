@@ -1,16 +1,19 @@
 import React, {useState} from 'react'
 import signInImage from "../assets/signup-1.jpg"
 import axios from "axios";
-import {Link} from 'react-router-dom'
+import {Link, useHistory} from 'react-router-dom'
 
 const initialState = {
     username: "",
     password: "",
     passwordConfirm: "",
-    email: ""
+    email: "",
+    profilePicture: "",
+
 }
 const Register = () => {
     const [form, setForm] = useState(initialState);
+    const history = useHistory();
 
 
     const handleChange = e => {
@@ -21,19 +24,19 @@ const Register = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const {username, email, password, passwordConfirm} = form;
+        const {username, email, password, passwordConfirm, profilePicture} = form;
 
         const URL = "http://localhost:8000/auth";
 
-        const {data : token } = await axios
-            .post(`${URL}/register`, {
-                username, email, password, passwordConfirm
-            })
-            .then(res => {
-                console.log(res);
-                console.log(res.data);
-            })
+        try {
+            await axios.post(`${URL}/register`, {
+                username, email, password, passwordConfirm, profilePicture
+            });
+            history.push("/login")
 
+        } catch(err) {
+            console.log(err)
+        }
     }
 
     return (
@@ -57,7 +60,7 @@ const Register = () => {
                                 <input
                                     name="username"
                                     type="text"
-                                    placeholder="Full Name"
+                                    placeholder="Your Name"
                                     onChange={handleChange}
                                     required
                                 />
@@ -68,7 +71,7 @@ const Register = () => {
                                 <input
                                     name="email"
                                     type="email"
-                                    placeholder="Email"
+                                    placeholder="Your Email"
                                     onChange={handleChange}
                                     required
                                 />
@@ -93,6 +96,16 @@ const Register = () => {
                                     placeholder="Confirm Password"
                                     onChange={handleChange}
                                     required
+                                />
+                            </div>
+
+                            <div className="auth__form-container_fields-content_input">
+                                <label htmlFor="profilePicture">Choose a profile picture:</label>
+                                <input
+                                    name="profilePicture"
+                                    type="file"
+                                    onChange={handleChange}
+                                    accept="image/png, image/jpeg"
                                 />
                             </div>
 

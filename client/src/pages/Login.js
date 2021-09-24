@@ -2,16 +2,19 @@ import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import signInImage from "../assets/signup-1.jpg";
 import axios from "axios";
+import {useUserContext} from "../context/user_context";
 
 const initialState = {
     username: "",
     password: "",
     passwordConfirm: "",
-    email: ""
+    email: "",
+    profilePicture: "",
 }
 
 const Login = () => {
     const [form, setForm] = useState(initialState);
+    const {user, isFetching, LoginStart, LoginSuccess, LoginFailure} = useUserContext();
 
 
     const handleChange = e => {
@@ -23,18 +26,34 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const { email, password} = form;
-
+        const {email, password} = form;
         const URL = "http://localhost:8000/auth";
 
-        axios
-            .post(`${URL}/login`, {
-                email, password
-            })
-            .then(res => {
-                console.log(res);
-                console.log(res.data);
-            })
+        try {
+            LoginStart();
+            try {
+                const res = await
+                    axios
+                        .post(`${URL}/login`, {
+                            email, password
+                        })
+                LoginSuccess(res.data)
+            } catch (err) {
+                LoginFailure(err)
+            }
+
+        } catch (err) {
+            console.log(err)
+        }
+
+        // axios
+        //     .post(`${URL}/login`, {
+        //         email, password
+        //     })
+        //     .then(res => {
+        //         console.log(res);
+        //         console.log(res.data);
+        //     })
 
     }
 

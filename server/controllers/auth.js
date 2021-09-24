@@ -28,7 +28,6 @@ const createSendToken = (user, statusCode, res) => {
         status: 'success',
         token,
         user
-
     })
 }
 
@@ -39,6 +38,7 @@ exports.register = async (req, res, next) => {
     const newUser = new User({
         username: req.body.username,
         email: req.body.email,
+        profilePicture: req.body.profilePicture,
         password: req.body.password,
         passwordConfirm: req.body.passwordConfirm,
     })
@@ -48,6 +48,7 @@ exports.register = async (req, res, next) => {
         const user = await newUser.save();
         res.status(201).json(user)  // "201" - successfully created
     } catch (err) {
+        console.log(err)
         res.status(500).json(err)
     }
 }
@@ -60,7 +61,7 @@ exports.login = async (req, res) => {
     try {
         // 1) Check if email and password exist
         if (!email || !password) {
-            //'401' means 'unathorised'
+            //'401' means 'unauthorised'
             res.status(401).json("Wrong password or username");
         }
 

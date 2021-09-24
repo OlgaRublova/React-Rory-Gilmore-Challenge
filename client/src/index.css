@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 .light-theme {
     --clr-bcg: white;
@@ -15,6 +15,7 @@
     --clr-spinner-top: #1aa7ec;
     --clr-bg-btn-primary: #1aa7ec;
     --clr-view: --clr-input;
+    --clr-user: --clr-font-primary;
 
 }
 
@@ -32,6 +33,8 @@
     --clr-spinner-top: #AF0029;
     --clr-bg-btn-primary: #AF0029;
     --clr-view: --clr-input;
+    --clr-user: --clr-font-primary;
+
 }
 
 
@@ -54,6 +57,127 @@ section {
     font-family: inherit;
     width: 100vw;
     padding: 0 1rem;
+}
+
+/* -----------Navbar style-----------*/
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background: var(--clr-bcg);
+    font-size: 14px;
+    transition: background 1s;
+}
+
+.navbar-container.scrolled {
+    background: var(--clr-btn-hover);
+}
+
+.navbarContainerLinks {
+    display: flex;
+    flex: 2 1 0;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    color: var(--clr-active-btn);
+    text-decoration: none;
+
+
+}
+
+.navbarContainerLinks__link {
+    display: flex;
+    align-items: center;
+    flex: 1 0 0;
+    color: var(--clr-active-btn);
+
+    font-size: 1rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.navbarContainerLinks__link:hover {
+
+}
+
+
+.navbarContainerLinks__link svg {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.navbar-container__theme,
+.navbar-container__logout {
+    color: var(--clr-theme-icon);
+    font-size: 2.5rem;
+    vertical-align: middle;
+    border: none;
+    background-color: transparent;
+
+
+
+}
+
+.navbar-container__logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-container__logo img {
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.navbar-container__user {
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    flex: 1 1 0;
+}
+
+.navbar-container__user img {
+    object-fit: cover;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.navbar-container__user h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar-container__logout {
+    color: lightgray !important;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbarContainerLinks {
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        margin: 1rem auto;
+
+
+    }
+
+    .theme, .navbar-container__logo {
+        display: none;
+    }
+
 }
 
 /* -----------Sign Up / Login style-----------*/
@@ -513,7 +637,8 @@ section {
 .section-info__text div:not(:first-of-type) {
     margin-top: 1rem;
 }
-.section-info img{
+
+.section-info img {
     border-radius: 50%;
     height: 20rem;
     width: 20rem;

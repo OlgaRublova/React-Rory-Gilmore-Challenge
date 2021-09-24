@@ -1,7 +1,7 @@
 import React from 'react'
 import {BiHomeHeart, BsBook, AiOutlineCoffee, AiOutlineComment, BiHeart} from 'react-icons/all'
 
-const links = [
+const navbarContainerLinks = [
     {
         title: "Home",
         icon: <BiHomeHeart/>,
@@ -71,4 +71,4 @@ const length = [
 ]
 
 //export default {length, links};
-export default  links;
+export default  navbarContainerLinks;

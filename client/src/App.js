@@ -18,26 +18,25 @@ import {
     Login,
     ErrorPage
 } from "../src/pages/index"
+import {useUserContext} from "./context/user_context";
 
 function App() {
-    const user = true;
-    // const user = false;
+    const {user} = useUserContext()
 
     return (
         <Router>
             <Title title="Rory Gilmore Reading Challenge"/>
-            {user && <Navbar/>}
-
+            { user && <Navbar/>}
 
 
             <Switch>
 
                 <Route path="/" exact>
-                    {user ? <Redirect to="/login"/> : <Redirect to="/register"/>}
+                    {user ? <Home/> : <Register/>}
                 </Route>
 
-                <Route path="/login" exact><Login/></Route>
-                <Route path="/register" exact><Register/></Route>
+                <Route path="/login" exact>{user ? <Redirect to="/"/> : <Login/>} </Route>
+                <Route path="/register" exact>{user ? <Redirect to="/"/> : <Register/>}</Route>
 
                 <Route path="/olga" exact><AboutOlga/></Route>
                 <Route path="/rory" exact><AboutRory/></Route>
@@ -45,7 +44,7 @@ function App() {
                 <Route exact path="/wish-list"><WishListPage/></Route>
 
                 <Route path="/books/:id" children={<SingleBookPage/>}/>
-                {/*<Route path="*"><ErrorPage/></Route>*/}
+                <Route path="*"><ErrorPage/></Route>
 
             </Switch>
         </Router>
