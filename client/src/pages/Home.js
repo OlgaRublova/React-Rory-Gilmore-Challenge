@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <section>
-            <h1>Home page</h1>
+            <h1 id={{"color": "orangered"}}>Home page</h1>
 
         </section>
     )

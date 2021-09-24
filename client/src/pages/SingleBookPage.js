@@ -1,48 +1,40 @@
 import {useParams, Link} from "react-router-dom"
 import {AiOutlineArrowLeft, AiOutlineArrowRight} from "react-icons/all";
 import data from "../components/data"
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react"
 
 const SingleBookPage = () => {
 
+    //  get id from url
+    const params = useParams(); //  return a string
 
-    let {id} = useParams(),
-        result,
-        index = 0;
+    const [singleBook, setSingleBook] = useState([]);
 
-    data.forEach(function checkResult(el) {
-        if (el.id === Number(id)) {
-            result = index;
-        } else {
-            index++;
-        }
-    });
+    useEffect(() => {
+
+        axios
+            .get(`http://localhost:8000/books/${params.id}`)
+            .then(res => {
+                setSingleBook(...singleBook, res.data[0])
+            })
+            .catch(err => {
+                console.log(err)
+            })
+    }, [params.id])
 
 
-
-    const handleClick = type => {
-
-        if (type === "next") {
-            result = result + 1;
-            id = result;
-        }
-        if (type === "prev") {
-            result = result - 1
-        }
-        return result
-    }
-
-    let {title, cover, firstName, lastName, genre, page} = data[result];
+    let {title, cover, firstName, lastName, genre, page} = singleBook;
 
     return (
 
         <section className="single-book">
             <div className="single-book-arrows">
                 <button className="single-book-arrow">
-                    <AiOutlineArrowLeft onClick={() => handleClick("prev")}/>
+                    <AiOutlineArrowLeft/>
                 </button>
                 <button className="single-book-arrow">
-                    <AiOutlineArrowRight onClick={() => handleClick("next")}/>
+                    <AiOutlineArrowRight/>
                 </button>
             </div>
 

@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 
 const authRoute = require("./routes/auth");
+const bookRoute = require("./routes/books");
 // const userRoute = require("./routes/users");
 // const movieRoute = require("./routes/movies");
 // const listRoute = require("./routes/lists");
@@ -37,6 +38,7 @@ app.use(cors(corsOptions)) // Use this after the variable declaration
 
 //  if you're making a request - use this end point, which leads to this route
 app.use("/auth", authRoute)
+app.use("/books", bookRoute)
 // app.use("/api/users", userRoute)
 // app.use("/api/movies", movieRoute)
 // app.use("/api/lists", listRoute)

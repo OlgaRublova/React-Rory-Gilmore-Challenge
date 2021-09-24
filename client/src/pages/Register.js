@@ -25,7 +25,7 @@ const Register = () => {
 
         const URL = "http://localhost:8000/auth";
 
-        axios
+        const {data : token } = await axios
             .post(`${URL}/register`, {
                 username, email, password, passwordConfirm
             })
