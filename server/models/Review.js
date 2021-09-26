@@ -5,7 +5,12 @@ const reviewSchema = new mongoose.Schema({
             type: String,
             required: [true, 'Please provide a userId'],
         },
-        desc: {
+        title: {
+            type: String,
+            required: [true, 'Please write your feedback'],
+            max: 200
+        },
+        detail: {
             type: String,
             required: [true, 'Please write your feedback'],
             max: 500
