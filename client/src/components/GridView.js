@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {AiFillHeart, BiBook, BiCheckSquare, RiDeleteBin6Line} from "react-icons/all";
+import {AiFillHeart, BiCheckSquare, RiDeleteBin6Line} from "react-icons/all";
 
 import {ImageColorOnScroll} from "./index";
 
@@ -16,8 +16,9 @@ const GridView = () => {
                 const {checked, favorite, id, firstName, lastName, title, genre, page, cover} = book;
                 return (
                     <article key={id} className="books-container--grid__book">
+                        <Link to={`/books/${id}`} key={id}>
                         <ImageColorOnScroll title={title} cover={cover}/>
-
+                        </Link>
                         <div className="books-container--grid__book-icons-wrapper">
                             <BiCheckSquare
                                 data-checked={id}
@@ -39,19 +40,10 @@ const GridView = () => {
                                     }}>
                             </AiFillHeart>
                         </div>
-
-                        <div className="books-container--grid__book-info-wrapper">
-                            <div>
+                            <div className="books-container--grid__book-info-wrapper">
                                 <h4>{firstName} {lastName}</h4>
                                 <p>{title}</p>
-                                <Link to={`/books/${id}`} key={id} className="link-read-more-wrapper">
-                                    <BiBook
-                                        style={{"marginRight": "0.4rem"}}
-                                    />
-                                    <span>Read More </span>
-                                </Link>
                             </div>
-                        </div>
 
                     </article>
                 )

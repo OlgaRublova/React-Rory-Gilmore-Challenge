@@ -7,6 +7,7 @@ const cors = require("cors");
 const authRoute = require("./routes/auth");
 const bookRoute = require("./routes/books");
 const reviewRoute = require("./routes/reviews");
+const userRoute = require("./routes/users");
 
 
 //  to enable process.env variables
@@ -39,6 +40,7 @@ app.use(cors(corsOptions)) // Use this after the variable declaration
 app.use("/auth", authRoute)
 app.use("/books", bookRoute)
 app.use("/reviews", reviewRoute)
+app.use("/users", userRoute)
 
 
 //  to run the server

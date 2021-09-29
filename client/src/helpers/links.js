@@ -32,43 +32,8 @@ const navbarContainerLinks = [
         url: "/wish-list",
         id: 5,
     },
-    // {
-    //     title: "Have read",
-    //     icon: <RiBook2Line/>,
-    //     url: "/read-list",
-    //     id: 6,
-    // },
-    // {
-    //     title: "Have liked",
-    //     icon: <RiBook2Line/>,
-    //     url: "/liked-list",
-    //     id: 7,
-    // },
-
 ]
 
-const length = [
-    {
-        id: 1,
-        size: "XS"
-    },
-    {
-        id: 2,
-        size: "S"
-    },
-    {
-        id: 3,
-        size: "M"
-    },
-    {
-        id: 4,
-        size: "L"
-    },
-    {
-        id: 5,
-        size: "XL"
-    },
-]
 
-//export default {length, links};
+
 export default  navbarContainerLinks;

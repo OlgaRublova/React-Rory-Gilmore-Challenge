@@ -672,6 +672,7 @@ section {
 
 .books-container--grid__book:hover .books-container--grid__book-info-wrapper {
     transform: translateY(0);
+    padding: 1rem;
 }
 
 .books-container--grid__book h4 {
@@ -953,6 +954,10 @@ section {
     display: flex;
     flex-direction: column;
     flex: 3;
+}
+.review__info__detail{
+    margin-top: 1rem;
+    text-align: justify;
 }
 .reviews-container__likes{
     display: flex;

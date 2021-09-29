@@ -12,9 +12,9 @@ const SingleBookPage = () => {
 
     const [singleBook, setSingleBook] = useState([]);
     const [reviews, setReviews] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('');
+    const [searchTerm, setSearchTerm] = useState("");
 
-    const searchValue = useRef('');
+    const searchValue = useRef("");
 
     useEffect(() => {
         searchValue.current.focus()
@@ -24,8 +24,7 @@ const SingleBookPage = () => {
         // findReview(searchTerm)
     }, [searchTerm]);
 
-    useEffect(() => {
-
+    useEffect(() =>  {
         axios
             .get(`http://localhost:8000/books/${params.id}`)
             .then(res => {

@@ -4,6 +4,7 @@ import {AiFillHeart, BiCheckSquare, RiDeleteBin6Line} from "react-icons/all";
 import {useFilterContext} from "../context/filter_context"
 import {useListContext} from "../context/list_context"
 import {ImageColorOnScroll} from "./index";
+import {Link} from "react-router-dom";
 
 const ListView = () => {
     const {filtered_books: books} = useFilterContext();
@@ -16,7 +17,9 @@ const ListView = () => {
                 return (
                     <article key={id} className="books-container--list__book">
                         <div className="books-container--list__book__image">
-                            <ImageColorOnScroll title={title} cover={cover}/>
+                            <Link to={`/books/${id}`} key={id}>
+                                <ImageColorOnScroll title={title} cover={cover}/>
+                            </Link>
                         </div>
 
                         <div className="books-container--list__book__info-wrapper">
