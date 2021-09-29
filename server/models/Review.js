@@ -1,18 +1,23 @@
 const mongoose = require('mongoose');
 
 const reviewSchema = new mongoose.Schema({
+        bookId: {
+            type: String,
+            required: [true, 'Please provide a userId'],
+        },
+
         userId: {
             type: String,
             required: [true, 'Please provide a userId'],
         },
         title: {
             type: String,
-            required: [true, 'Please write your feedback'],
+            required: [true, 'Please write your title'],
             max: 200
         },
         detail: {
             type: String,
-            required: [true, 'Please write your feedback'],
+            required: [true, 'Please write your detail'],
             max: 500
         },
         img: {

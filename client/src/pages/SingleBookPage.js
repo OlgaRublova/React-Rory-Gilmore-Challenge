@@ -11,6 +11,7 @@ const SingleBookPage = () => {
     const params = useParams(); //  return a string
 
     const [singleBook, setSingleBook] = useState([]);
+    const [reviews, setReviews] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
 
     const searchValue = useRef('');
@@ -35,6 +36,13 @@ const SingleBookPage = () => {
             })
     }, [params.id])
 
+    useEffect(() => {
+        const fetchReviews = async () => {
+         const res =   await axios.get(`/reviews/${singleBook._id}`);
+         setReviews(res.data)
+        }
+        fetchReviews();
+    }, [singleBook._id])
 
     let {title, cover, firstName, lastName, genre, page} = singleBook;
 
@@ -100,7 +108,15 @@ const SingleBookPage = () => {
 
                 </div>
 
-                <SingleReview/>
+
+
+
+                {reviews.map((review, index) => {
+                    return (
+                            <SingleReview key={index} review={review}/>
+                    )
+                })}
+
 
             </div>
 

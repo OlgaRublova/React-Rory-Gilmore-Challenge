@@ -16,7 +16,6 @@ export { default as ListTotals} from "./ListTotals"
 
 export { default as Modal} from "./Modal"
 export { default as Navbar} from "./Navbar"
-export { default as Pages} from "./Pages"
 export { default as Pulitzer} from "./Pulitzer"
 export { default as SearchForm} from "./SearchForm"
 export { default as Sort} from "./Sort"

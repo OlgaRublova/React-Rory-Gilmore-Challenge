@@ -4,13 +4,11 @@ const Book = require("../models/Book");
 
 //  get
 router.get("/:id", async (req, res) => {
-    console.log( req.params.id)
 
         try {
 
             const book = await Book.find({
                 id: req.params.id
-                // firstName: "Anne"
             }).exec();
 
 

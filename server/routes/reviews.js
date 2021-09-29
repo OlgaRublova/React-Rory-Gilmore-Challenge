@@ -1,8 +1,8 @@
 const router = require("express").Router();
 
 const Review = require("../models/Review");
-// const User = require("../models/User");
-// const Book = require("../models/Book");
+const User = require("../models/User");
+const Book = require("../models/Book");
 
 //  create a review
 router.post("/", async (req, res) => {
@@ -57,11 +57,11 @@ router.put("/:id/like", async (req, res) => {
     try {
         const review = await Review.findById(req.params.id);
 
-        if(!review.likes.includes(req.body.userId)){
-            await review.updateOne({ $push: { likes: req.body.userId}})
+        if (!review.likes.includes(req.body.userId)) {
+            await review.updateOne({$push: {likes: req.body.userId}})
             res.status(200).json("The review has been liked")
-        }else{
-            await review.updateOne({ $pull: { likes: req.body.userId}})
+        } else {
+            await review.updateOne({$pull: {likes: req.body.userId}})
             res.status(200).json("The review has been disliked")
         }
 
@@ -72,7 +72,25 @@ router.put("/:id/like", async (req, res) => {
 })
 
 
+//  get all reviews for a specific book
 
 
+router.get("/:id", async (req, res, next) => {
+    try {
+        let filter = {};
+        if (req.params.id) {
+            filter = {
+                bookId: req.params.id
+            }
+        }
+        Review.find(filter).exec(function (err, reviews){
+            res.status(200).json(reviews.reverse())
+        })
+
+
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
 
 module.exports = router;

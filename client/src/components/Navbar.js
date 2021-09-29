@@ -11,7 +11,6 @@ import {useUserContext} from "../context/user_context";
 const Navbar = () => {
     const {theme, toggleTheme} = useGlobalContext();
     const {user, LoginOut} = useUserContext();
-    console.log(user)
 
     const [isScrolled, setIsScrolled] = useState(false);
 

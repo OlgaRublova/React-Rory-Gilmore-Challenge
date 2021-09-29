@@ -11,11 +11,11 @@ const SingleReview = ({review}) => {
     const [isLiked, setIsLiked] = useState(false);
     const [user, setUser] = useState({});
     const {user: currentUser} = useUserContext();
-    console.log("review")
-    console.log(review)
-    useEffect(() => {
-        setIsLiked(review.likes.includes(currentUser._id));
-    }, [currentUser._id, review.likes]);
+
+
+    // useEffect(() => {
+    //     setIsLiked(review.likes.includes(currentUser._id));
+    // }, [currentUser._id, review.likes]);
 
     useEffect(()=>{
         const fetchUser = async () => {
@@ -27,13 +27,17 @@ const SingleReview = ({review}) => {
 
 
     const likeHandler = () => {
-        try {
-            axios.put("/reviews/" + review._id + "/like", {userId: currentUser._id})
-        } catch (err) {
-            setLike(isLiked ? like - 1 : like + 1);
-            setIsLiked(!isLiked)
-        }
+        // try {
+        //     axios.put("/reviews/" + review._id + "/like", {userId: currentUser._id})
+        // } catch (err) {
+        //     setLike(isLiked ? like - 1 : like + 1);
+        //     setIsLiked(!isLiked)
+        // }
     }
+    // console.log("user")
+    // console.log(user)
+    // console.log("current user :")
+    // console.log(currentUser)
     return (
         <div className="reviews-container__review">
             <div className="review__stars">
@@ -50,9 +54,9 @@ const SingleReview = ({review}) => {
 
                 </div>
             </div>
-            <div className="use__info">
-                <div className="use__info__fullName">{user.username}</div>
-                <div className="use__info__date">{format(review.createdAt)}</div>
+            <div className="user__info">
+                <div className="user__info__fullName">{user.username}</div>
+                <div className="user__info__date">{format(review.createdAt)}</div>
             </div>
 
         </div>

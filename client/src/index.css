@@ -943,7 +943,27 @@ section {
     left: 100%;
     margin-left: 15px;
 }
+.review__stars,
+.user__info {
+    flex: 1;
+    text-align: center;
+}
 
+.review__info{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.reviews-container__likes{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    margin-top: 1rem;
+}
+.reviews-container__likes svg{
+    margin-right: 1rem;
+}
 /* -----------Book List style-----------*/
 
 .book-list__item {
@@ -1004,42 +1024,7 @@ section {
 }
 
 
-/* -----------Pagination style-----------*/
 
-/*.btn-container--page {*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    flex-wrap: wrap;*/
-/*    background-color: red;*/
-/*!*}*!*/
-
-/*.pagination-btn {*/
-/*    width: 2rem;*/
-/*    height: 2rem;*/
-/*    background-color: var(--clr-btn);*/
-/*    color: var(--clr-font-primary);*/
-/*    border-color: transparent;*/
-/*    border-radius: 5px;*/
-/*    cursor: pointer;*/
-/*    margin: 1rem 0.3rem;*/
-/*    transition: all 2s;*/
-/*}*/
-
-/*.pagination-btn--active {*/
-/*    background-color: var(--clr-active-btn);*/
-/*    color: var(--clr-font-primary);*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.pagination-btn__prev, .pagination-btn__next {*/
-/*    background-color: transparent;*/
-/*    color: chocolate;*/
-/*    border: transparent;*/
-/*    font-weight: bold;*/
-/*    font-size: 1rem;*/
-/*    text-transform: capitalize;*/
-/*}*/
 
 
 /* -----------Loading style-----------*/

@@ -14,7 +14,7 @@ const initialState = {
 
 const Login = () => {
     const [form, setForm] = useState(initialState);
-    const {user, isFetching, LoginStart, LoginSuccess, LoginFailure} = useUserContext();
+    const { LoginStart, LoginSuccess, LoginFailure} = useUserContext();
 
 
     const handleChange = e => {
