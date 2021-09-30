@@ -959,6 +959,15 @@ section {
     margin-top: 1rem;
     text-align: justify;
 }
+.user__info__picture img{
+    height:5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 1rem;
+
+}
+
 .reviews-container__likes{
     display: flex;
     align-items: center;
@@ -968,6 +977,15 @@ section {
 }
 .reviews-container__likes svg{
     margin-right: 1rem;
+}
+
+/* -----------Write A Review Form style-----------*/
+
+.write-review-form-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 1rem;
 }
 /* -----------Book List style-----------*/
 

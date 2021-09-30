@@ -4,6 +4,7 @@ import React, {useState, useEffect, useRef} from "react"
 import {MdSearch} from "react-icons/all";
 
 import SingleReview from "../components/SingleReview";
+import WriteReview from "../components/WriteReview";
 
 const SingleBookPage = () => {
 
@@ -85,6 +86,8 @@ const SingleBookPage = () => {
                     </div>
                 </div>
 
+                <WriteReview/>
+
                 <div className="reviews-container__filter">
                     <div className="reviews-container__filter__search-form">
                         <form className="input-search-form-wrapper">
@@ -115,6 +118,7 @@ const SingleBookPage = () => {
                             <SingleReview key={index} review={review}/>
                     )
                 })}
+
 
 
             </div>
