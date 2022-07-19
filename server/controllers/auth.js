@@ -46,6 +46,8 @@ exports.register = async (req, res, next) => {
     try {
         //  send our user to our db
         const user = await newUser.save();
+        console.log("user - register")
+        console.log(user)
         res.status(201).json(user)  // "201" - successfully created
     } catch (err) {
         console.log(err)

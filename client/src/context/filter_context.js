@@ -1,60 +1,50 @@
 import React, {useContext, useReducer, useEffect} from 'react';
 import reducer from "../reducer/filter_reducer"
-import {useBooksContext} from "./books_context";
+import axios from "axios";
 
 
 const initialState = {
-    filtered_books: [],
     all_books: [],
-    grid_view: false,
-    sort: "page-lowest",
-    error: {
-        show: false,
-        msg: ""
-    },
+    filtered_books: [],
+    sort: "page-highest",
     filters: {
-        min_length: 0,
-        max_length: 0,
-        pulitzer_prize: false,
         genre: "all",
+        pulitzer_prize: false,
         book_size: "ALL"
     },
-    page: 0,
-    showPagination: false,
-    pagination: false,
-    likes: [],
-    checked: [],
 }
 
 const FilterContext = React.createContext();
 
 export const FilterProvider = ({children}) => {
-    const {books} = useBooksContext();
     const [state, dispatch] = useReducer(reducer, initialState)
 
     useEffect(() => {
-        dispatch({type: "LOAD_BOOKS", payload: books})      // Generates books
-    }, [books])
+        const fetchBooks = async () => {
+            await axios
+                .get("http://localhost:8000/books")
+                .then(res => {
+                   const books =  res.data;
+                    dispatch({type: "LOAD_BOOKS", payload: books})
+                })
+        }
+        fetchBooks();
+
+    }, [])
 
 
     useEffect(() => {
         dispatch({type: "SORT_BOOKS"})
         dispatch({type: "FILTER_BOOKS"})
-    }, [books, state.sort, state.filters])
+    }, [state.sort, state.filters])
+
+
+
 
     const updateSort = (e) =>{
         const value = e.target.value;
         dispatch({type: "UPDATE_SORT", payload: value})
     }
-
-    const setGridView = () => {
-        dispatch({type: "SET_GRIDVIEW"})
-    }
-    const setListView = () => {
-        dispatch({type: "SET_LISTVIEW"})
-    }
-
-
 
     const updateFilters = e => {
         let name = e.target.name;
@@ -75,79 +65,18 @@ export const FilterProvider = ({children}) => {
     }
 
 
-
-
-    const removeBook = id => {
-        dispatch({type: "REMOVE_BOOK", payload: id})
-    }
-
-    const heartFavoriteHandler = (e, favoriteValue) => {
-        console.log("heart")
-        console.log(e.target.parentElement)
-
-        e.preventDefault();
-        const sessionId = Number(e.target.parentElement.attributes['data-sessionid'].value);
-        console.log("sessionId")
-        console.log(sessionId)
-        let newLikes = state.filtered_books.map((like) => {
-            const {id} = like;
-            console.log("id: ")
-            console.log(id)
-            if (id === sessionId) {
-                return {...like, favorite: favoriteValue}
-            }
-            return like;
-        })
-
-        dispatch({type: "LIKE_BOOK", payload: newLikes})
-    }
-
-    const checkedHandler = (e, checkedValue) => {
-        e.preventDefault();
-        const sessionId = Number(e.target.parentElement.attributes['data-checked'].value);
-        let newChecks = state.filtered_books.map((check) => {
-            if (check.id === sessionId) {
-                return {...check, checked: checkedValue}
-            }
-            return check;
-        })
-
-        dispatch({type: "CHECK_BOOK", payload: newChecks})
-    }
-
-
     const findBook = (searchItem) => {
         if (searchItem) {
+            const books = [...state.all_books];
             dispatch({type: "FIND_BOOK", payload: {searchItem, books}})
-            toggleError(true, "That's what we found")
         }
     }
-
-
-    function toggleError(show = false, msg = "") {
-        dispatch({type: "TOGGLE_ERROR", payload: {show, msg}})
-    }
-
-    // const handlePage = index => {
-    //     dispatch({type: "SET_INDEX", payload: index})
-    // }
-    // const prevPage = () => {
-    //     dispatch({type: "SET_PREV_BOOK", payload: state.page})
-    // }
-    // const nextPage = () => {
-    //     dispatch({type: "SET_NEXT_BOOK", payload: state.page})
-    // }
 
     return (
         <FilterContext.Provider value={{
             ...state,
-            setListView, setGridView,
             updateSort, updateFilters,
-            removeBook, findBook,
-            toggleError,
-            // prevPage, nextPage, handlePage,
-            heartFavoriteHandler, checkedHandler
-
+            findBook,
         }}>
             {children}
         </FilterContext.Provider>

@@ -1,38 +1,81 @@
 const list_reducer = (state, action) => {
 
-    if (action.type === "ADD_TO_LIST") {
-        const {id, firstName, lastName, title, genre, page, cover,favorite} = action.payload;
-        const newItem = {
-            id,
-            firstName,
-            lastName,
-            title,
-            genre,
-            cover,
-            page,
-            favorite
-        }
-        return (
-            {
-                ...state,
-                list: [...state.list, newItem],
+    switch (action.type) {
+        case "TOGGLE_LIST":
+            const {_id, firstName, lastName, title, cover} = action.payload;
+
+            const newItem = {
+                _id,
+                firstName,
+                lastName,
+                title,
+                cover,
             }
-        )
+
+
+            const isFound = state.checked_items.some(item => {
+                if (action.payload._id === item._id) {
+                    const tempList = state.checked_items.filter((item) => {
+                        return item.id !== action.payload
+                    })
+                    return {
+                        ...state,
+                        checked_items: tempList
+                    }
+                }
+            })
+            if (!isFound) {
+                return {
+                    ...state,
+                    checked_items: [...state.checked_items, newItem]
+                }
+            }
+
+            return {...state}
+
+        // case "ADD_TO_LIST":
+        //     const {_id, firstName, lastName, title, cover} = action.payload;
+        //
+        //     const newItem = {
+        //         _id,
+        //         firstName,
+        //         lastName,
+        //         title,
+        //         cover,
+        //     }
+        //
+        //     const isFound = state.checked_items.some(item => {
+        //         if (action.payload._id === item._id) {
+        //             return true;
+        //         }
+        //     })
+        //
+        //     if (!isFound) {
+        //         return {
+        //             ...state,
+        //             checked_items: [...state.checked_items, newItem]
+        //         }
+        //     }
+        //     return {...state}
+        //
+        //
+        // case "REMOVE_LIST_ITEM":
+        //     const tempList = state.total_items.filter((item) => {
+        //         return item.id !== action.payload
+        //     })
+        //     return {
+        //         ...state,
+        //         checked_items: tempList
+        //     }
+        case "CLEAR_LIST":
+            return {
+                ...state,
+                checked_items: []
+            }
+
+        default:
+            return state
     }
-
-
-    if (action.type === "REMOVE_LIST_ITEM") {
-        const tempList = state.list.filter((item) => {
-            return item.id !== action.payload
-        })
-        return {...state, list: tempList}
-    }
-
-    if (action.type === "CLEAR_LIST") {
-        return {...state, list: []}
-    }
-    throw new Error(`No Matching "${action.type}" - action type`)
-
 }
 
 

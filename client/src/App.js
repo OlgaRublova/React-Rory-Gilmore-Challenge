@@ -12,13 +12,16 @@ import {
     Home,
     SingleBookPage,
     AboutOlga,
-    AboutRory,
-    WishListPage,
+    BooksPage,
     Register,
     Login,
-    ErrorPage
+    ErrorPage,
+    CheckedListPage
+
 } from "../src/pages/index"
 import {useUserContext} from "./context/user_context";
+import WriteReview from "./pages/WriteReview";
+import EditReview from "./pages/EditReview";
 
 function App() {
     const {user} = useUserContext()
@@ -26,7 +29,7 @@ function App() {
     return (
         <Router>
             <Title title="Rory Gilmore Reading Challenge"/>
-            { user && <Navbar/>}
+            {user && <Navbar/>}
 
 
             <Switch>
@@ -39,9 +42,12 @@ function App() {
                 <Route path="/register" exact>{user ? <Redirect to="/"/> : <Register/>}</Route>
 
                 <Route path="/olga" exact><AboutOlga/></Route>
-                <Route path="/rory" exact><AboutRory/></Route>
-                <Route path="/books" exact><Modal/></Route>
-                <Route exact path="/wish-list"><WishListPage/></Route>
+
+                <Route path="/books" exact><BooksPage/></Route>
+                <Route path="/read" exact><CheckedListPage/></Route>
+
+                <Route path="/write/:id" exact><WriteReview/></Route>
+                <Route path="/edit/:id" exact><EditReview/></Route>
 
                 <Route path="/books/:id" children={<SingleBookPage/>}/>
                 <Route path="*"><ErrorPage/></Route>

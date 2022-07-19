@@ -44,8 +44,6 @@ export const UserProvider = ({children}) => {
         <UserContext.Provider value={{
             ...state,
             LoginStart, LoginSuccess, LoginFailure, LoginOut
-
-
         }}>
             {children}
         </UserContext.Provider>

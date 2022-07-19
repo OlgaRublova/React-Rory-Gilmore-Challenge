@@ -1,50 +1,44 @@
 import React, {useRef, useEffect, useState} from "react";
-import {MdSearch} from "react-icons/all";
 import {useFilterContext} from "../context/filter_context"
 
 const SearchForm = () => {
-    const {findBook, error, toggleError} = useFilterContext()
-    const {show, msg} = error;
-
-    const [searchTerm, setSearchTerm] = useState('');
+    const {findBook} = useFilterContext()
+    const [searchTerm, setSearchTerm] = useState("");
 
     const handleSubmit = e => {
         e.preventDefault();
     }
 
-    const searchValue = useRef('');
+    const searchValue = useRef(null);
 
     useEffect(() => {
         searchValue.current.focus()
     }, []);
 
     useEffect(() => {
-        findBook(searchTerm)
+        findBook(searchTerm);
+        setTimeout(function () {
+            setSearchTerm("");
+            findBook(searchTerm);
+        }, 1000)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchTerm]);
-
-
-    useEffect(() => {
-        toggleError("true", "Enter the book/author you want to find")
-    }, [])
 
     return (
 
         <>
-            <article className="section-info">
-                <div className="section-info__heading">Check if <span>your favourite book</span> is in the list</div>
+            <article className="section-info-global">
+                <div className="section-info-global__heading">Check if <span>your favourite book</span> is in the list</div>
             </article>
-            <div className="errorMessage">{show && <p>{msg}</p>}</div>
 
-
-            <form className="input-search-form-wrapper"
+            <form className="input-form-container"
                   onSubmit={handleSubmit}>
-                <MdSearch style={{"marginLeft": "1rem"}}/>
                 <input
                     type="text"
                     ref={searchValue}
                     onChange={(e) => setSearchTerm(searchValue.current.value)}
+                    placeholder="Enter the book/author you want to find"
                 />
-                <button>search</button>
             </form>
         </>
     )

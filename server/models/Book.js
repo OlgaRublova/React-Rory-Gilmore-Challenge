@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const bookSchema = new mongoose.Schema({
-        id: {type: Number, required: [true, 'Please tell us the id!'], unique: true},
+        bookId: {type: Number, required: [true, 'Please tell us the id!'], unique: true},
         title: {type: String, required: [true, 'Please tell us the title!']},
         firstName: {type: String, required: [true, 'Please tell us the firstName!']},
         lastName: {type: String, required: [true, 'Please tell us the lastName!']},

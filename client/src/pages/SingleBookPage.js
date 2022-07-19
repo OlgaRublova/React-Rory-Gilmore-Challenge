@@ -1,127 +1,142 @@
 import {useParams, Link} from "react-router-dom"
 import axios from "axios";
-import React, {useState, useEffect, useRef} from "react"
-import {MdSearch} from "react-icons/all";
+import React, {useState, useEffect} from "react"
 
 import SingleReview from "../components/SingleReview";
-import WriteReview from "../components/WriteReview";
+
+import ReactStars from "react-rating-stars-component";
+import {BarChart, Bar, XAxis, YAxis} from 'recharts';
+
 
 const SingleBookPage = () => {
-
     //  get id from url
-    const params = useParams(); //  return a string
-
+    const bookId = useParams();
     const [singleBook, setSingleBook] = useState([]);
     const [reviews, setReviews] = useState([]);
-    const [searchTerm, setSearchTerm] = useState("");
+    const [reviewsStats, setReviewsStats] = useState([]);
 
-    const searchValue = useRef("");
+    const [users, setUsers] = useState([]);
 
-    useEffect(() => {
-        searchValue.current.focus()
-    }, []);
 
     useEffect(() => {
-        // findReview(searchTerm)
-    }, [searchTerm]);
-
-    useEffect(() =>  {
         axios
-            .get(`http://localhost:8000/books/${params.id}`)
+            .get(`http://localhost:8000/books/${bookId.id}`)
             .then(res => {
                 setSingleBook(...singleBook, res.data[0])
             })
-            .catch(err => {
-                console.log(err)
-            })
-    }, [params.id])
+            .catch(err => console.log(err))
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [bookId])
 
     useEffect(() => {
         const fetchReviews = async () => {
-         const res =   await axios.get(`/reviews/${singleBook._id}`);
-         setReviews(res.data)
+
+            await axios
+                .get(`http://localhost:8000/reviews/${bookId.id}`)
+                .then(res => {
+                    setReviews(...reviews, res.data.reviews)
+                    setReviewsStats(...reviewsStats, res.data.reviewsStats[0])
+                })
         }
+
         fetchReviews();
-    }, [singleBook._id])
+    }, [bookId])
+
+    useEffect(() => {
+        const fetchUsers = async () => {
+            await axios
+                .get(`http://localhost:8000/users/${bookId.id}`)
+                .then(res => {
+                    setUsers(...users, res.data)
+                })
+        }
+        fetchUsers();
+    }, [bookId])
+
 
     let {title, cover, firstName, lastName, genre, page} = singleBook;
+    let {numRatings, avgRating} = reviewsStats || 0;
+
+    const data = [
+        {name: 1, reviewCount: numRatings},
+        {name: 2, reviewCount: numRatings},
+        {name: 3, reviewCount: numRatings},
+        {name: 4, reviewCount: numRatings},
+        {name: 5, reviewCount: numRatings}
+    ];
 
     return (
-        <section className="single-book-page-container">
-            <div className="single-book-container">
-                <button className="back_to_all_books-button">
-                    <Link to="/books" className="back_to_all_books-button__link">Back to books</Link>
-                </button>
-                <h2 className="single-book-container__title">{title}</h2>
-                <img className="single-book-container__cover" src={cover} alt={title}/>
-                <div className="single-book-container__info">
-                    <p><span className="single-book-container__info-button">Author:</span> {firstName} {lastName}</p>
-                    <p><span className="single-book-container__info-button">Genre:</span> {genre}</p>
-                    <p><span className="single-book-container__info-button">Count:</span> {page} pages</p>
+        <section className="single-book-page">
+            <div className="book-container">
+                <img className="book__cover" src={cover} alt={title}/>
+                <div className="book__info">
+                    <div className="book__info__item">
+                        <div className="book__info__item--name">Author:</div>
+                        <div className="book__info__item--value">{firstName} {lastName}</div>
+                    </div>
+                    <div className="book__info__item">
+                        <div className="book__info__item--name">Title:</div>
+                        <div className="book__info__item--value">{title}</div>
+                    </div>
+                    <div className="book__info__item">
+                        <div className="book__info__item--name">Genre:</div>
+                        <div className="book__info__item--value">{genre}</div>
+                    </div>
+                    <div className="book__info__item">
+                        <div className="book__info__item--name">Count:</div>
+                        <div className="book__info__item--value">{page} pages</div>
+                    </div>
                 </div>
             </div>
-
 
             <div className="reviews-container">
-                <div className="review-container__rating-container">
-                    <p className="subtitle fancy">
-                        <span className="rating-container__title"> User Reviews </span>
-                    </p>
-                    <div className="rating-container__rating-box-container">
-                        <div className="rating-box-container__box">
-                            stars
+                <div className="average-rating-container">
+                    <div className="average-rating-summary">
+                        <div className="average-rating__number">
+                            {avgRating ? avgRating.toFixed(2) : "N/A"}
                         </div>
-                        <div className="rating-box-container__bar">
-                            bar scores
+                        <div className="average-rating__star">
+                            {
+                                avgRating && <ReactStars
+                                    count={5}
+                                    value={avgRating}
+                                    size={24}
+                                    activeColor="#ffd700"
+                                    isHalf={true}
+                                    edit={false}
+                                />
+                            }
+                        </div>
+                        <div className="average-rating__count">
+                            <span>Based on {Number(numRatings) ? Number(numRatings).toFixed(0) : "N/A"} review(s)</span>
                         </div>
                     </div>
-                </div>
+                    <div className="average-rating__breakdown">
+                        <BarChart width={250} height={100} data={data}>
+                            <Bar dataKey="reviewCount" fill="blue"/>
+                            <XAxis dataKey="name"/>
+                            <YAxis/>
+                        </BarChart>
 
-                <div className="reviews-container__write-review-container">
-                    <button className="write-review__button">write a review</button>
-                    <div className="write-review__user-photos">
-                        <p>photos</p>
-                        <p>photos</p>
-                        <p>photos</p>
+
+                    </div>
+                    <div className="submit-review-container">
+                        <Link to={`/write/${bookId.id}`} style={{textDecoration: "none"}}>
+                            <div className="btn-primary">Write A Review</div>
+                        </Link>
+                        <div className="submit-review-container-text">Share your experience to help others</div>
                     </div>
                 </div>
 
-                <WriteReview/>
 
-                <div className="reviews-container__filter">
-                    <div className="reviews-container__filter__search-form">
-                        <form className="input-search-form-wrapper">
-                            <input
-                                type="text"
-                                ref={searchValue}
-                                onChange={(e) => setSearchTerm(searchValue.current.value)}
-                            />
-                            <MdSearch style={{"marginLeft": "1rem"}}/>
-                        </form>
-                    </div>
-                    <div className="reviews-container__filter__sort">
-                        <select name="sort" id="sort">
-                            <option value="highest">Highest Rating</option>
-                            <option value="lowest">Lowest Rating</option>
-                            <option value="newest">Newest</option>
-                            <option value="oldest">Oldest</option>
-                        </select>
-                    </div>
-
-                </div>
-
-
-
-
-                {reviews.map((review, index) => {
+                {reviews && reviews.map((review) => {
                     return (
-                            <SingleReview key={index} review={review}/>
+                        <SingleReview key={review._id} review={review}/>
                     )
                 })}
-
-
-
             </div>
+
 
         </section>
     )

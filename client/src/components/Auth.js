@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import signInImage from "../assets/signup-1.jpg"
-import { Title} from "./index";
-import axios from "axios";
+import {Title} from "./index";
+
 
 const initialState = {
     fullName: "",
@@ -18,9 +18,7 @@ const Auth = () => {
     }
 
     const handleChange = e => {
-        setForm({
-            ...form, [e.target.name]: e.target.value
-        })
+        setForm({...form, [e.target.name]: e.target.value})
     }
 
     const handleSubmit = async (e) => {
@@ -30,19 +28,19 @@ const Auth = () => {
     return (
         <section>
             <Title title="Rory Gilmore Reading Challenge"/>
-            <div className="section-info">
-                <h1 className="section-info__heading">
-                    Want to read like <span>Rory Gilmore</span> from Gilmore Girls?
+            <div className="section-info-global">
+                <h1 className="section-info-global__heading">
+                    Do you want to read like <span>Rory Gilmore</span> from Gilmore Girls?
                 </h1>
-                <h3 className="section-info__text">
-                    You can, and you should. Because when you read like a Gilmore, your life will change. I know
+                <h3 className="section-info-global__text">
+                    You can, and you should! Because when you read like a Gilmore, your life will change. I know
                     because it's changing mine.
                 </h3>
             </div>
             <div className="auth__form-container">
                 <div className="auth__form-container_fields">
                     <div className="auth__form-container_fields-content">
-                        <p>{isSignup ? 'Sign Up' : 'Sign In'}</p>
+                        <p>{isSignup ? "Sign Up" : "Sign In"}</p>
                         <form>
                             {isSignup && (
                                 <div className="auth__form-container_fields-content_input">

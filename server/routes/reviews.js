@@ -1,12 +1,12 @@
 const router = require("express").Router();
-
 const Review = require("../models/Review");
-const User = require("../models/User");
-const Book = require("../models/Book");
+
 
 //  create a review
-router.post("/", async (req, res) => {
+router.post("/:id", async (req, res) => {
     const newReview = new Review(req.body);
+
+
     try {
         const savedReview = await newReview.save();
         res.status(200).json(savedReview);
@@ -15,6 +15,7 @@ router.post("/", async (req, res) => {
         console.log(err)
     }
 })
+
 
 //  update a review
 router.put("/:id", async (req, res) => {
@@ -44,12 +45,16 @@ router.delete("/:id", async (req, res) => {
             await review.deleteOne();
             res.status(200).json("your review has been deleted");
         } else {
+
             res.status(403).json("you can only delete your review");
         }
     } catch (err) {
+
         res.status(500).json(err)
         console.log(err)
+
     }
+
 })
 
 //  like or dislike a review
@@ -74,7 +79,6 @@ router.put("/:id/like", async (req, res) => {
 
 //  get all reviews for a specific book
 
-
 router.get("/:id", async (req, res, next) => {
     try {
         let filter = {};
@@ -83,14 +87,48 @@ router.get("/:id", async (req, res, next) => {
                 bookId: req.params.id
             }
         }
-        Review.find(filter).exec(function (err, reviews){
-            res.status(200).json(reviews.reverse())
-        })
+
+        const reviews = await Review
+            .find(filter)
 
 
+//  get all review stats - average rating and count
+        const reviewsStats = await
+            Review.aggregate([
+                {
+                    $match: {"bookId": {$eq: req.params.id}}
+                },
+                {
+                    $group: {
+                        _id: req.params.id,
+                        avgRating: {$avg: "$ratingsQuantity"},
+                        numRatings: {$sum: 1},
+                    }
+                }
+            ]).exec()
+
+        // res.status(200).json(reviewsStats.reverse())
+        res.status(200).json({"reviews": reviews, "reviewsStats": reviewsStats.reverse()})
     } catch (err) {
         res.status(500).json(err)
     }
 })
+
+
+// fetch a specific review
+router.get("/find/:id", async (req, res) => {
+        console.log(req)
+
+        try {
+            const review = await Review.find({
+                _id: req.params.id
+            }).exec();
+            res.status(200).json(review)
+
+        } catch (err) {
+            res.status(500).json(err)
+        }
+    }
+)
 
 module.exports = router;

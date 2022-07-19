@@ -1,21 +1,18 @@
-import React, {useEffect, useContext, useReducer} from 'react'
+import React, {useContext, useReducer, useEffect} from 'react'
 import reducer from "../reducer/list_reducer"
 
-const getStorageList = () => {
-    let list = [];
-    if (localStorage.getItem("list")) {
-        list = JSON.parse(localStorage.getItem("list"))
-    }
-    return list;
-}
-
+// const getStorageList = () => {
+//     let checked_items = [];
+//     if (localStorage.getItem("checked_items")) {
+//         checked_items = JSON.parse(localStorage.getItem("checked_items"))
+//     }
+//     return checked_items;
+// }
 
 const initialState = {
-    list: getStorageList(),
     total_items: [],
-    wished_items: [],
     checked_items: [],
-
+    liked_items: [],
 }
 
 
@@ -24,33 +21,39 @@ const ListContext = React.createContext();
 export const ListProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
+    // useEffect(() => {
+    //     localStorage.setItem('checked_items', JSON.stringify(state.checked_items));
+    // }, [state.checked_items])
 
-    useEffect(() => {
-        localStorage.setItem('list', JSON.stringify(state.list));
-    }, [state.list])
-
-
-    //  add to cart
-    const addToList = (id, firstName, lastName, title, genre, page, cover, favorite) => {
-        dispatch({type: "ADD_TO_LIST", payload: {id, firstName, lastName, title, genre, page, cover, favorite}})
-
+//toggle adding or removing a book into the checked list
+    const toggleList = (_id, firstName, lastName, title, cover) => {
+        dispatch({type: "TOGGLE_LIST", payload: {_id, firstName, lastName, title, cover}})
+        console.log(...state.checked_items)
     }
 
-    const removeItem = id => {
-        dispatch({type: "REMOVE_LIST_ITEM", payload: id})
-    }
+    // //  add to cart
+    // const addToList = (_id, firstName, lastName, title, cover) => {
+    //     dispatch({type: "ADD_TO_LIST", payload: {_id, firstName, lastName, title, cover}})
+    //     console.log("Added to the checked list")
+    //     console.log(...state.checked_items)
+    // }
+    //
+    // const removeItem = id => {
+    //     dispatch({type: "REMOVE_LIST_ITEM", payload: id})
+    // }
 
     const clearList = () => {
         dispatch({type: "CLEAR_LIST"})
     }
 
-
     return (
         <ListContext.Provider value={{
             ...state,
-            addToList,
-            removeItem,
+            toggleList,
+            // addToList,
+            // removeItem,
             clearList,
+            // checkedHandler,
         }}>
             {children}
         </ListContext.Provider>

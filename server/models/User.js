@@ -33,10 +33,15 @@ const userSchema = new mongoose.Schema(
             }
         },
         profilePicture: {
-            data: Buffer,
-            contentType: String,
+            type: String,
+            // contentType: String,
+            // default: "assets/logo.jpeg"
         },
         isAdmin: {type: Boolean, default: false},
+        booksChecked: {
+            type: Array,
+            default: []
+        },
     },
     //  to be able to add "created at" || "updated at"
     {timestamps: true},
@@ -53,10 +58,7 @@ userSchema.pre('save', async function (next) {
     next();
 });
 
-userSchema.methods.correctPassword = async function (
-    candidatePassword,
-    userPassword
-) {
+userSchema.methods.correctPassword = async function (candidatePassword, userPassword) {
     return await bcrypt.compare(candidatePassword, userPassword);
 };
 

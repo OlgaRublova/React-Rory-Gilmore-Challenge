@@ -10,7 +10,7 @@ const reviewSchema = new mongoose.Schema({
             type: String,
             required: [true, 'Please provide a userId'],
         },
-        title: {
+        headline: {
             type: String,
             required: [true, 'Please write your title'],
             max: 200
@@ -28,18 +28,13 @@ const reviewSchema = new mongoose.Schema({
             type: Array,
             default: []
         },
-        ratingsAverage: {
+        ratingsQuantity: {
             type: Number,
-            default: 4.5,
+            default: 5,
             min: [1, 'Rating must be above 1.0'],
             max: [5, 'Rating must be below 5.0'],
             set: val => Math.round(val * 10) / 10
         },
-        ratingsQuantity: {
-            type: Number,
-            default: 0
-        },
-
     },
     {timestamps: true},
     {collection: "reviews"}
