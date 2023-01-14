@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,aAAc;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,aAAa;EACrB,WAAW,EAAE,IAAI;EAEjB,wBAAa;IACX,UAAU,EAAE,OAAO;IACnB,MAAM,EAAE,KAAK;IACb,KAAK,EAAE,KAAK;EAGd,oBAAS;IACP,KAAK,EAAE,OAAO",
+"sources": ["book-summary.styles.scss"],
+"names": [],
+"file": "book-summary.styles.css"
+}

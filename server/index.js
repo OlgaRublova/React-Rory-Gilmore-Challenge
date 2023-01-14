@@ -24,7 +24,7 @@ mongoose.connect(process.env.MONGO_URL, {
     .catch((err) => console.log(err))
 ;
 
-// to be able to except requests in json. In Postmaster we pick Body-raw-json
+// to be able to except requests in json. In Postmaster, we pick Body-raw-json
 app.use(express.json());
 
 

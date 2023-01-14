@@ -1,38 +1,37 @@
 import React, {useState, useEffect, useRef} from "react"
 import axios from "axios";
-import {useParams, useHistory} from "react-router-dom"
-import {useUserContext} from "../context/user_context";
-import ReactStars from "react-rating-stars-component";
+import {useNavigate, useParams} from "react-router-dom"
+import ButtonComponent from "../components/button/button.component";
+import BookSummaryComponent from "../components/book-summary/book-summary.component";
+import {useAuthContext} from "../context/auth_context";
 
 const EditReview = () => {
     const reviewId = useParams();
-    const history = useHistory();
-    const inputHeadline = useRef();
-    const inputText = useRef();
-    const inputUserId = useRef();
-    const user = useUserContext();
-
+    const navigate = useNavigate();
     const [review, setReview] = useState([]);
     const [ratingsQuantity, setRatingsQuantity] = useState(5)
     const [singleBook, setSingleBook] = useState([]);
-    let {title, cover, firstName, lastName} = singleBook;
+
+    const user = useAuthContext();
+
 
 
     const initialValues = {
         headline: review.headline,
         detail: review.detail,
-
+        ratingsQuantity: review.ratingsQuantity
     };
 
     const [values, setValues] = useState(initialValues);
 
+    const inputHeadline = useRef(values.headline);
+    const inputDetail = useRef(values.detail);
+    const inputUserId = useRef();
 
     useEffect(() => {
         const fetchReview = async () => {
             const res = await axios.get(`http://localhost:8000/reviews/find/${reviewId.id}`);
             setReview(res.data[0]);
-
-
         }
         fetchReview();
     }, [reviewId])
@@ -52,13 +51,13 @@ const EditReview = () => {
         const editedReview = {
             userId: inputUserId.current.value,
             headline: inputHeadline.current.value,
-            detail: inputText.current.value,
+            detail: inputDetail.current.value,
             ratingsQuantity
         }
 
         try {
             await axios.put(`http://localhost:8000/reviews/${reviewId.id}`, editedReview);
-            history.go(-1);
+            navigate(`/books/${review.bookId}`)
 
         } catch (err) {
             console.log(err)
@@ -72,33 +71,14 @@ const EditReview = () => {
 
     const handleInputChange = (e) => {
         const {name, value} = e.target;
-        setValues({
-            ...values,
-            [name]: value,
-        });
-
+        setValues({...values, [name]: value});
     };
 
     return (
         <section>
             <form className="review__container">
-                <div className="book_summary">
-                    <div className="book-summary__cover">
-                        <img src={cover} alt={title}/>
-                    </div>
-                    <div className="book-summary__title">{title}</div>
-                    <div className="book-summary__author">{firstName} {lastName}</div>
-                </div>
 
-                <span>Overall Rating: </span>
-                <ReactStars
-                    count={5}
-                    onChange={ratingChanged}
-                    size={24}
-                    activeColor="#ffd700"
-                    half
-                />
-
+                <BookSummaryComponent ratingChanged={ratingChanged} singleBook={singleBook}/>
 
                 <input type="hidden" ref={inputUserId} value={user.user.user._id}/>
                 <input
@@ -111,14 +91,17 @@ const EditReview = () => {
                 />
                 <input
                     type="text"
-                    ref={inputText}
+                    ref={inputDetail}
                     value={values.detail}
                     name="detail"
                     onChange={handleInputChange}
                     maxLength="2000"
                 />
-
-                <button className="btn-primary" type="submit" onClick={editReview}>Edit Review</button>
+                <div className="btn-primary-box">
+                    <ButtonComponent buttonType="inverted" onClick={() => navigate(`/books/${review.bookId}`)}>Go Back</ButtonComponent>
+                    <ButtonComponent buttonType="primary" onClick={editReview}>Edit
+                        Review</ButtonComponent>
+                </div>
             </form>
         </section>
     );

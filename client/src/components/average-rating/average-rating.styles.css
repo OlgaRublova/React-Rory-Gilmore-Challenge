@@ -1,0 +1,17 @@
+.average-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin: 2rem 0; }
+  .average-rating__number {
+    font-weight: bold;
+    font-size: 2rem; }
+  .average-rating__count {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-right: 15rem;
+    width: max-content; }
+
+/*# sourceMappingURL=average-rating.styles.css.map */

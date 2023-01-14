@@ -1,0 +1,92 @@
+.button-container {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center; }
+  .button-container:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black; }
+  .button-container.google-sign-in {
+    background-color: #4285f4;
+    color: white;
+    padding: 0 10px; }
+    .button-container.google-sign-in:hover {
+      background-color: white;
+      border: 1px solid #357ae8;
+      color: #4285f4; }
+  .button-container.inverted {
+    background-color: white;
+    color: black;
+    border: 1px solid black; }
+    .button-container.inverted:hover {
+      background-color: black;
+      color: white;
+      border: none; }
+  .button-container.results {
+    margin: 2rem auto;
+    padding: 0 10px; }
+
+/*GENRES*/
+.genre-buttons-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 10px; }
+  .genre-buttons-list .genre-button {
+    background-color: var(--clr-btn--genre);
+    color: var(--clr-font-primary);
+    text-transform: capitalize;
+    padding: 0.3rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    transition: all 1s; }
+    .genre-buttons-list .genre-button:hover {
+      background: var(--clr-btn--genre-hover); }
+    .genre-buttons-list .genre-button--active {
+      background: var(--clr-btn--genre-hover); }
+
+/* PULITZER & BOOKS' SIZE BUTTONS*/
+.book-size-buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%; }
+
+.book-size-buttons {
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(6, minmax(2rem, 3rem));
+  font-size: 1rem;
+  grid-gap: 10px; }
+
+.book-size-btn {
+  border-color: transparent;
+  padding: 0.25rem;
+  background: var(--clr-btn--book-size);
+  color: var(--clr-font-primary);
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  transition: all 1s; }
+
+.book-size-btn--active {
+  background-color: var(--clr-btn--book-size-hover); }
+
+/*# sourceMappingURL=button.styles.css.map */

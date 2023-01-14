@@ -1,37 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, {StrictMode} from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
-
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 
 import {FilterProvider} from "./context/filter_context";
-// import {BooksProvider} from "./context/books_context";
 import {GlobalProvider} from "./context/global_context";
 import {ListProvider} from "./context/list_context";
-import {UserProvider} from "./context/user_context";
+import {AuthProvider} from "./context/auth_context";
 import {ReviewProvider} from "./context/review_context";
 
+const container = document.getElementById('root');
+const root = createRoot(container);
 
-ReactDOM.render(
-    <React.StrictMode>
+root.render(
+    <StrictMode>
         <GlobalProvider>
-            {/*<BooksProvider>*/}
                 <FilterProvider>
                     <ListProvider>
-                        <UserProvider>
+                        <AuthProvider>
                             <ReviewProvider>
                                 <Router>
                                     <App/>
                                 </Router>
                             </ReviewProvider>
-                        </UserProvider>
+                        </AuthProvider>
                     </ListProvider>
                 </FilterProvider>
-            {/*</BooksProvider>*/}
         </GlobalProvider>
-    </React.StrictMode>,
-    document.getElementById('root')
+    </StrictMode>
 );
 
 

@@ -1,23 +1,32 @@
 import React from "react";
-
+import ButtonComponent from "../components/button/button.component";
+import {useNavigate} from "react-router-dom";
 
 const AboutOlga = () => {
+    const navigate = useNavigate();
     return (
-        <section>
+        <>
+
             <div className="olga-page__content">
-                <img className="olga-page__content__image"
-                     src="https://m.media-amazon.com/images/M/MV5BN2QwYzE4YTItNmZmZC00M2YyLTg0OTQtOTQyMzRmNWJhN2RmXkEyXkFqcGdeQXVyMTI5ODA2NzQ5._V1_.jpg"
-                     alt="olga"/>
+                <ButtonComponent buttonType="inverted" onClick={() => navigate("/books")}>Go
+                    Back</ButtonComponent>
+                <img className="olga-page__content__image" src="../images/girl.jpg" alt="olga"/>
+
                 <div className="olga-page__content__text">
-                    <h3>Hello, I'm <span className="section-info-global__heading">Olga Rublova</span></h3>
+                    <h3>Hello,<h2>I'm Olga Rublova</h2></h3>
                     <h3>I'm a front-end developer</h3>
                     <div className="btn-primary-box">
-                        <button className="btn-primary"> View My Work</button>
-                        <button className="btn-primary"> View My CV</button>
+                        <ButtonComponent buttonType="inverted"> View My Work</ButtonComponent>
+                        <ButtonComponent buttonType="primary"> View My CV</ButtonComponent>
                     </div>
+
+
                 </div>
             </div>
-        </section>
+
+        </>
+
+
     )
 }
 

@@ -1,14 +1,16 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
-import React, {useState, useEffect} from "react"
+import {useNavigate} from 'react-router-dom'
+import React from "react"
+import ButtonComponent from "../components/button/button.component";
 
 const ErrorPage = () => {
+    const navigate = useNavigate();
     return (
-        <Wrapper className="page-100">
+        <Wrapper>
             <section>
                 <h1>404</h1>
                 <h3>Sorry, the page you tried to reach cannot be found</h3>
-                <Link to="/" className="btn-primary"> back home </Link>
+                <ButtonComponent buttonType="reverse" onClick = {()=> navigate("home")}>back home </ButtonComponent>
             </section>
 
         </Wrapper>
@@ -16,8 +18,15 @@ const ErrorPage = () => {
 }
 
 const Wrapper = styled.section`
-  text-align: center;
-  margin: 10rem auto;
+  section{
+    text-align: center;
+    margin: 10rem 35%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
 
   h1 {
     font-size: 10rem;

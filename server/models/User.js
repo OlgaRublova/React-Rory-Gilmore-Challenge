@@ -4,7 +4,7 @@ const bcrypt = require('bcryptjs');
 
 const userSchema = new mongoose.Schema(
     {
-        username: {
+        displayName: {
             type: String,
             required: [true, 'Please tell us your name!']
         },
@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema(
             minlength: 8,
             select: false
         },
-        passwordConfirm: {
+        confirmPassword: {
             type: String,
             required: [true, 'Please confirm your password'],
             validate: {
@@ -31,11 +31,6 @@ const userSchema = new mongoose.Schema(
                 },
                 message: 'Passwords are not the same!'
             }
-        },
-        profilePicture: {
-            type: String,
-            // contentType: String,
-            // default: "assets/logo.jpeg"
         },
         isAdmin: {type: Boolean, default: false},
         booksChecked: {

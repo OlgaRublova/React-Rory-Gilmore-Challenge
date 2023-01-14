@@ -1,0 +1,14 @@
+.book-summary {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+  font-weight: bold; }
+  .book-summary__cover img {
+    object-fit: contain;
+    height: 12rem;
+    width: 12rem; }
+  .book-summary__title {
+    color: crimson; }
+
+/*# sourceMappingURL=book-summary.styles.css.map */

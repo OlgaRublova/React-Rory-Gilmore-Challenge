@@ -1,40 +1,40 @@
 import React, {useState, useEffect, useRef} from "react"
 import axios from "axios";
-import {useParams, useHistory} from "react-router-dom"
-import {useUserContext} from "../context/user_context";
-import ReactStars from "react-rating-stars-component";
+import {useNavigate, useParams} from "react-router-dom"
+import ButtonComponent from "../components/button/button.component";
+import BookSummaryComponent from "../components/book-summary/book-summary.component";
+import {useAuthContext} from "../context/auth_context";
 
 const WriteReview = () => {
     const bookId = useParams();
-    const history = useHistory();
+    const user = useAuthContext();
+    const userId = user.user.uid ? user.user.uid : user.user.user._id;
+    const navigate = useNavigate();
 
     const [singleBook, setSingleBook] = useState([]);
-    // const [file, setFile] = useState([]);
     const [ratingsQuantity, setRatingsQuantity] = useState(5)
-
-    let {title, cover, firstName, lastName} = singleBook;
-    const user = useUserContext();
 
     const inputHeadline = useRef();
     const inputText = useRef();
-    const inputUserId = useRef();
+
+
 
 
     const postReview = async (e) => {
         e.preventDefault();
         const newReview = {
-            userId: inputUserId.current.value,
+            userId: userId,
             bookId: bookId.id,
-            headline:inputHeadline.current.value,
-            detail:inputText.current.value,
+            headline: inputHeadline.current.value,
+            detail: inputText.current.value,
             ratingsQuantity
         }
 
-        try{
+        try {
             await axios.post(`http://localhost:8000/reviews/${bookId.id}`, newReview);
-            history.push(`/books/${bookId.id}`);
+            navigate(`/books/${bookId.id}`);
 
-        }catch(err){
+        } catch (err) {
             console.log(err)
         }
 
@@ -57,37 +57,24 @@ const WriteReview = () => {
     };
 
     return (
+
         <section>
             <form className="review__container">
-                <div className="book_summary">
-                    <div className="book-summary__cover">
-                        <img src={cover} alt={title}/>
-                    </div>
-                    <div className="book-summary__title">{title}</div>
-                    <div className="book-summary__author">{firstName} {lastName}</div>
-                </div>
-
-                <span>Overall Rating: </span>
-                <ReactStars
-                    count={5}
-                    onChange={ratingChanged}
-                    size={24}
-                    activeColor="#ffd700"
-                    half
-                />
-
-
-                <input type="hidden" ref={inputUserId} value={user.user.user._id}/>
-                <input type="text" ref={inputHeadline} id="review__headline" maxLength="60"
+                <BookSummaryComponent ratingChanged={ratingChanged} singleBook={singleBook}/>
+                <input type="hidden" value={userId}/>
+                <input type="text" ref={inputHeadline} maxLength="60"
                        placeholder="Sum up your experience in a few simple words."/>
-                <input type="text" ref={inputText} id="review__text" maxLength="2000"
+                <input type="text" ref={inputText} maxLength="2000"
                        placeholder="What do you like best or least?"/>
 
-                {/*<label htmlFor="file">Photo or Video: </label>*/}
-                {/*<input type="file" id="file" accept=".png, .jpeg, .jpg"*/}
-                {/*       onChange={(e) => setFile(e.target.files)}/>*/}
 
-                <button className="btn-primary" type="submit" onClick={postReview}>Submit Review</button>
+                <div className="btn-primary-box">
+                    <ButtonComponent buttonType="inverted" type="submit"
+                                     onClick={() => navigate(`/books/${bookId.id}`)}>Go Back</ButtonComponent>
+                    <ButtonComponent buttonType="primary" type="submit" onClick={postReview}>Submit
+                        Review</ButtonComponent>
+                </div>
+
             </form>
         </section>
     );

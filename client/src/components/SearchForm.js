@@ -11,36 +11,25 @@ const SearchForm = () => {
 
     const searchValue = useRef(null);
 
-    useEffect(() => {
-        searchValue.current.focus()
-    }, []);
 
     useEffect(() => {
         findBook(searchTerm);
         setTimeout(function () {
-            setSearchTerm("");
             findBook(searchTerm);
         }, 1000)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [searchTerm]);
 
     return (
-
-        <>
-            <article className="section-info-global">
-                <div className="section-info-global__heading">Check if <span>your favourite book</span> is in the list</div>
-            </article>
-
             <form className="input-form-container"
                   onSubmit={handleSubmit}>
                 <input
-                    type="text"
+                    type="search"
                     ref={searchValue}
                     onChange={(e) => setSearchTerm(searchValue.current.value)}
                     placeholder="Enter the book/author you want to find"
                 />
             </form>
-        </>
     )
 }
 

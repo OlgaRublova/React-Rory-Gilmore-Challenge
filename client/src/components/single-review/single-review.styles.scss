@@ -1,0 +1,54 @@
+
+.single-review {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 8rem minmax(60%, 40rem) auto;
+  align-items: center;
+  background-color: white;
+  margin-top: 1rem;
+  box-shadow: 0 0 1px black;
+  padding: 1rem;
+
+  &:hover {
+    background-color: whitesmoke;
+  }
+
+  &__content {
+    .single-review__buttons {
+      height: 2rem;
+      width: 50%;
+      display: grid;
+      grid-template-columns: 4.6rem 1rem 1rem;
+      grid-column-gap: 1.5rem;
+      color: var(--clr-font-primary);
+      margin-top: 1rem;
+
+      &--like,
+      &--edit,
+      &--delete {
+        height: 100%;
+        font-size: 1rem;
+        color: var(--clr-font-primary);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .single-review__user {
+    .user__displayName {
+      font-weight: bold;
+    }
+
+    .user__image img {
+      height: 5rem;
+      border-radius: 50%;
+    }
+  }
+
+}
+
+
+
+

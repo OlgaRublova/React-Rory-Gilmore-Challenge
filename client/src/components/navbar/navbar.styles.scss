@@ -1,0 +1,98 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  font-size: 1rem;
+  transition: background 1s;
+  color: var(--clr-font-primary);
+  background-color: var(--clr-btn--genre);
+  padding: 0 2rem;
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    flex: 1 0 auto;
+    font-size: 1rem;
+
+  }
+
+  &__logo img {
+    height: 4rem;
+    width: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__links__link {
+    font-size: 1rem;
+    color: var(--clr-font-primary);
+    text-transform: capitalize;
+    text-decoration: none;
+
+
+    svg {
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      font-family: 'Dancing Script', cursive;
+    }
+  }
+
+
+  &__buttons {
+    margin-right: 2rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    &--theme, &--logout {
+      font-size: 1.2rem;
+      border: none;
+      background-color: transparent;
+
+    }
+
+    &--theme {
+      font-size: 1.4rem;
+      color: #f9d71c;
+    }
+  }
+}
+.scrolled{
+  background-color: var(--clr--theme);
+}
+
+
+@media screen and (max-width: 800px) {
+  .home-page__images__text {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+    align-items: center;
+
+    &__user,
+    &__logo,
+    &__buttons {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+/* HOME PAGE - ABOUT PROJECT*/
+.home-page {
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-color: var(--clr-bcg);
+  color: var(--clr-font-primary);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 900px));
+  grid-template-rows: 1fr;
+  justify-content: center;
+  place-items: center;
+  grid-gap: 1rem 3rem;
+  margin: 6rem 0 0 0; }
+  .home-page__images, .home-page__content {
+    position: relative;
+    flex: 1; }
+  .home-page__images__box {
+    position: relative;
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 1rem; }
+    .home-page__images__box img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+  .home-page__images__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline-offset: 1rem;
+    width: 100%;
+    max-width: 50rem;
+    text-align: center;
+    background-color: var(--clr-bcg);
+    color: var(--clr-font-primary); }
+    .home-page__images__text h1 {
+      font-size: 3rem;
+      padding: 1rem; }
+  .home-page__info {
+    font-weight: normal;
+    text-align: justify;
+    margin-bottom: 2rem; }
+    .home-page__info span {
+      font-family: 'Satisfy', cursive;
+      color: var(--clr-font-primary);
+      font-size: 35px; }
+
+@media only screen and (max-width: 844px) {
+  .home-page {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem; }
+    .home-page__images__text {
+      display: none; } }
+
+/*# sourceMappingURL=home.styles.css.map */

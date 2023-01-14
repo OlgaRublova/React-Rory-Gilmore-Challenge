@@ -1,0 +1,25 @@
+.average-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  margin: 2rem 0;
+
+
+  &__number {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  &__star {
+
+  }
+
+  &__count {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    margin-right: 15rem;
+    width: max-content;
+  }
+}

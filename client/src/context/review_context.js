@@ -1,7 +1,7 @@
 import React, {useContext, useReducer} from 'react'
 import reducer from "../reducer/review_reducer"
 import axios from "axios";
-import {useUserContext} from "./user_context";
+import {useAuthContext} from "./auth_context";
 
 
 const initialState = {
@@ -15,7 +15,7 @@ const ReviewContext = React.createContext();
 
 export const ReviewProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initialState);
-    const {user: currentUser} = useUserContext();
+    const {user: currentUser} = useAuthContext();
 
 
 
